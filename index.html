@@ -28,7 +28,8 @@
 		</div>
 		<div id="about" class="section scrollspy">
 			<h5>
-				<b>I’m a front-end developer <i>and</i> a problem solver.</b> Understanding users to creating beautiful and practical interfaces takes more than just technical skill or arts sense. My passion has driven me to create and implement 5+ projects within just a year of entering the webdev world. <a href="#projects">Come check out what I’ve made!</a>
+				<b>I’m a front-end developer <i>and</i> a problem solver.</b> Understanding users to creating beautiful and practical interfaces takes more than just technical skill or arts sense. My passion has driven me to create and implement 5+ projects within just a year of entering the webdev world. <br/>
+				<a href="#projects">Come check out what I’ve made!</a>
 			</h5>
 		</div>
 		<div id="projects" class="section scrollspy">
@@ -66,7 +67,34 @@
 					<td>
 					</td>
 				</tr>
+				<tr><td colspan="6" style="text-align: center;"><a href>View More</a></td></tr>
 			</table>
+		</div>
+		<div id="contact" class="section scrollspy">
+			<table>
+				<tr>
+					<td colspan="3">
+						<h3>Thanks for visiting!</h3>
+					</td>
+				</tr>
+				<tr>
+					<td>logo</td>
+					<td colspan="3">( 412 ) - 265 - 8129</td>
+				</tr>
+				<tr>
+					<td>logo</td>
+					<td colspan="3">spark3@andrew.cmu.edu</td>
+				</tr>
+				<tr>
+					<td>logo</td>
+					<td colspan="3">/spark33</td>
+				</tr>
+				<tr>
+					<td>logo</td>
+					<td colspan="3">/spark6</td>
+				</tr>
+			</table>
+			<img id="me" src="me1.png" />
 		</div>
 
 		<!-- FOOTER AS DIV FOR SCROLLING-->
@@ -80,6 +108,7 @@
         <li><a href="#landing">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
         <li><a href="resume.pdf" target="_blank">Resume</a>
       </ul>
     </div>
@@ -103,11 +132,6 @@
 			e.preventDefault();
 			$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
 		});
-	});
-	$(window).scroll(function() {
-	   if($(window).scrollTop() + $(window).height() == $(document).height()) {
-	       alert("bottom!");
-	   }
 	});
 </script>
 </body>

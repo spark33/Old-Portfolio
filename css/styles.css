@@ -90,7 +90,7 @@ main div
 	height: 70vh;
 }
 
-#about, #projects
+#about, #projects, #contact
 {
 	padding-left: 25%;
 	padding-right: 25%;
@@ -114,6 +114,20 @@ table td
 {
 	padding: 1%;
 	text-align: justify;
+}
+
+#contact
+{
+	position: relative;
+}
+
+#me
+{
+	width: 10%;
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+	z-index: 10;
 }
 
 footer
@@ -152,8 +166,8 @@ footer
 	width: 24px;
 	height: 24px;
 	margin-left: -12px;
-	border-left: 1px solid #404040;
-	border-bottom: 1px solid #404040;
+	border-left: 1px solid #26a69a;
+	border-bottom: 1px solid #26a69a;
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	-webkit-animation: sdb07 2s infinite;
@@ -225,6 +239,12 @@ footer
 		display: block;
 	}
 
+	#me
+	{
+		width: 14%;
+		left: 43%;
+	}
+
 	div
 	{
 		height: 80vh;
@@ -233,5 +253,13 @@ footer
 		display: block;
 		position: static;
 		height: auto;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#me
+	{
+		width: 20%;
+		left: 40%;
 	}
 }
