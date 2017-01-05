@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sean Park</title>
+	<meta name="viewport" content="width=device-width">
+
+
+	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<script type="text/javascript" src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="materialize/js/materialize.js"></script>
+	<script type="text/javascript" src="scrollify/jquery.scrollify.js"></script>
+</head>
+
+<body>
+	<div id="top-left">
+		<p><b>Student at Carnegie Mellon</b></p>
+		<p><b>Developer / Designer / Student</b></p>
+	</div>
+	<div id="bottom-right">
+		<p><i class="fa fa-copyright" aria-hidden="true" style="color: #26a69a"> </i> Sean Park 2017</p>
+	</div>
+	<main>
+		<div id="landing" class="section scrollspy">
+			<h1>Sean Park</h1>
+			<a href="#about"><small>Scroll</small><span></span><span></span><span></span></a>
+		</div>
+		<div id="about" class="section scrollspy">
+			<h5>
+				<b>I’m a front-end developer <i>and</i> a problem solver.</b> Understanding users to creating beautiful and practical interfaces takes more than just technical skill or arts sense. My passion has driven me to 5+ projects to create and implement within just a year of entering the webdev world. <a href="#projects">Come check out what I’ve made!</a>
+			</h5>
+		</div>
+		<div id="projects" class="section scrollspy">
+			<table>
+				<tr>
+					<td>
+						Image
+					</td>
+					<td colspan="4">
+						<h4 style="text-align: left;">Seoul 53 Hotel</h4>
+						<p>Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description </p>
+					</td>
+					<td>
+					</td>
+				</tr>
+				<tr>
+					<td>
+					</td>
+					<td colspan="4">
+						<h4 style="text-align: right;">Scheduler</h4>
+						<p>Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description </p>
+					</td>
+					<td>
+						Image
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Image
+					</td>
+					<td colspan="4">
+						<h4 style="text-align: left;">NoobLoop</h4>
+						<p>Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description Description </p>
+					</td>
+					<td>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<!-- FOOTER AS DIV FOR SCROLLING-->
+		<footer class="scrollspy">
+	    	<h1>Footer</h1>
+	    </footer>
+	</main>
+
+	<div id="scroller" class="col m3 l2">
+      <ul class="section table-of-contents">
+        <li><a href="#landing">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a>
+      </ul>
+    </div>
+
+<!-- SCRIPTS -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.scrollspy').scrollSpy({
+			scrollOffset: 0
+		});
+	});
+	$(function() {
+			$.scrollify({
+				section : ".scrollspy",
+				interstitialSection: "footer",
+				updateHash: false
+			});
+		});
+	$(function() {
+		$('a[href="#about"]').on('click', function(e) {
+			e.preventDefault();
+			$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+		});
+	});
+	$(window).scroll(function() {
+	   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+	       alert("bottom!");
+	   }
+	});
+</script>
+</body>
+</html>
