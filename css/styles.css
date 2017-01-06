@@ -118,7 +118,21 @@ table td
 
 #contact
 {
+	flex-direction: column;
 	position: relative;
+}
+
+#contact > div
+{
+	padding-top: 10px;
+	height: auto;
+	display: block;
+	text-align: left;
+}
+
+#contact > div span
+{
+	margin-left: ;
 }
 
 #me
