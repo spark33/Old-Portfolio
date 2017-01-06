@@ -98,7 +98,7 @@ main div
 
 #about h5
 {
-	line-height: 4em;
+	line-height: 10vh;
 	max-width: 100%;
 	text-align: justify;
 }
@@ -114,6 +114,7 @@ table td
 {
 	padding: 1%;
 	text-align: justify;
+	line-height: 4vh;
 }
 
 #contact
@@ -255,8 +256,8 @@ footer
 
 	#me
 	{
-		width: 14%;
-		left: 43%;
+		width: 18%;
+		left: 41%;
 	}
 
 	div
