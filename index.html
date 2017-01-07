@@ -1,8 +1,21 @@
+<!--
+
+TO-DO LIST:
+-transitions
+-separate pages for projects
+-signature animation
+-footer content
+-resume upload
+-add photo to about me
+
+-->
+
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Sean Park</title>
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="OGehVcQmnCCqJjCaRlK3uSQtjMLNjppaTkwS5EXkMT8" />
 
 
@@ -30,9 +43,8 @@
 		<div id="about" class="section scrollspy">
 			<h5>
 				<b>I’m a front-end developer <i>and</i> a problem solver.</b> Understanding users to creating beautiful and practical interfaces takes more than just technical skill or arts sense. My passion has driven me to create and implement 5+ projects within just a year of entering the webdev world. <br/>
-				<a href="#projects">Come check out what I’ve made!</a>
 			</h5>
-			<a class="scroll-button" href="#projects"><small>Scroll</small><span></span><span></span><span></span></a>
+			<a href="#projects" class="button">Come check out what I’ve made!</a>
 		</div>
 		<div id="projects" class="section scrollspy">
 			<table>
@@ -67,8 +79,13 @@
 					</td>
 				</tr>
 				<tr><td colspan="7" style="text-align: center;"><a href>View More</a></td></tr>
+				<tr>
+					<td colspan="2"></td>
+					<td colspan="3" style="text-align: center;">
+						<a href="#contact"><p class="button">Intrigued? <b>Contact me.</b></p></a>
+					</td>
+				</tr>
 			</table>
-			<a class="scroll-button" href="#contact"><small>Scroll</small><span></span><span></span><span></span></a>
 		</div>
 		<div id="contact" class="section scrollspy">
 			<h3>Thank you for visiting!</h3>
@@ -84,6 +101,7 @@
 
 		<!-- FOOTER AS DIV FOR SCROLLING-->
 		<footer class="scrollspy">
+			<a href="#landing" class="button">Back to Top</a>
 	    	<h1>Footer</h1>
 	    </footer>
 	</main>

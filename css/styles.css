@@ -4,6 +4,11 @@ html
 	transition: all 1s ease;
 }
 
+html a
+{
+	cursor: pointer;
+}
+
 html, body
 {
 	min-width: 100%;
@@ -38,6 +43,29 @@ a, p
 {
     font-size: calc(12px + 0.2vw);
 }
+
+.button
+{
+	margin: 10px;
+	padding: 12px;
+	border: 2px solid #26a69a;
+	color: #26a69a;
+	background: transparent;
+	border-radius: 5px;
+}
+
+.button:hover
+{
+	color: white;
+	background: #26a69a;
+}
+
+.button *
+{
+	color: inherit;
+}
+
+/* SECTION SPECIFIC STYLES */
 
 #top-left
 {
@@ -103,6 +131,13 @@ main div
 	text-align: justify;
 }
 
+#about .button
+{
+	margin-left: 0px;
+	margin-right: auto;
+}
+
+
 #projects
 table
 {
@@ -117,7 +152,26 @@ table td
 	line-height: 4vh;
 }
 
-#contact
+#projects h4
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#projects p
+{
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+#projects
+img
+{
+	width: 70%;
+	min-width: 80px;
+}
+
+#about, #contact
 {
 	flex-direction: column;
 	position: relative;
@@ -131,11 +185,6 @@ table td
 	text-align: left;
 }
 
-#contact > div span
-{
-	margin-left: ;
-}
-
 #me
 {
 	width: 10%;
@@ -147,6 +196,7 @@ table td
 
 footer
 {
+	text-align: center;
 	background: #353535;
 	color: white;
 	max-width: 100%;
@@ -249,13 +299,6 @@ footer
 	{
 		padding-left: 5%;
 		padding-right: 5%;
-	}
-
-	#project
-	{
-		height: 800px;
-		width: 100%;
-		display: block;
 	}
 
 	#me
