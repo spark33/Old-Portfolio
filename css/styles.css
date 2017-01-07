@@ -157,8 +157,12 @@ footer
 
 /* SCROLLER BUTTON ANIMATION */
 
+.scrollspy
+{
+	position: relative;
+}
 
-#landing a {
+.scroll-button {
 	position: absolute;
 	bottom: 20%;
 	z-index: 2;
@@ -170,11 +174,11 @@ footer
 	transition: opacity .3s;
 	cursor: pointer;
 }
-#landing a:hover {
+.scroll-button:hover {
 	opacity: .5;
 }
 
-#landing a span {
+.scroll-button span {
 	position: absolute;
 	top: 50px;
 	left: 50%;
@@ -190,17 +194,17 @@ footer
 	opacity: 0;
 	box-sizing: border-box;
 }
-#landing a span:nth-of-type(1) {
+.scroll-button span:nth-of-type(1) {
 	top: 16px;
 	-webkit-animation-delay: 0s;
 	animation-delay: 0s;
 }
-#landing a span:nth-of-type(2) {
+.scroll-button span:nth-of-type(2) {
 	top: 32px;
 	-webkit-animation-delay: .15s;
 	animation-delay: .15s;
 }
-#landing a span:nth-of-type(3) {
+.scroll-button span:nth-of-type(3) {
 	top: 48px;
 	-webkit-animation-delay: .3s;
 	animation-delay: .3s;
