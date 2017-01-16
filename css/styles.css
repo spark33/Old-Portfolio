@@ -1,17 +1,22 @@
-html
+body
 {
 	font-family: 'Avenir', sans-serif;
-	transition: all 1s ease;
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
 
-html a
+body a
 {
 	cursor: pointer;
 }
 
-html, body
+body
 {
 	min-width: 100%;
+	max-width: 100%;
 }
 
 h1
@@ -50,7 +55,6 @@ a, p
 	padding: 12px;
 	border: 2px solid #26a69a;
 	color: #26a69a;
-	background: transparent;
 	border-radius: 5px;
 }
 
@@ -71,7 +75,8 @@ a, p
 {
 	position: fixed;
 	top: 3%;
-	left: 3%;
+	left: 4%;
+	z-index: 999;
 }
 
 #scroller
@@ -96,12 +101,10 @@ a, p
 main
 {
 	margin: 0 auto;
-	width: 100%;
-	min-height: 100vh;
-	scroll
+	max-width: 100%;
 }
 
-main div
+main > div
 {
 	text-align: center;
 	padding: 10%;
@@ -126,7 +129,7 @@ main div
 
 #about h5
 {
-	line-height: 10vh;
+	line-height: 7vh;
 	max-width: 100%;
 	text-align: justify;
 }
@@ -135,6 +138,18 @@ main div
 {
 	margin-left: 0px;
 	margin-right: auto;
+}
+
+#about table
+{
+	table-layout: fixed;
+}
+
+#me1
+{
+	width: 100%;
+	max-width: 200px;
+	border-radius: 50%;
 }
 
 
@@ -185,7 +200,7 @@ img
 	text-align: left;
 }
 
-#me
+#me2
 {
 	width: 10%;
 	position: absolute;
@@ -204,6 +219,7 @@ footer
 	/* override scrollspy height */
 	height: 50vh !important;
 }
+
 
 /* SCROLLER BUTTON ANIMATION */
 
@@ -285,6 +301,7 @@ footer
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 800px) {
+
 	#top-left
 	{
 		position: absolute;
@@ -316,9 +333,48 @@ footer
 		position: static;
 		height: auto;
 	}
+
+	/* ADJUST FONT SIZES */
+
+	h1
+	{
+	    font-size: calc(9px + 3.5vw);;
+	}
+
+	h2
+	{
+	    font-size: calc(9px + 2vw);
+	}
+
+	h3
+	{
+	    font-size: calc(9px + 1.7vw);
+	}
+
+	h4
+	{
+	    font-size: calc(9px + 1.2vw);
+	}
+
+	h5
+	{
+	    font-size: calc(9px + 0.5vw);
+	}
+
+	a, p
+	{
+	    font-size: calc(9px + 0.2vw);
+	}
 }
 
 @media screen and (max-width: 700px) {
+
+	.row .col
+	{
+		width: 90% !important;
+		margin: 0 auto;
+	}
+
 	#me
 	{
 		width: 20%;

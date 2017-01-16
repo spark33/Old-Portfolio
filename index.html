@@ -1,13 +1,13 @@
 <!--
 
 TO-DO LIST:
--transitions
--separate pages for projects
+-revise my about-me blurb
+-appear animations
+-button hover animations
 -signature animation
--footer content
 -resume upload
--add photo to about me
 
+-create separate page for social
 -->
 
 
@@ -18,13 +18,14 @@ TO-DO LIST:
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-site-verification" content="OGehVcQmnCCqJjCaRlK3uSQtjMLNjppaTkwS5EXkMT8" />
 
-
+	<link rel="stylesheet" type="text/css" href="css/material_icons.css">
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<script type="text/javascript" src="jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="materialize/js/materialize.js"></script>
 	<script type="text/javascript" src="scrollify/jquery.scrollify.js"></script>
+	<script type="text/javascript" src="jquery-ui.js"></script>
 </head>
 
 <body>
@@ -37,10 +38,26 @@ TO-DO LIST:
 	</div>
 	<main>
 		<div id="landing" class="section scrollspy">
-			<h1>Sean Park</h1>
+			<h1>Sean Park<br/><br/></h1>
 			<a class="scroll-button" href="#about"><small>Scroll</small><span></span><span></span><span></span></a>
 		</div>
 		<div id="about" class="section scrollspy">
+			<table>
+				<tr>
+					<td colspan="2" style="text-align: right;">
+						<img id="me1" src="images/me1.jpg"/>
+					</td>
+					<td colspan="3" style="padding-left: 10%">
+						<h2>Hi!</h2>
+						<p>
+							I study Information Systems + <br/>
+							Human Computer Interaction <br/>
+							at <b>Carnegie Mellon University.</b><br/><br/>
+							<i>Expected Graduation: May 2019</i>
+						</p>
+					</td>
+				</tr>
+			</table>
 			<h5>
 				<b>I’m a front-end developer <i>and</i> a problem solver.</b> Understanding users to creating beautiful and practical interfaces takes more than just technical skill or arts sense. My passion has driven me to create and implement 5+ projects within just a year of entering the webdev world. <br/>
 			</h5>
@@ -50,7 +67,7 @@ TO-DO LIST:
 			<table>
 				<tr>
 					<td colspan="2">
-						<img src="test.jpg" width="90%"/>
+						<img src="images/test.jpg" width="90%"/>
 					</td>
 					<td colspan="5">
 						<h4 style="text-align: left;">Seoul 53 Hotel</h4>
@@ -65,12 +82,12 @@ TO-DO LIST:
 						<p>Employee scheduling application built on the MEAN stack; created for CMU Computing Services</p>
 					</td>
 					<td colspan="2" style="text-align: right;">
-						<img src="test.jpg" width="90%"/>
+						<img src="images/test.jpg" width="90%"/>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2">
-						<img src="test.jpg" width="90%"/>
+						<img src="images/test.jpg" width="90%"/>
 					</td>
 					<td colspan="5">
 						<h4 style="text-align: left;">NoobLoop</h4>
@@ -78,7 +95,7 @@ TO-DO LIST:
 						<p>Python3 standalone audio looping software.</p>
 					</td>
 				</tr>
-				<tr><td colspan="7" style="text-align: center;"><a href>View More</a></td></tr>
+				<tr><td colspan="7" style="text-align: center;"><a href="projects.html">View All</a></td></tr>
 				<tr>
 					<td colspan="2"></td>
 					<td colspan="3" style="text-align: center;">
@@ -96,13 +113,15 @@ TO-DO LIST:
 				<p><i class="fa fa-fw fa-github" aria-hidden="true"> </i> <span>/spark33</span></p>
 				<p><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> <span>/spark6</span></p>
 			</div>
-			<img id="me" src="me1.png" />
+			<img id="me2" src="images/me2.png" />
 		</div>
 
 		<!-- FOOTER AS DIV FOR SCROLLING-->
 		<footer class="scrollspy">
 			<a href="#landing" class="button">Back to Top</a>
-	    	<h1>Footer</h1>
+			<br/><br/><br/>
+			<p>Made <span style="color: #26a69a;"><i class="tiny material-icons">volume_up</i></span> by Sean Park</p>
+        	<p>spark3@andrew.cmu.edu</p>
 	    </footer>
 	</main>
 

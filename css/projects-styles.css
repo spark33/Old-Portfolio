@@ -1,0 +1,59 @@
+#projects-landing > h1
+{
+	margin-top: 0;
+}
+
+.row
+{
+	padding: 0 5% 0 5%;
+}
+
+.card-panel
+{
+	margin: 0 4% 0 4%;
+	text-align: left;
+	padding: 3%;
+}
+
+
+/* apply active code from Materialize table of contents */
+.table-of-contents .ui-tabs-active a
+{
+	font-weight: 500;
+	padding-left: 18px;
+	border-left: 2px solid #26a69a;
+}
+
+/* Chrome adds a weird blue border on focus */
+.table-of-contents .ui-tabs-active a:focus {
+	outline: none;
+}
+
+.project ul
+{
+	text-align: center;
+}
+
+.project li 
+{
+	display: inline-block;
+}
+
+h5
+{
+	line-height: 8vh;
+}
+
+p
+{
+	line-height: 4vh;
+}
+
+@media screen and (max-width: 700px) {
+
+	.row .col
+	{
+		width: 90% !important;
+		margin: 0 auto;
+	}
+}
