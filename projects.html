@@ -26,7 +26,7 @@ TO-DO LIST:
 	<script type="text/javascript" src="jquery-ui.js"></script>
 	<script type="text/javascript">
 	  $( function() {
-	    $( "#projects-landing .row" ).tabs();
+	    $( "main" ).tabs();
 	  } );
     </script>
 </head>
@@ -41,22 +41,8 @@ TO-DO LIST:
 	<main>
 		<div id="projects-landing" style="display: block; height: auto;">
 			<h1>Projects</h1>
-			<div class="row">
-				<div id="project-nav" class="col s2 card-panel">
-					<ul class="table-of-contents">
-						<li><label><b>2016-2017</b></label></li>
-						<li><a href="#scheduler">Scheduler</a></li>
-						<li><a href="#s53h">Seoul 53 Hotel</a></li>
-						<li><a href="#soundbytes">CMU Soundbytes</a></li>
-						<li><a href="#research">HCI Research</a></li>
-						<hr/>
-						<li><label><b>2015-2016</b></label></li>
-						<li><a href="#haydens">Hayden's Shoes</a></li>
-						<li><a href="#prantls">Prantl's Bakery</a></li>
-						<li><a href="#noobloop">NoobLoop</a></li>
-					</ul>
-				</div>
-				<div class="col s9 card-panel" style="padding: 0 5% 0 5%">
+			<div>
+				<div id="project-infos">
 					<div id="scheduler" class="project">
 						<h1>Scheduler</h1>
 						<h5>
@@ -215,10 +201,27 @@ TO-DO LIST:
 
 	<footer class="scrollspy">
 		<a href="#projects-landing" class="button">Back to Top</a>
-    	<h1>Footer</h1>
+    	<br/><br/><br/>
+		<p>Made <span style="color: #26a69a;"><i class="tiny material-icons">volume_up</i></span> by Sean Park</p>
+    	<p>spark3@andrew.cmu.edu</p>
     </footer>
 
 	<div id="scroller" class="col m3 l2">
+	  	<div id="project-nav">
+			<ul class="table-of-contents">
+				<li><label><b>2016-2017</b></label></li>
+				<li><a href="#scheduler">Scheduler</a></li>
+				<li><a href="#s53h">Seoul 53 Hotel</a></li>
+				<li><a href="#soundbytes">CMU Soundbytes</a></li>
+				<li><a href="#research">HCI Research</a></li>
+				<hr/>
+				<li><label><b>2015-2016</b></label></li>
+				<li><a href="#haydens">Hayden's Shoes</a></li>
+				<li><a href="#prantls">Prantl's Bakery</a></li>
+				<li><a href="#noobloop">NoobLoop</a></li>
+				<hr/>
+			</ul>
+		</div>
       <ul class="section table-of-contents">
         <li><a href="index.html#about">About Me</a></li>
         <li><a href="index.html#contact">Contact Me</a></li>
