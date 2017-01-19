@@ -1,11 +1,6 @@
 body
 {
 	font-family: 'Avenir', sans-serif;
-	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
 }
 
 body a
@@ -56,6 +51,9 @@ a, p
 	border: 2px solid #26a69a;
 	color: #26a69a;
 	border-radius: 5px;
+	transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
 }
 
 .button:hover
@@ -67,6 +65,24 @@ a, p
 .button *
 {
 	color: inherit;
+}
+
+main
+{
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+main > div
+{
+	text-align: center;
+	padding: 10%;
+	max-width: 100%;
+	height: 100vh;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    display: flex;
 }
 
 /* SECTION SPECIFIC STYLES */
@@ -96,24 +112,6 @@ a, p
 	-o-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
 	transform: rotate(90deg);
-}
-
-main
-{
-	margin: 0 auto;
-	max-width: 100%;
-}
-
-main > div
-{
-	text-align: center;
-	padding: 10%;
-	max-width: 100%;
-	height: 100vh;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    display: flex;
 }
 
 #landing
@@ -152,13 +150,26 @@ main > div
 	border-radius: 50%;
 }
 
-
 #projects
 table
 {
 	table-layout: fixed;
 }
 
+#projects
+img
+{
+	width: 100%;
+	border-radius: 3%;
+}
+
+#projects
+td
+{
+	text-align: center;
+}
+
+/*
 #projects
 table td
 {
@@ -185,6 +196,7 @@ img
 	width: 70%;
 	min-width: 80px;
 }
+*/
 
 #about, #contact
 {

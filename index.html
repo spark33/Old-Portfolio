@@ -21,10 +21,6 @@ TO-DO LIST:
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<script type="text/javascript" src="jquery-3.1.1.js"></script>
-	<script type="text/javascript" src="materialize/js/materialize.js"></script>
-	<script type="text/javascript" src="scrollify/jquery.scrollify.js"></script>
-	<script type="text/javascript" src="jquery-ui.js"></script>
 </head>
 
 <body>
@@ -63,6 +59,7 @@ TO-DO LIST:
 			<a href="#projects" class="button">Come check out what I’ve made!</a>
 		</div>
 		<div id="projects" class="section scrollspy">
+			<!--
 			<table>
 				<tr>
 					<td colspan="2">
@@ -102,10 +99,107 @@ TO-DO LIST:
 					</td>
 				</tr>
 			</table>
+			-->
+			<table>
+				<tr>
+					<td id="scheduler">
+						<img src="images/test.jpg" />
+						<p>
+							Scheduler<br/>
+							<a href="#scheduler-modal">Details</a>
+						</p>
+					</td>
+					<td id="s53h">
+						<img src="images/test.jpg" />
+						<p>
+							Seoul 53 Hotel<br/>
+							<a href="#s53h-modal">Details</a>
+						</p>
+					</td>
+					<td id="soundbytes">
+						<img src="images/test.jpg" />
+						<p>
+							Soundbytes<br/>
+							<a href="#soundbytes-modal">Details</a>
+						</p>
+					</td>
+				</tr>
+				<tr>
+					<td id="haydens">
+						<img src="images/test.jpg" />
+						<p>
+							Hayden's Shoes<br/>
+							<a href="#haydens-modal">Details</a>
+						</p>
+					</td>
+					<td id="prantls">
+						<img src="images/test.jpg" />
+						<p>
+							Prantl's Bakery<br/>
+							<a href="#prantls-modal">Details</a>
+						</p>
+					</td>
+					<td id="noobloop">
+						<img src="images/test.jpg" />
+						<p>
+							NoobLoop<br/>
+							<a href="#noobloop-modal">Details</a>
+						</p>
+					</td>
+				</tr>
+			</table>
+			<div id="scheduler-modal" class="modal">
+		        <div class="close-hi"> 
+		            CLOSE MODAL
+		        </div>
+		        <div class="modal-content">
+		            Insert Scheduler Content
+		        </div>
+			</div>
+			<div id="s53h-modal" class="modal">
+		        <div class="close-hi"> 
+		            CLOSE MODAL
+		        </div>
+		        <div class="modal-content">
+		            Insert S53H Content
+		        </div>
+			</div>
+			<div id="soundbytes-modal" class="modal">
+		        <div class="close-hi"> 
+		            CLOSE MODAL
+		        </div>
+		        <div class="modal-content">
+		            Insert Soundbytes Content
+		        </div>
+			</div>
+			<div id="haydens-modal" class="modal">
+		        <div class="close-hi"> 
+		            CLOSE MODAL
+		        </div>
+		        <div class="modal-content">
+		            Insert Hayden's Content
+		        </div>
+			</div>
+			<div id="prantls-modal" class="modal">
+		        <div class="close-hi"> 
+		            CLOSE MODAL
+		        </div>
+		        <div class="modal-content">
+		            Insert Prantl's Content
+		        </div>
+			</div>
+			<div id="noobloop-modal" class="modal">
+		        <div class="close-hi"> 
+		            CLOSE MODAL
+		        </div>
+		        <div class="modal-content">
+		            Insert NoobLoop Content
+		        </div>
+			</div>
 		</div>
 		<div id="contact" class="section scrollspy">
-			<h3>Thank you for visiting!</h3>
-			<p>Feel free to get in touch.</p>
+			<h3>Feel free to get in touch!</h3>
+			<br/><br/><br/>
 			<div>
 				<p><i class="fa fa-fw fa-phone" aria-hidden="true"> </i> <span>(412) 265 - 8129</span></p>
 				<p><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> <span>spark3@andrew.cmu.edu</span></p>
@@ -131,12 +225,16 @@ TO-DO LIST:
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact Me</a></li>
         <li><!--<a href="resume.pdf" target="_blank">Resume</a>-->
-        	<a onclick="alert('comin soon bebs');">Resume</a>
+        	<a onclick="alert('comin soon beb');">Resume</a>
         </li>
       </ul>
     </div>
 
 <!-- SCRIPTS -->
+<script src="jquery-3.1.1.js"></script>
+<script src="animatedModal.min.js"></script>
+<script type="text/javascript" src="materialize/js/materialize.js"></script>
+<script type="text/javascript" src="scrollify/jquery.scrollify.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('.scrollspy').scrollSpy({
@@ -144,17 +242,12 @@ TO-DO LIST:
 		});
 	});
 	$(function() {
-			$.scrollify({
-				section : ".scrollspy",
-				interstitialSection: "footer",
-				updateHash: false
-			});
+		$.scrollify({
+			section : ".scrollspy",
+			interstitialSection: "footer",
+			updateHash: false
 		});
-	$(function() {
-		$('a[href="#about"]').on('click', function(e) {
-			e.preventDefault();
-			$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-		});
+		$('.modal').modal();
 	});
 </script>
 </body>
