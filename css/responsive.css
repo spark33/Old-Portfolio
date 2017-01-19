@@ -1,0 +1,84 @@
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 800px) {
+
+	#top-left
+	{
+		position: absolute;
+	}
+
+	#scroller, #bottom-right
+	{
+		display: none;
+	}
+
+	#about, #projects
+	{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	#me
+	{
+		width: 18%;
+		left: 41%;
+	}
+
+	div
+	{
+		height: 80vh;
+		padding: 0;
+		margin: 0 auto;
+		display: block;
+		position: static;
+		height: auto;
+	}
+
+	/* ADJUST FONT SIZES */
+
+	h1
+	{
+	    font-size: calc(9px + 3.5vw);;
+	}
+
+	h2
+	{
+	    font-size: calc(9px + 2vw);
+	}
+
+	h3
+	{
+	    font-size: calc(9px + 1.7vw);
+	}
+
+	h4
+	{
+	    font-size: calc(9px + 1.2vw);
+	}
+
+	h5
+	{
+	    font-size: calc(9px + 0.5vw);
+	}
+
+	a, p
+	{
+	    font-size: calc(9px + 0.2vw);
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.row .col
+	{
+		width: 90% !important;
+		margin: 0 auto;
+	}
+
+	#me
+	{
+		width: 20%;
+		left: 40%;
+	}
+}
