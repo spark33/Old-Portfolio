@@ -67,6 +67,40 @@ a, p
 	color: inherit;
 }
 
+.sub-button
+{
+	text-transform: uppercase;
+	font-size: calc(5px + 0.5vw);
+	color: grey;
+	transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+}
+
+.sub-button:before,
+.sub-button:after
+{
+	content: '';
+	color: inherit;
+}
+
+.sub-button:hover
+{
+	color: #26a69a;
+	background: white;
+	transition: inherit;
+}
+
+.sub-button:hover:before
+{
+	content: '[ ';
+}
+
+.sub-button:hover:after
+{
+	content: ' ]';
+}
+
 main
 {
 	margin: 0 auto;
@@ -159,7 +193,7 @@ table
 #projects
 img
 {
-	width: 100%;
+	width: 90%;
 	border-radius: 3%;
 }
 

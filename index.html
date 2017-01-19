@@ -2,8 +2,7 @@
 
 TO-DO LIST:
 -appear animations
--modal close animation
--style modal
+-sub-button animation
 -signature animation
 -resume upload
 
@@ -20,7 +19,9 @@ TO-DO LIST:
 
 	<link rel="stylesheet" type="text/css" href="css/material_icons.css">
 	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/modal-styles.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/scroll-button.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -61,68 +62,27 @@ TO-DO LIST:
 			<a href="#projects" class="button">Come check out what I’ve made!</a>
 		</div>
 		<div id="projects" class="section scrollspy">
-			<!--
-			<table>
-				<tr>
-					<td colspan="2">
-						<img src="images/test.jpg" width="90%"/>
-					</td>
-					<td colspan="5">
-						<h4>Scheduler</h4>
-						<p><i>January 2017</i></p>
-						<p>Employee scheduling application built on the MEAN stack; created for CMU Computing Services</p>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="5" style="text-align: right;">
-						<h4>Seoul 53 Hotel</h4>
-						<p><i>December 2016</i></p>
-						<p>AngularJS front-end with translation and form processing features.</p>
-					</td>
-					<td colspan="2" style="text-align: right;">
-						<img src="images/test.jpg" width="90%"/>
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						<img src="images/test.jpg" width="90%"/>
-					</td>
-					<td colspan="5">
-						<h4 style="text-align: left;">NoobLoop</h4>
-						<p><i>December 2015</i></p>
-						<p>Python3 standalone audio looping software.</p>
-					</td>
-				</tr>
-				<tr><td colspan="7" style="text-align: center;"><a href="projects.html">View All</a></td></tr>
-				<tr>
-					<td colspan="2"></td>
-					<td colspan="3" style="text-align: center;">
-						<a href="#contact"><p class="button">Intrigued? <b>Contact me.</b></p></a>
-					</td>
-				</tr>
-			</table>
-			-->
 			<table>
 				<tr>
 					<td id="scheduler">
 						<img src="images/test.jpg" />
 						<p>
 							Scheduler<br/>
-							<a href="#scheduler-modal">Details</a>
+							<a class="sub-button" href="#scheduler-modal">Details</a>
 						</p>
 					</td>
 					<td id="s53h">
 						<img src="images/test.jpg" />
 						<p>
 							Seoul 53 Hotel<br/>
-							<a href="#s53h-modal">Details</a>
+							<a class="sub-button" href="#s53h-modal">Details</a>
 						</p>
 					</td>
 					<td id="soundbytes">
 						<img src="images/test.jpg" />
 						<p>
 							Soundbytes<br/>
-							<a href="#soundbytes-modal">Details</a>
+							<a class="sub-button" href="#soundbytes-modal">Details</a>
 						</p>
 					</td>
 				</tr>
@@ -131,28 +91,28 @@ TO-DO LIST:
 						<img src="images/test.jpg" />
 						<p>
 							Hayden's Shoes<br/>
-							<a href="#haydens-modal">Details</a>
+							<a class="sub-button" href="#haydens-modal">Details</a>
 						</p>
 					</td>
 					<td id="prantls">
 						<img src="images/test.jpg" />
 						<p>
 							Prantl's Bakery<br/>
-							<a href="#prantls-modal">Details</a>
+							<a class="sub-button" href="#prantls-modal">Details</a>
 						</p>
 					</td>
 					<td id="noobloop">
 						<img src="images/test.jpg" />
 						<p>
 							NoobLoop<br/>
-							<a href="#noobloop-modal">Details</a>
+							<a class="sub-button" href="#noobloop-modal">Details</a>
 						</p>
 					</td>
 				</tr>
 			</table>
 			<div id="scheduler-modal" class="modal">
 		        <div class="modal-close"> 
-		            CLOSE MODAL
+		            <span>X</span>
 		        </div>
 		        <div class="modal-content">
 		            Insert Scheduler Content
@@ -160,7 +120,7 @@ TO-DO LIST:
 			</div>
 			<div id="s53h-modal" class="modal">
 		        <div class="modal-close"> 
-		            CLOSE MODAL
+		            <span>X</span>
 		        </div>
 		        <div class="modal-content">
 		            Insert S53H Content
@@ -168,7 +128,7 @@ TO-DO LIST:
 			</div>
 			<div id="soundbytes-modal" class="modal">
 		        <div class="modal-close"> 
-		            CLOSE MODAL
+		            <span>X</span>
 		        </div>
 		        <div class="modal-content">
 		            Insert Soundbytes Content
@@ -176,7 +136,7 @@ TO-DO LIST:
 			</div>
 			<div id="haydens-modal" class="modal">
 		        <div class="modal-close"> 
-		            CLOSE MODAL
+		            <span>X</span>
 		        </div>
 		        <div class="modal-content">
 		            Insert Hayden's Content
@@ -184,7 +144,7 @@ TO-DO LIST:
 			</div>
 			<div id="prantls-modal" class="modal">
 		        <div class="modal-close"> 
-		            CLOSE MODAL
+		            <span>X</span>
 		        </div>
 		        <div class="modal-content">
 		            Insert Prantl's Content
@@ -192,7 +152,7 @@ TO-DO LIST:
 			</div>
 			<div id="noobloop-modal" class="modal">
 		        <div class="modal-close"> 
-		            CLOSE MODAL
+		            <span>X</span>
 		        </div>
 		        <div class="modal-content">
 		            Insert NoobLoop Content
@@ -234,7 +194,6 @@ TO-DO LIST:
 
 <!-- SCRIPTS -->
 <script src="jquery-3.1.1.js"></script>
-<script src="animatedModal.min.js"></script>
 <script type="text/javascript" src="materialize/js/materialize.js"></script>
 <script type="text/javascript" src="scrollify/jquery.scrollify.js"></script>
 <script type="text/javascript">
