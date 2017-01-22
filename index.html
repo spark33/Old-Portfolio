@@ -68,21 +68,21 @@ TO-DO LIST:
 						<img src="images/test.jpg" />
 						<p>
 							Scheduler<br/>
-							<a class="sub-button" href="#scheduler-modal">Details</a>
+							<a class="sub-button modal-button" href="#scheduler-modal">Details</a>
 						</p>
 					</td>
 					<td id="s53h">
 						<img src="images/test.jpg" />
 						<p>
 							Seoul 53 Hotel<br/>
-							<a class="sub-button" href="#s53h-modal">Details</a>
+							<a class="sub-button modal-button" href="#s53h-modal">Details</a>
 						</p>
 					</td>
 					<td id="soundbytes">
 						<img src="images/test.jpg" />
 						<p>
 							Soundbytes<br/>
-							<a class="sub-button" href="#soundbytes-modal">Details</a>
+							<a class="sub-button modal-button" href="#soundbytes-modal">Details</a>
 						</p>
 					</td>
 				</tr>
@@ -91,21 +91,21 @@ TO-DO LIST:
 						<img src="images/test.jpg" />
 						<p>
 							Hayden's Shoes<br/>
-							<a class="sub-button" href="#haydens-modal">Details</a>
+							<a class="sub-button modal-button" href="#haydens-modal">Details</a>
 						</p>
 					</td>
 					<td id="prantls">
 						<img src="images/test.jpg" />
 						<p>
 							Prantl's Bakery<br/>
-							<a class="sub-button" href="#prantls-modal">Details</a>
+							<a class="sub-button modal-button" href="#prantls-modal">Details</a>
 						</p>
 					</td>
 					<td id="noobloop">
 						<img src="images/test.jpg" />
 						<p>
 							NoobLoop<br/>
-							<a class="sub-button" href="#noobloop-modal">Details</a>
+							<a class="sub-button modal-button" href="#noobloop-modal">Details</a>
 						</p>
 					</td>
 				</tr>
@@ -115,7 +115,23 @@ TO-DO LIST:
 		            <span>X</span>
 		        </div>
 		        <div class="modal-content">
-		            Insert Scheduler Content
+			        <h5>
+						<b>I created a employee scheduling app for CMU Computing Services to replace WhenToWork.com.</b> After analyzing data on issues and competing apps, I led a team of 3 developers and wrote code all across the MEAN stack.
+					</h5>
+					<table>
+						<tr>
+							<td>
+								<img src="images/test.jpg" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>
+									As a scheduling manager for CMU Computing Services, I was asked to manipulate the department’s schedule for student employees on WhenToWork.com. I was absolutely disgusted by the app’s unintuitive interface, lack of flexibility in shift planning and unnecessarily complex user stories; many of them were manually done on other software. The department was also using more than 5 apps to support its functions; any developer would have recognized how easy it would be to support all of them using one app.
+								</p>
+							</td>
+						</tr>
+					</table>
 		        </div>
 			</div>
 			<div id="s53h-modal" class="modal">
@@ -209,6 +225,14 @@ TO-DO LIST:
 			updateHash: false
 		});
 		$('.modal').modal();
+	});
+	$('.modal-button').click(function() {
+		$.scrollify.disable();
+		$('#projects').css('overflow-y','scroll')
+
+	})
+	$('.modal-close').click(function() {
+		$.scrollify.enable();
 	});
 </script>
 </body>
