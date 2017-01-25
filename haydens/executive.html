@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author​" content="sjark consulting">
+	<meta name="keywords" content="Hayden Shoes Dashboard">
+	<meta name="description" content="Hayden Shoes Dashboard">
+
+	<title>Hayden Shoes</title>
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+	<script type="text/javascript" src="js/modules/exporting.js"></script>
+
+	<style type="text/css">
+		${demo.css}
+	</style>
+	<script type="text/javascript">
+
+		$(function () {
+		    $('#bar').highcharts({
+		        chart: {
+		            type: 'bar'
+		        },
+		        title: {
+		            text: 'Weekly Sales by Shoe Style'
+		        },
+		        xAxis: {
+		            categories: ['The Classic', 'Style 2', 'Style 3', 'Style 4'],
+		        },
+		        yAxis: {
+		            min: 0,
+		            title: {
+		                text: 'number of sales',
+		                align: 'high'
+		            },
+		            labels: {
+		                overflow: 'justify'
+		            }
+		        },
+		        tooltip: {
+		            valueSuffix: ' pairs'
+		        },
+		        plotOptions: {
+		            bar: {
+		                dataLabels: {
+		                    enabled: true
+		                }
+		            }
+		        },
+		        legend: {
+		            layout: 'horizontal',
+		            align: 'right',
+		            verticalAlign: 'top',
+		            x: -20,
+		            y: 20,
+		            floating: true,
+		            borderWidth: 1,
+		            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+		            shadow: false
+		        },
+		        credits: {
+		            enabled: false
+		        },
+		        series: [{
+		            name: 'Current Week',
+		            data: [107, 230, 170, 135]
+		        }, {
+		            name: 'Last Week',
+		            data: [133, 156, 147, 96]
+		        }, {
+		            name: 'Two Weeks Ago',
+		            data: [124, 154, 250, 138]
+		        }]
+		    });
+		});
+
+		$(function () {
+			$('#yearly_sales').highcharts({
+					title: {
+							text: 'Yearly Sales by Shoe Styles',
+							x: -20 //center
+					},
+					xAxis: {
+							title:{
+								text:'Months'
+							},
+							categories: ['JAN', 'FEB', 'MARCH', 'APRIL', 'MAY', 'JUNE',
+									'JULY', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
+					},
+					yAxis: {
+							title: {
+									text: 'number of sales'
+							},
+							plotLines: [{
+									value: 0,
+									width: 1,
+									color: '#808080'
+							}]
+					},
+
+					legend: {
+							layout: 'vertical',
+							align: 'right',
+							verticalAlign: 'middle',
+							borderWidth: 0
+					},
+					series: [{
+							name: 'The Classic',
+							data: [120,120,150,137,168,173,172,185,172,162,152,120]
+					}, {
+							name: 'Style 2',
+							data: [100,89,78,68,89,78,84,73,65,40,20,35]
+					}, {
+							name: 'Style 3',
+							data: [45,65,56,65,47,68,69,74,80,88,95,103]
+					}
+					]
+			});
+		});
+
+		$(function () {
+			$('#web_traffic').highcharts({
+					title: {
+							text: 'Web Traffic by Month',
+							x: -20 //center
+					},
+					xAxis: {
+							title:{
+								text:'Months'
+							},
+							categories: ['JAN', 'FEB', 'MARCH', 'APRIL', 'MAY', 'JUNE',
+									'JULY', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
+					},
+					yAxis: {
+							title: {
+									text: 'number of sales'
+							},
+							plotLines: [{
+									value: 0,
+									width: 1,
+									color: '#808080'
+							}]
+					},
+
+					legend: {
+							layout: 'vertical',
+							align: 'right',
+							verticalAlign: 'middle',
+							borderWidth: 0
+					},
+					series: [{
+							name: 'The Classic',
+							data: [120,120,150,137,168,173,172,185,172,162,152,120]
+					}, {
+							name: 'Style 2',
+							data: [100,89,78,68,89,78,84,73,65,40,20,35]
+					}, {
+							name: 'Style 3',
+							data: [45,65,56,65,47,68,69,74,80,88,95,103]
+					}
+					]
+			});
+		});
+
+	</script>
+
+</head>
+
+</head>
+
+<body>
+	<div id="sidebar">
+		<h2>HAYDEN SHOES</h2>
+		<div id="profile_pic">
+			<img src="images/profile.png" alt="profile" style="width: 70px">
+		</div>
+		<div id="profile_info">
+			<span>Welcome,</span><br/>
+			<a href="executive-profile.html">Mirela Hayden</a>
+		</div>
+		<ul>
+			<li><a class="active" href="executive.html">Home</a></li>
+			<li><a href="executive-profile.html">Profile</a></li>
+			<li><a href="executive-sales.html">Sales</a></li>
+			<li><a href="executive-boutiques.html">Boutiques</a></li>
+			<li><a href="executive-employees.html">Employees</a></li>
+		</ul>
+	</div>
+
+
+	<div id="header">
+		<div id="modes" class="dropdown">
+			<button class="dropbtn">Executive</button>
+			<div class="dropdown-content">
+				<a href="manager.html">Manager</a>
+				<a href="employee.html">Employee</a>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="main">
+		
+		<div id="main-graph" class="big-box" style="width:100%;">
+        	<div id="yearly_sales"></div>
+		</div><br/>
+
+		<div id="main-graph" class="big-box" style="width:100%;">
+        	<div id="web_traffic"></div>
+		</div><br/>
+
+		<div id="main-graph" class="big-box" style="width:100%;">
+        	<div id="bar"></div>
+		</div>
+
+	</div>
+
+		
+	</div>
+
+
+
+</body>
+
+</html>
+
+

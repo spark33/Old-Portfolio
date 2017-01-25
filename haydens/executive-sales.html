@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author​" content="sjark consulting">
+	<meta name="keywords" content="Hayden Shoes Dashboard">
+	<meta name="description" content="Hayden Shoes Dashboard">
+
+	<title>Hayden Shoes</title>
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/w3.css" />
+
+	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/highcharts.js"></script>
+
+
+	<script type="text/javascript">
+
+		//weekly sales by shoe style
+		$(function () {
+		    $('#bar').highcharts({
+	        chart: {
+	            type: 'bar'
+	        },
+	        title: {
+	            text: 'Weekly Sales by Shoe Style'
+	        },
+	        xAxis: {
+	            categories: ['The Classic', 'Style 2', 'Style 3', 'Style 4'],
+	        },
+	        yAxis: {
+	            min: 0,
+	            title: {
+	                text: 'number of sales',
+	                align: 'high'
+	            },
+	            labels: {
+	                overflow: 'justify'
+	            }
+	        },
+	        tooltip: {
+	            valueSuffix: ' pairs'
+	        },
+	        plotOptions: {
+	            bar: {
+	                dataLabels: {
+	                    enabled: true
+	                }
+	            }
+	        },
+	        legend: {
+	            layout: 'horizontal',
+	            align: 'right',
+	            verticalAlign: 'top',
+	            x: -20,
+	            y: 20,
+	            floating: true,
+	            borderWidth: 1,
+	            backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+	            shadow: false
+	        },
+	        credits: {
+	            enabled: false
+	        },
+	        series: [{
+	            name: 'Current Week',
+	            data: [107, 230, 170, 135]
+	        }, {
+	            name: 'Last Week',
+	            data: [133, 156, 147, 96]
+	        }, {
+	            name: 'Two Weeks Ago',
+	            data: [124, 154, 250, 138]
+	        }]
+	    });
+	});
+		//market demographic by age
+		$(function () {
+			$('#age_demographics').highcharts({
+					chart: {
+							plotBackgroundColor: null,
+							plotBorderWidth: null,
+							plotShadow: false,
+							type: 'pie'
+					},
+					title: {
+							text: 'Market Demographics by Age'
+					},
+					tooltip: {
+							pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+					},
+					plotOptions: {
+							pie: {
+									allowPointSelect: true,
+									cursor: 'pointer',
+									dataLabels: {
+											enabled: true,
+											format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+											style: {
+													color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+											}
+									}
+							}
+					},
+					series: [{
+							name: 'Ages',
+							colorByPoint: true,
+							data: [{
+									name: '1-14',
+									y: 100
+							}, {
+									name: '15-18',
+									y: 199,
+							}, {
+									name: '19-22',
+									y: 248,
+									sliced: true,
+									selected: true
+							}, {
+									name: '22-25',
+									y: 356,
+							}, {
+									name: '25+',
+									y: 180,
+							}]
+					}]
+			});
+		});
+		
+		//market demographic by race
+		$(function () {
+			$('#race_demographics').highcharts({
+					chart: {
+							plotBackgroundColor: null,
+							plotBorderWidth: null,
+							plotShadow: false,
+							type: 'pie'
+					},
+					title: {
+							text: 'Market Demographics by Race'
+					},
+					tooltip: {
+							pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+					},
+					plotOptions: {
+							pie: {
+									allowPointSelect: true,
+									cursor: 'pointer',
+									dataLabels: {
+											enabled: true,
+											format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+											style: {
+													color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+											}
+									}
+							}
+					},
+					series: [{
+							name: 'Race',
+							colorByPoint: true,
+							data: [{
+									name: 'Asian',
+									y: 100
+							}, {
+									name: 'White',
+									y: 199,
+							}, {
+									name: 'Black',
+									y: 248,
+									sliced: true,
+									selected: true
+							}, {
+									name: 'Hispanic',
+									y: 356,
+							}, {
+									name: 'Others',
+									y: 180,
+							}]
+					}]
+			});
+		});
+
+		//Sales Channels
+		$(function () {
+			$('#sales_channels').highcharts({
+				chart: {
+						plotBackgroundColor: null,
+						plotBorderWidth: null,
+						plotShadow: false,
+						type: 'pie'
+				},
+				title: {
+						text: 'Sales Channel'
+				},
+				tooltip: {
+						pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+				},
+				plotOptions: {
+						pie: {
+								allowPointSelect: true,
+								cursor: 'pointer',
+								dataLabels: {
+										enabled: true,
+										format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+										style: {
+												color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+										}
+								}
+						}
+				},
+				series: [{
+						name: 'Channels',
+						colorByPoint: true,
+						data: [{
+								name: 'Retails',
+								y: 680,
+						}, {
+								name: 'eCommerce',
+								y: 760,
+								sliced: true,
+								selected: true
+						}, {
+								name: 'mCommerce',
+								y: 124,
+						}]
+				}]
+		});
+	});
+	</script>
+
+</head>
+
+<body>
+	<div id="sidebar">
+		<h2>HAYDEN SHOES</h2>
+		<div id="profile_pic">
+			<img src="images/profile.png" alt="profile" style="width: 70px">
+		</div>
+		<div id="profile_info">
+			<span>Welcome,</span><br/>
+			<a href="executive-profile.html">Mirela Hayden</a>
+		</div>
+		<ul>
+			<li><a href="executive.html">Home</a></li>
+			<li><a href="executive-profile.html">Profile</a></li>
+			<li><a class="active" href="executive-sales.html">Sales</a></li>
+			<li><a href="executive-boutiques.html">Boutiques</a></li>
+			<li><a href="executive-employees.html">Employees</a></li>
+		</ul>
+	</div>
+
+
+	<div id="header">
+		<div id="modes" class="dropdown">
+			<button class="dropbtn">Executive</button>
+			<div class="dropdown-content">
+				<a href="manager.html">Manager</a>
+				<a href="employee.html">Employee</a>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div id="main">
+		<div id="main-graph" class="big-box graph" style="width:100%;">
+			<script src="https://code.highcharts.com/highcharts.js"></script>
+	        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        	<div id="bar"></div> <!--the graph code-->
+
+		</div>
+
+		<div id="age_demographics" class="small-box subgraph1" style="max-height:300px"></div>
+		<div id="race_demographics" class="small-box subgraph2" style="max-height:300px"></div>
+
+		<div id="sales_channels" class="big-box graph" style="width:100%;"></div>
+	</div>
+
+
+</body>
+
+</html>
+
+

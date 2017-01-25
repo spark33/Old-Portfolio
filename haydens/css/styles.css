@@ -1,0 +1,391 @@
+html {
+	overflow-y: scroll;
+}
+
+body {
+	font-family: "Gill Sans", "Proxima Nova", Helvetica, Arial, sans-serif;
+	font-size: 100%; 
+	line-height: 1.7em; 
+	background-color: #495668;
+	margin: 0;
+	float: left;
+	min-width: 320px;
+}
+
+/* =============================================================================
+	SIDEBAR
+============================================================================= */
+#sidebar {
+	width: 230px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+
+}
+#sidebar h2 {
+	padding: 10px 10px 0px;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+}
+
+#profile_pic {
+	width: 70px;
+	float: left;
+}
+
+#profile_info {
+	margin-left: 70px;
+	padding-top: 10px;
+}
+
+
+#profile_info a {
+	color: black;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#profile_info a:hover {
+	text-decoration: underline;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+#sidebar li a.active {
+    background-color: #344155;
+    color: white;
+}
+
+#sidebar li a:hover:not(.active) {
+    background-color: #344155;
+    color: white;
+}
+
+/* =============================================================================
+	HEADER
+============================================================================= */
+#header {
+	min-height: 57px;
+	left: 230px;
+	width: calc(100% - 230px);
+	position: absolute;
+	float: left;
+
+	border-bottom: 1px solid #D9DEE4;	
+	background-color: #EDEDED;
+}
+
+#modes {
+	float: right;
+	width: 120px;
+	background-color: #d5d5d5; 
+	margin: 10px 20px;
+	padding: 5px;
+}
+
+.dropbtn {
+	background-color: #d5d5d5;
+	font: inherit;
+	border: none;
+}
+
+.dropbtn:hover {
+	font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #fbfbfb;
+    width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-top: 5px;
+    padding: 12px 16px;
+}
+
+.dropdown-content a {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+
+    display: block;
+}
+
+
+/* =============================================================================
+	LOGIN
+============================================================================= */
+
+#login-border {
+	top: 12%;
+	left: calc(50% - 250px);
+
+ 	position: absolute;
+ 	width: 500px;
+ 	height: 550px;
+
+	text-align: center;
+
+
+}
+
+#login {
+	top: calc(12% + 70px);
+	left: calc(50% - 150px);
+
+ 	position: absolute;
+ 	width: 300px;
+ 	height: 50%;
+
+	text-align: center;
+}
+
+#login .userinput {
+	width: 180px;
+	height: 20px;
+	padding: 5px;
+	margin: 5px;
+}
+
+#login .checkbox {
+	margin-left: -80px;
+}
+
+.btn {
+	width: 120px;
+	padding: 5px;
+	background-color: #d5d5d5;
+	font: inherit;
+	font-weight: bold;
+	border: none;
+}
+
+#presentedby {
+	width: 210px;
+	margin-left: 40px;	
+}
+
+#ptext {
+	width: 80px;
+	padding-top: 15px;
+	text-align: right;
+	font-weight: bold;
+	display: block;
+	float: left;
+}
+
+#sjark {
+	margin-left: 110px;
+	text-align: left;
+	display: block;
+}
+
+/* =============================================================================
+	MAIN
+============================================================================= */
+#main {	
+	top: 57px;
+	left: 230px;
+ 	position: absolute;
+ 	width: calc(100% - 270px);
+ 	min-height: calc(100% - 93px);
+
+	border-style: solid;
+	border-color: #F7F7F7;
+	border-width: 20px;
+	background-color: #F7F7F7;
+	z-index: -1;
+
+	overflow-y: auto;
+}
+
+#main .big-box {
+	border: 10px;
+	background-color: white;
+	border: 1px dotted black;
+	margin: 10px 0px;
+	display: inline-block;
+	text-align: center;
+
+}
+
+#main .small-box {
+	width: calc(50% - 20px);
+	height: 300px;
+	position: relative;
+	display: inline-block;
+
+	background-color: white;
+	border: 1px dotted black;
+	margin: 10px 0;
+
+	text-align: center;
+}
+
+.subgraph1 {
+	float: left;
+
+}
+
+.subgraph2 {
+	float: right;
+}
+
+.text {
+	padding: 20px;
+}
+
+
+.graph {
+	width: 100%;
+}
+
+/* =============================================================================
+	PROFILE
+============================================================================= */
+#profile {
+	height: calc(100% - 93px);
+}
+#user-info {
+	width: 200px;
+	margin: 20px 20px 20px 20px;
+	float: left;
+}
+
+#user-info h2 {
+	-webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.1em;
+}
+#user-info a {
+	text-align: left;
+}
+
+#user-content {
+	width: calc(100% - 285px);
+
+	padding: 10px 20px 20px;
+	float: left;
+	border-left: 1px dotted black;
+
+}
+
+#user-sales {
+	height: 400px;
+
+}
+
+/* =============================================================================
+	TRAINING
+============================================================================= */
+
+#training h3 {
+	text-align: left;
+	text-decoration: underline;
+}
+#training ol {
+	text-align: left;
+}
+.progressbar-container {
+
+    width: 100%;
+    height: 1.5em;
+    position: relative;
+    background-color: #f1f1f1;
+}
+
+.progressbar {
+	background-color: #757575;
+    height: 100%;
+    position: absolute;
+    line-height: inherit;
+}
+
+
+/* =============================================================================
+	EMPLOYEES
+============================================================================= */
+.employee {
+
+	width: 300px;
+	height: 100px;
+	border: 1px solid black;
+	padding: 10px;
+	display: inline-block;
+	margin: 10px;
+}
+
+.employee-pic {
+	width: 100px;
+	float: left;
+}
+
+.employee-info {
+	margin-left: 115px;
+	text-align: left;
+}
+
+
+
+.employee-name {
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* =============================================================================
+	BOUTIQUES
+============================================================================= */
+.boutique {
+
+	width: 300px;
+	height: 100px;
+	border: 1px solid black;
+	padding: 30px;
+	display: inline-block;
+	margin: 30px;
+}
+
+.boutique-name {
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.boutique-pic {
+	width: 100px;
+	float: left;
+}
+
+.boutique-info {
+	margin-left: 115px;
+	text-align: left;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author​" content="sjark consulting">
+	<meta name="keywords" content="Hayden Shoes Dashboard">
+	<meta name="description" content="Hayden Shoes Dashboard">
+
+	<title>Hayden Shoes</title>
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css"/>
+	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<!--The two following libraries are used for the pie charts-->
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+	<script>
+		$(function () {
+		$('#oneperson').highcharts({
+				title: {
+						text: 'My Sales over this Week',
+						x: -20 //center
+				},
+				xAxis: {
+						categories: ['MON','TUE','WED','THURS','FRI']
+				},
+				yAxis: {
+						title: {
+								text: 'Pairs'
+						},
+						plotLines: [{
+								value: 0,
+								width: 1,
+								color: '#808080'
+						}]
+				},
+				tooltip: {
+						valueSuffix: ' pairs'
+				},
+				legend: {
+						layout: 'vertical',
+						align: 'right',
+						verticalAlign: 'middle',
+						borderWidth: 0
+				},
+				series: [{
+						name: 'John Doe',
+						data: [6,10,4,2,1]
+				}]
+			});
+		});
+	</script>
+
+</head>
+
+</head>
+
+<body>
+	<div id="sidebar">
+		<h2>HAYDEN SHOES</h2>
+		<div id="profile_pic">
+			<img src="images/profile.png" alt="profile" style="width: 70px">
+		</div>
+		<div id="profile_info">
+			<span>Welcome,</span><br/>
+			<a href="employee.html">John Doe</a>
+		</div>
+		<ul>
+			<li><a class="active" href="employee.html">My Profile</a></li>
+			<li><a href="employee-training.html">Training</a></li>
+			<li><a href="employee-calendar.html">Calendar</a></li>
+			<li><a href="employee-contacts.html">My Team</a></li>
+		</ul>
+	</div>
+
+
+	<div id="header">
+		<div id="modes" class="dropdown">
+			<button class="dropbtn">Employee</button>
+			<div class="dropdown-content">
+				<a href="executive.html">Executive</a>
+				<a href="manager.html">Manager</a>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="main">
+		
+		<div id="profile" class="big-box" style="width:100%">
+			
+			<div id="user-info">
+				<img src="images/profile-big.png" style="width: 200px; border: 1px solid black"><br/>
+				<h2>John Doe</h2>
+				<a>Pittsburgh, PA</a><br/>
+				<a>Cashier</a>
+			</div>
+
+			<div id="user-content">
+				<div id="user-sales" class="big-box graph">
+					<div id="oneperson"></div>
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+		
+	</div>
+
+
+
+</body>
+
+</html>
+
+

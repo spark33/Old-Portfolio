@@ -1,0 +1,26 @@
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	font-family: "Gill Sans", "Proxima Nova", Helvetica, Arial, sans-serif;
+	color: white;
+	font-size: 100%; 
+	line-height: 1.7em; 
+	background-color: #344155;
+}
+
+body
+h1
+{
+	margin-left: 40%;
+	margin-top: 5%;
+}
+
+body
+#form
+{
+	margin-left:30%;
+	width: 50%;
+}
