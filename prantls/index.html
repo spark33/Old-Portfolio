@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8" />
+	<meta name = "author" about = "Sean Park" />
+	<meta name = "description" about = "Prantl's Bakery Website" />
+
+	<!-- Import stylesheets -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightboxclone-0.6.css" />
+	<!-- Import fonts (Roboto & Open Sans) from Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<!-- Import .js files -->
+	<script  type="text/javascript" src="js/jquery-2.2.1.min.js"> </script>
+	<script  type="text/javascript" src="js/jquery-ui.js"></script>
+	<script  type="text/javascript" src="js/scripts.js"> </script>
+	<script type="text/javascript" src="js/jquery.lightboxclone-0.6-min.js"></script>
+
+	<!-- Lightbox Gallery Script -->
+	<script type = "text/JavaScript">
+		$ ( function () {
+			$ ( '#gallery a' ). lightBoxClone ();
+		});
+	</script>
+
+	<title>Prantl's Bakery</title>
+
+</head>
+
+<body>
+	<div id="top_row"> <!-- Navigation bar + image. Same throughout all webpages. -->
+		<header> <!-- Green navigation bar -->
+			<a href="index.html">
+				<img src="images/sean.png" alt="Home">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="stores.html">Stores</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="data.html">Sales Data</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="home_image"> 
+			<h1>Home of the famous Burnt Almond Torte.</h1>
+			<button id="down_button" class="button" onclick="scrollTo('#container');">Down</button>
+		</div>
+	</div> <!-- Close top_row -->
+
+	<br/>
+	<hr>
+	<br/>
+
+	<div id="container">
+	
+		<div id="almond_torte"> <!-- Feature Gallery for Burnt Almond Torte-->
+			<h3>Learn more.</h3>
+			<div id="content-gallery">
+				<div id = "gallery">
+					<div id = "galleryThumbnail" >
+						<div id = "thmbnlShadow">
+						<!--https://www.flickr.com/photos/katiebordner/14899901961/in/photolist-qrkPW1-nhYNMZ-oLPbR7-7gkLjD-dDNums-7KWf1c-6syEi1-9CUYqp-cAzozS-6BNBqZ-njtk5f-oTN58Y-38s85r-oGDTKp-eLPRpA-rtomGg-eemjgV-rc3T7P-6aAGCj-dEpriH-oeuAkt-anp4QG-anp2rs-rc3NUR-rtpjwy-rc3P3g-CVBF1-5Q8y9U-eLqPjR-rtomiR-Fu6vc-zGJ1PU-eH9ud2-afrWpf-uC8n8M-nrsfYk/-->
+							<a href= " images/torte1.jpg" title= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit dolor leo, ac accumsan lorem consequat eget. Nam ut massa malesuada, tincidunt nulla ut, sollicitudin tortor. Aliquam eu est elementum, placerat purus sed, rutrum metus. Sed hendrerit a sem id tristique. Sed vulputate egestas mi, sit amet aliquam diam scelerisque vel. Pellentesque eget cursus odio. Curabitur porttitor rutrum nunc, sed varius risus viverra quis. Nunc tincidunt nisi diam, sit amet gravida eros volutpat posuere. Ut volutpat urna non ante bibendum vehicula nec eu eros. Nulla facilisi. Pellentesque pharetra gravida elit id molestie.">
+							<img src = "images/torte1.jpg" alt = "image 1" width = "120px" height = "120px"/>
+							</a>
+						</div><!-- Close thmbnlShadow-->
+					</div> <!-- Close galleryThumbnail-->
+					<div id = "galleryThumbnail" >
+						<div id = "thmbnlShadow">
+						<!--http://i.huffpost.com/gen/1733006/thumbs/s-PRANTLS-CAKE-large640.jpg-->
+							<a href= " images/torte2.jpg" title= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit dolor leo, ac accumsan lorem consequat eget. Nam ut massa malesuada, tincidunt nulla ut, sollicitudin tortor. Aliquam eu est elementum, placerat purus sed, rutrum metus. Sed hendrerit a sem id tristique. Sed vulputate egestas mi, sit amet aliquam diam scelerisque vel. Pellentesque eget cursus odio. Curabitur porttitor rutrum nunc, sed varius risus viverra quis. Nunc tincidunt nisi diam, sit amet gravida eros volutpat posuere. Ut volutpat urna non ante bibendum vehicula nec eu eros. Nulla facilisi. Pellentesque pharetra gravida elit id molestie.">
+							<img src = "images/torte2.jpg" alt = "image 2" width = "120px" height = "120px"/>
+							</a>
+						</div> <!-- Close thmbnlShadow-->
+					</div> <!-- Close galleryThumbnail-->
+					<div id = "galleryThumbnail" >
+						<div id = "thmbnlShadow">
+							<!--http://media2.fdncms.com/pittsburgh/imager/u/original/1874229/last-word-making-mini-burnt-almond-tortes.jpg-->
+							<a href= " images/torte3.jpg" title= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit dolor leo, ac accumsan lorem consequat eget. Nam ut massa malesuada, tincidunt nulla ut, sollicitudin tortor. Aliquam eu est elementum, placerat purus sed, rutrum metus. Sed hendrerit a sem id tristique. Sed vulputate egestas mi, sit amet aliquam diam scelerisque vel. Pellentesque eget cursus odio. Curabitur porttitor rutrum nunc, sed varius risus viverra quis. Nunc tincidunt nisi diam, sit amet gravida eros volutpat posuere. Ut volutpat urna non ante bibendum vehicula nec eu eros. Nulla facilisi. Pellentesque pharetra gravida elit id molestie.">
+							<img src = "images/torte3.jpg" alt = "image 3" width = "120px" height = "120px"/>
+							</a>
+						</div> <!-- Close thmbnlShadow -->
+					</div> <!-- Close galleryThumbnail -->
+				</div> <!-- Close gallery -->
+				<p> Learn more about the famous burnt almond torte. </p>
+			</div> <!-- Close content-gallery -->
+			<div id="content-gallery">
+				<div id = "gallery">
+					<div id = "galleryThumbnail" >
+						<div id = "thmbnlShadow">
+						<!--https://www.flickr.com/photos/katiebordner/14899901961/in/photolist-qrkPW1-nhYNMZ-oLPbR7-7gkLjD-dDNums-7KWf1c-6syEi1-9CUYqp-cAzozS-6BNBqZ-njtk5f-oTN58Y-38s85r-oGDTKp-eLPRpA-rtomGg-eemjgV-rc3T7P-6aAGCj-dEpriH-oeuAkt-anp4QG-anp2rs-rc3NUR-rtpjwy-rc3P3g-CVBF1-5Q8y9U-eLqPjR-rtomiR-Fu6vc-zGJ1PU-eH9ud2-afrWpf-uC8n8M-nrsfYk/-->
+							<a href= "images/prantlsStore1.jpg" title= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit dolor leo, ac accumsan lorem consequat eget. Nam ut massa malesuada, tincidunt nulla ut, sollicitudin tortor. Aliquam eu est elementum, placerat purus sed, rutrum metus. Sed hendrerit a sem id tristique. Sed vulputate egestas mi, sit amet aliquam diam scelerisque vel. Pellentesque eget cursus odio. Curabitur porttitor rutrum nunc, sed varius risus viverra quis. Nunc tincidunt nisi diam, sit amet gravida eros volutpat posuere. Ut volutpat urna non ante bibendum vehicula nec eu eros. Nulla facilisi. Pellentesque pharetra gravida elit id molestie.">
+							<img src = "images/prantlsStore1.jpg" alt = "image 1" width = "120px" height = "120px"/>
+							</a>
+						</div> <!-- Close thmbnlShadow -->
+					</div> <!-- Close galleryThumbnail -->
+					<div id = "galleryThumbnail" >
+						<div id = "thmbnlShadow">
+						<!--http://i.huffpost.com/gen/1733006/thumbs/s-PRANTLS-CAKE-large640.jpg-->
+							<a href= "images/prantlsStore2.jpg" title= "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit dolor leo, ac accumsan lorem consequat eget. Nam ut massa malesuada, tincidunt nulla ut, sollicitudin tortor. Aliquam eu est elementum, placerat purus sed, rutrum metus. Sed hendrerit a sem id tristique. Sed vulputate egestas mi, sit amet aliquam diam scelerisque vel. Pellentesque eget cursus odio. Curabitur porttitor rutrum nunc, sed varius risus viverra quis. Nunc tincidunt nisi diam, sit amet gravida eros volutpat posuere. Ut volutpat urna non ante bibendum vehicula nec eu eros. Nulla facilisi. Pellentesque pharetra gravida elit id molestie.">
+							<img src = "images/prantlsStore2.jpg" alt = "image 2" width = "120px" height = "120px"/>
+							</a>
+						</div> <!-- Close thmbnlShadow -->
+					</div> <!-- Close galleryThumbnail -->
+				</div> <!-- Close gallery -->
+				<p> Explore our stores. </p>
+			</div> <!-- Close content-gallery -->
+		</div> <!-- Close almond-torte -->
+
+		<div id="about">
+			<h3>About Us</h3>		
+				<div id="bio">
+					<br/>
+					<p> Prantl’s Bakery is a Pittsburgh institution. Its “Burnt Almond Torte” and 100+ sinful sweets have been a tradition for the last 40 years. In fact, there’s been a bakery in continuous operation at the flagship Shadyside store for over 100 years. Prantl’s is a bakery in the German tradition, with old-fashioned fruit Danish and nut-filled coffeecakes, but we can’t help but get excited about some of our “new favorites” as well, like key lime pie and our buttery croissants. In addition to our mouth watering special order cakes, we are famous for our “Burnt Almond Torte”, which was conceived by Henry Prantl after a trip to California. There was an almond glut the year he went and the Almond Board was trying to get bakers to use almonds in new and inspiring ways. Henry picked up a few ideas and brought them back to Pittsburgh where he refined them into our current recipe for “Burnt Almond Torte”, a unique and addictive dessert.</p>
+
+					<p>Henry and Jane Prantl retired from the business in 2007. The bakery is now owned and operated by John M. Felice, who strives to maintain the tradition of high quality baked goods.</p>
+				</div> <!-- Close bio -->
+		</div> <!-- Close about -->
+
+		<div id="sidebar"> <!-- Video + Article links -->
+
+			<h3>Media</h3>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/iLhlZciMfoQ" frameborder="0" allowfullscreen></iframe>
+		
+			<br/>
+			<br/>
+
+			<p>
+				Prantl's Bakery has attracted the attention of multiple news media outlets.
+			</p>
+
+			<br/><br/>
+
+			<a href="http://www.huffingtonpost.com/2014/04/14/prantls-torte-cake-almond_n_5133580.html">
+				<img src="images/article1.png"/>
+			</a>
+			<p>“No cake made in any of the five boroughs of New York holds a candle to Prantl’s amazing burnt almond torte. It is possibly the BEST cake America has to offer.”</p>
+			
+			<a href="http://www.pghcitypaper.com/pittsburgh/burnt-almond-torte-is-still-the-big-draw-at-prantls-bakery/Content?oid=1874228">
+				<img src="images/article2.png"/>
+			</a>
+			<p>"That’s because for many, the cake is more than a dessert. It’s as much a part of the holidays as watching your favorite Christmas movie or lighting a menorah."</p>
+
+		</div> <!-- Close sidebar -->
+	</div>
+
+	<button id="up_button" class="button" onclick="scrollToTop();">Back To Top</button>
+
+	<br/>
+	<br/><br/>
+
+	<footer>
+		<br/>
+		<!-- Links to social media -->
+		<!-- Icons downloaded from: -->
+		<!-- https://www.iconfinder.com/iconsets/icon-set-social-media-icons-colours-mouse-over-and-->
+		<a href="https://twitter.com/prantlsbakery"><img src="images/twitter_icon.png" width="30px" height="30px"/></a>
+		<a href="https://www.facebook.com/PrantlsBakery"><img src="images/facebook_icon.png" width="30px" height="30px"/></a>
+		<a href="https://www.instagram.com/prantls_bakery/"><img src="images/instagram_icon.png" width="30px" height="30px" /></a>
+		<br/>
+		&copy; Sean Park <br/>
+		<a class="link" href="mailto:spark3@andrew.cmu.edu">Email the developer</a><br/>
+		Last updated: March 24, 2016
+	</footer>
+
+</body>
+
+</html>

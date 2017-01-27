@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8" />
+	<meta name = "author" content = "Sean Park" />
+	<meta name = "description" content = "Prantl's Bakery Website" />
+
+	<!-- Import stylesheets -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<!-- Import fonts (Roboto & Open Sans) from Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<!-- Import .js files -->
+	<script  type="text/javascript" src="js/jquery-2.2.1.min.js"> </script>
+	<script  type="text/javascript" src="js/scripts.js"> </script>
+	<script  type="text/javascript" src="js/jquery-ui.js"></script>
+	<script  type="text/javascript" src="js/highcharts.js"></script>
+	<script  type="text/javascript" src="js/modules/exporting.js"></script>
+
+	<!-- Highcharts line graph script for location-1-->
+	<script type="text/javascript">
+		$(function () {
+		    $('#location1-graph').highcharts({
+		        title: {
+		            text: 'Popular Times for Shadyside (avg per day)',
+		            x: -20 //center
+		        },
+		        /*subtitle: {
+		            text: 'Source: WorldClimate.com',
+		            x: -20
+		        },*/
+		        xAxis: {
+		        	title:{
+		        		text: "Time"
+		        	},
+		            categories: ['7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm']
+		        },
+		        yAxis: {
+		            title: {
+		                text: 'Number of Visits'
+		            },
+		            plotLines: [{
+		                value: 0,
+		                width: 1,
+		                color: '#808080'
+		            }]
+		        },
+		        tooltip: {
+		            valueSuffix: 'visitors'
+		        },
+		        legend: {
+		            layout: 'vertical',
+		            align: 'right',
+		            verticalAlign: 'middle',
+		            borderWidth: 0
+		        },
+		        series: [{
+		        	name: "Shadyside",
+		            data: [10,8,24,5,7,32,16,18,27,39,32]
+		        }
+		        ]
+		    });
+		});
+	</script>
+
+	<!-- Highcharts line graph script for location-2-->
+	<script type="text/javascript">
+		$(function () {
+		    $('#location2-graph').highcharts({
+		        title: {
+		            text: 'Popular Times for Downtown (avg per day)',
+		            x: -20 //center
+		        },
+		        /*subtitle: {
+		            text: 'Source: WorldClimate.com',
+		            x: -20
+		        },*/
+		        xAxis: {
+		        	title:{
+		        		text: "Time"
+		        	},
+		            categories: ['7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm']
+		        },
+		        yAxis: {
+		            title: {
+		                text: 'Number of Visits'
+		            },
+		            plotLines: [{
+		                value: 0,
+		                width: 1,
+		                color: '#808080'
+		            }]
+		        },
+		        tooltip: {
+		            valueSuffix: 'visitors'
+		        },
+		        legend: {
+		            layout: 'vertical',
+		            align: 'right',
+		            verticalAlign: 'middle',
+		            borderWidth: 0
+		        },
+		        series: [{
+		        	name: "Downtown",
+		            data: [24,12,16,8,11,19,15,18,13,21,35]
+		        }
+		        ]
+		    });
+		});
+	</script>
+
+	<title>Prantl's Bakery</title>
+
+</head>
+
+<body>
+<div id="container"> <!--Container div created for easy CSS formatting across page-->
+	<div id="top_row"> <!-- Navigation bar + image. Same throughout all webpages. -->
+		<header> <!-- Green navigation bar -->
+			<a href="index.html">
+				<img src="images/sean.png" alt="Home">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="stores.html">Stores</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="data.html">Sales Data</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="image">
+			<h1>Stores</h1>
+			<button id="down_button" class="button" onclick="scrollTo('#location1');">Down</button>
+		</div>
+	</div> <!-- Close top_row -->
+
+	<hr>
+
+	<div id="location1"> 
+		<table>
+			<tr> <!-- Row 1 : Heading -->
+				<th colspan="2">Shadyside</th>
+			</tr>
+			<tr> <!-- Row 2 : Address -->
+				<th>Address:</th>
+				<td>5525 Walnut Street, Pittsburgh PA, 15232</td>
+			</tr> 
+			<tr> <!-- Row 3 : Phone Number -->
+				<th>General Information:</th>
+				<td>412-471-6861</td>
+			</tr> 
+			<tr> <!-- Row 4 : E-mail Address -->
+				<th>E-mail:</th>
+				<td><a href="mailto:infoms@prantlsbakery.com">infoms@prantlsbakery.com</a></td>
+			</tr> 
+			<tr> <!-- Row 5 : Website-->
+				<th>Website:</th>
+				<td><a href="http://www.prantlsbakery.com/">http://www.prantlsbakery.com/</a></td>
+			</tr> 
+			<tr> <!-- Row 6 : Operating Hours -->
+				<th>Operating Hours: </th>
+				<td rowspan="1">
+					Monday: 7am – 6pm<br/>
+					Tuesday – Saturday: 9am – 4pm<br/>
+					Sunday: 10am – 3pm
+				</td>
+			</tr> 
+			<tr> <!-- Row 7 : Google Maps-->
+				<td></td>
+				<td colspan="2">
+					<a id="map" onclick="popUpWindow('https://goo.gl/maps/ne51Sduxq5L2');">
+						<!-- https://www.iconfinder.com/icons/285662/map_icon#size=128 -->
+						<img src="images/map_icon.png" alt="Map"/>
+					</a>
+				</td>
+			</tr>
+			<tr> <!-- Row 8 : Visitor Data -->
+				<td class="highchart" id="location1-graph" colspan="2" width="100%"></td>
+			</tr>
+		</table>
+
+		<!-- http://www.prantlsbakery.com/about/ -->
+		<img src="images/prantlsStore1.jpg" />
+
+	</div> <!-- Close location 1-->
+
+		<br/>
+		<hr>
+		<br/>
+
+	<div id="location2">
+
+	<!--http://www.parmesanprincess.com/wp-content/uploads/2014/04/image38.jpg-->
+	<img src="images/prantlsStore2.jpg" />
+
+		<table>
+			<tr> <!-- Row 1 : Heading-->
+				<th colspan="2">Downtown</th>
+			</tr>
+			<tr> <!-- Row 2 : Address -->
+				<th>Address:</th>
+				<td>438 Market Street, Pittsburgh, PA 15222</td>
+			</tr> 
+			<tr> <!-- Row 3 : Phone Number -->
+				<th>Phone Number:</th>
+				<td>412-621-2092</td>
+			</tr> 
+			<tr> <!-- Row 4 : E-mail Address -->
+				<th>E-mail:</th>
+				<td><a href="mailto:info@prantlsbakery.com">info@prantlsbakery.com</a></td>
+			</tr> 
+			<tr> <!-- Row 5 : Website -->
+				<th>Website:</th>
+				<td><a href="http://www.prantlsbakery.com/">http://www.prantlsbakery.com/</a></td>
+			</tr> 
+			<tr> <!-- Row 6 : Operating Hours -->
+				<th>Operating Hours: </th>
+				<td rowspan="1">
+					Monday: 9am – 4pm<br/>
+					Tuesday – Saturday: 7.30am – 6pm<br/>
+					Sunday: 9am – 4pm
+				</td>
+			</tr> 
+			<tr> <!-- Row 7 : Google Maps-->
+				<td colspan="2">
+					<a id="map" onclick="popUpWindow('https://goo.gl/maps/ne51Sduxq5L2');">
+						<img src="images/map_icon.png" alt="Map"/>
+					</a>
+				</td>
+			</tr>
+			<tr> <!-- Row 8 : Visitor Data -->
+				<td class="highchart" id="location2-graph" colspan="2"></td>
+			</tr>
+		</table>
+	</div> <!-- Close location 2-->
+	
+	<button id="up_button" class="button" onclick="scrollToTop();">Back To Top</button>
+
+		<br/>
+		<br/><br/>
+
+	<footer>
+		<br/>
+		<!-- Links to social media -->
+		<!-- Icons downloaded from: -->
+		<!-- https://www.iconfinder.com/iconsets/icon-set-social-media-icons-colours-mouse-over-and-->
+		<a href="https://twitter.com/prantlsbakery"><img src="images/twitter_icon.png" width="30px" height="30px"/></a>
+		<a href="https://www.facebook.com/PrantlsBakery"><img src="images/facebook_icon.png" width="30px" height="30px"/></a>
+		<a href="https://www.instagram.com/prantls_bakery/"><img src="images/instagram_icon.png" width="30px" height="30px" /></a>
+		<br/>
+		&copy; Sean Park <br/>
+		<a class="link" href="mailto:spark3@andrew.cmu.edu">Email the developer</a><br/>
+		Last updated: March 24, 2016
+	</footer>
+</div> <!-- Close container -->
+</body>
+
+</html>

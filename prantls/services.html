@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8" />
+	<meta name = "author" content = "Sean Park" />
+	<meta name = "description" content = "Prantl's Bakery Website" />
+
+	<!-- Import stylesheets -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+	<!-- Import fonts (Roboto & Open Sans) from Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<!-- Import .js files -->
+	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script  type="text/javascript" src="js/jquery-ui.js"></script>
+
+	<script>
+		$(function(){
+			$("#accordion").accordion();
+		 }
+		);
+	</script>
+
+	<title>Prantl's Bakery</title>
+
+</head>
+
+<body>
+	<div id="top_row"> <!-- Navigation bar + image. Same throughout all webpages. -->
+		<header> <!-- Green navigation bar -->
+			<a href="index.html">
+				<img src="images/sean.png" alt="Home">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="stores.html">Stores</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="data.html">Sales Data</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="image">
+			<h1>Services</h1>
+			<button id="down_button" class="button" onclick="scrollTo('#services');">Down</button>
+		</div>
+	</div> <!-- Close top_row -->
+
+	<hr>
+
+	<div id="services"> <!-- Accordion + Footer -->
+		<h2>Services</h2>
+
+		<div id="accordion"> <!-- Feature of Prantl's Bakery's services for weddings, celebrations and holidays. -->
+			<h4>Weddings</h4>
+				<div id="accordion_content">
+
+					<!--https://s-media-cache-ak0.pinimg.com/736x/b0/7b/bc/b07bbcd07b61ae8ba815fbc27736c52b.jpg-->
+					<img src="images/wedding_cake.jpg" alt="Wedding Cake"/>
+
+					<h5>Weddings are such a joyous occasion and each one is different! The same is true of our wedding cakes. We have an almost unlimited combination of flavors and styles to choose from. </h5>
+
+					<h5>Batters and fillings:</h5>
+					<p>Our most popular batter is yellow, but we also offer red velvet, chocolate, marble, and others upon request. As for fillings, we recommend white buttercream icing, chocolate fudge icing, strawberry crème filling, vanilla pastry cream, or one of several fruit fillings (lemon, raspberry, apricot, strawberry, etc.). That being said, if you have something special in mind it can’t hurt to ask!</p>
+
+					<h5>Sizes:</h5>
+					<p>To keep proportionality and maintain structure, wedding cakes come in certain sizes with certain tier dimensions. If the size of the wedding party falls in between cake sizes, we can offer additional sheet cakes up to the amount of slices required.</p>
+
+					<h5>Pricing:</h5>
+					<p>Our wedding cakes vary in price, depending on type, size, and “extras” such as special fillings, pillars, etc. For example, the cakes seen above are in the $3.25 – $3.75 per serving range.</p>
+
+					<h5>Other delicacies:</h5>
+					<p>Our wedding cakes are really just the beginning. Lots of folks opt for Individual desserts (3” mini-cakes, cupcakes, etc.) and of course there’s always room in the celebration for Cookie Trays, Monogrammed Petit Fours, Junior Pastry Trays, Grooms’ Cakes, Shower Cakes, Monogrammed Cookies, Wedding Challah, Breakfast Trays, etc.</p>
+
+					<h5>Delivery:</h5>
+					<p>We co-ordinate with the reception venue, florist, etc. for the timing of the delivery of the cake. Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.</p>
+				</div>
+			
+			<h4>Celebrations</h4>
+				<div id="accordion_content">
+
+					<!--http://emilyemsu.pairserver.com/prantls/images/cupcakes.png-->
+					<img src="images/celebrations.jpg" alt="Celebrations" width="500px" height="400px"/>
+
+					<h5>Birthdays, anniversaries, showers, graduations, religious celebrations etc. We have baked special treats for each of life’s special events and can customize them to showcase your theme or ideas. View our photo gallery on Facebook, and if you would like to inquire about a custom cake not available on our website, please email us at info@prantlsbakery.com. </h5> 
+
+					<h5>Sizes:</h5>
+					<p>We offer custom cake rounds sizes from 8”-12”. Sheet cakes can be ordered from the sizes of 1/4, 1/2, 3/4 and full. </p>
+
+					<h5>Pricing:</h5>
+					<p>Our cakes vary in price, depending on type, size, and “extras” such as decorations and personalizations. </p>
+
+					<h5>Delivery:</h5>
+					<p>Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.</p>
+				</div>
+			
+			<h4>Holidays</h4>
+				<div id="accordion_content">
+					<!--https://scontent.cdninstagram.com/hphotos-xft1/t51.2885-15/s640x640/sh0.08/e35/12331405_923896294325098_1684031025_n.jpg-->
+					<img src="images/holidays.jpg" alt="Holidays" width="500px" height="400px" />
+					<h5>From Valentine’s Day, Christmas, Thanksgiving, and Mardi Gras, we have cakes for your favorite occasions!</h5>
+
+					<h5>Easter is right around the corner. Check out our baked goods that are perfect for your fun, colorful weekend, ranging from Easter themed cookies, cakes, cupcakes, and more.</h5>
+				
+				</div>
+
+		</div> <!--Close accordion-->
+
+		<button id="up_button" class="button" onclick="scrollToTop();">Back To Top</button>
+
+		<br/>
+		<br/><br/>
+
+		<footer>
+			<br/>
+			<!-- Links to social media -->
+			<!-- Icons downloaded from: -->
+			<!-- https://www.iconfinder.com/iconsets/icon-set-social-media-icons-colours-mouse-over-and-->
+			<a href="https://twitter.com/prantlsbakery"><img src="images/twitter_icon.png" width="30px" height="30px"/></a>
+			<a href="https://www.facebook.com/PrantlsBakery"><img src="images/facebook_icon.png" width="30px" height="30px"/></a>
+			<a href="https://www.instagram.com/prantls_bakery/"><img src="images/instagram_icon.png" width="30px" height="30px" /></a>
+			<br/>
+			&copy; Sean Park <br/>
+			<a class="link" href="mailto:spark3@andrew.cmu.edu">Email the developer</a><br/>
+			Last updated: March 24, 2016
+		</footer>
+	</div>
+
+</body>
+
+</html>

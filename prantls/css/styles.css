@@ -1,0 +1,428 @@
+body
+#home_image 
+/* Main image on index.html */
+{
+	background-image:url("../images/homepage.png");
+	margin-top: -32px;
+	height:500px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+#home_image
+h1
+/* Slogan text on index.html */
+{
+	position: relative;
+	top: 130px;
+}
+
+#home_image
+button
+/* Scroll-down button on index.html */
+{
+	position: relative;
+	top: 200px;
+}
+
+body
+#image
+/* Main image on other HTMLs */
+{
+	background-image:url("../images/homepage.png");
+	margin-top: -32px;
+	height:300px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+#image
+h1
+/* Slogal text on other HTMLs */
+{
+	position: relative;
+	top: 100px;
+}
+
+#image
+button
+/* Scroll-down button on other HTMLs */
+{
+	position: relative;
+	top: 60px;
+}
+
+#top_row 
+header 
+/* Navigation bar on all HTMLs */
+{
+	width: 100%;
+	display:block;
+	vertical-align: bottom;
+	background-color:#00a665;
+}
+
+#top_row
+header a img 
+/* logo */
+{
+	margin-left: 20px;
+	width: 120px;
+	height: 120px;
+}
+
+#top_row 
+h1 
+/* Heading for top_row on all HTMLs */
+{
+	color: white; /* Prantl's color for header */
+	font-size: 3em; /*pxtoem.com*/
+	letter-spacing: -2px; /**/
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+#top_row 
+h3 
+/* Description for top_row on index.html */
+{
+	font-size: 1.25em;
+	font-weight: 200;
+	text-align: center;
+	color:white;
+}
+#top_row 
+nav
+{
+	display:inline-block;
+	vertical-align: bottom;
+}
+#top_row 
+nav a 
+/* Links on navigation bar */
+{
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.125em;
+	font-weight: 400;
+	color: white;
+	padding: 15px;
+	float:left;
+}
+
+#top_row 
+nav a:hover 
+{
+	color:#d3d3d3;
+}
+
+#top_row
+header nav ul li
+{
+	display:inline;
+	width: auto;
+	margin-right: 30px;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+body
+#almond_torte
+{
+	text-align: center;
+	width:100%;
+}
+
+body
+#about {
+	float: left;
+	width: 40%;
+	margin: 20px;
+	padding: 1em;
+	border­right: 1px dotted #ccc;
+	letter-spacing: 1.5px;
+	line-height: 35px;
+}
+
+body
+#about 
+h3
+{
+	text-align: center;
+	margin-bottom: -10px;
+
+}
+
+body
+#sidebar {
+	text-align: center;
+	float: right;
+	width: 50%;
+	margin-top: 20px;
+	padding: 1em;
+	border­right: 1px dotted #ccc;
+	letter-spacing: 1.5px;
+}
+
+body
+#sidebar 
+h3 
+{
+	font-size: 1.125em;
+	border­bottom: 1px dotted #ccc;
+}
+
+body
+#sidebar
+a
+{
+	text-decoration:none;
+}
+
+body
+#sidebar
+a:hover
+{
+	text-decoration: underline;
+}
+
+body
+#articles {
+	float: right;
+	width: 40%;
+	margin: 0;
+	padding: 1em;
+	border­right: 1px dotted #ccc;
+}
+
+body footer {
+	clear: both; /* The clear property specifies which side(s) of an element other
+				 floating elements are not allowed. */
+	margin: 0;
+	font-variant: small-caps;
+	font-size: .813em;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	border-top: 1px dotted #cccccc;
+	background-color:#00a665;
+}
+
+footer
+#developer_info 
+{
+	width: 50%;
+	float:left;
+	background-color:#00a665;
+}
+
+footer
+#social_media
+{
+	width: 50%;
+	float:right;
+	background-color:#00a665;
+}
+
+body
+#weddings
+{
+	background-image: url("images/celebrations.jpg");
+	/*https://upload.wikimedia.org/wikipedia/en/a/a5/Canada's_fireworks_at_the_2013_Celebration_of_Light_in_Vancouver,_BC.jpg*/
+}
+
+body
+#location1
+{
+	width: 100%;
+}
+
+body
+#location2
+{
+	width: 100%;
+}
+
+body
+#location1
+table
+{
+	width: 80%;
+	display:inline;
+	position: relative;
+	left: 100px;
+	top: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body
+#location2
+table
+{
+	width: 80%;
+	display:inline;
+	position: relative;
+	right: -150px;
+	top: 30px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#location1
+img
+{	
+	float: right;
+	margin-right: 90px;
+	margin-top:50px;
+	display:inline;
+	vertical-align: top;
+	width: 500px;
+	height:500px;
+}
+
+#location2
+img
+{
+	float:left;
+	margin-left: 80px;
+	margin-top:30px;
+	width: 500px;
+	height: 500px;
+}
+
+#map
+{
+	float:center;
+}
+
+#map
+img
+{
+	margin: 0px auto;
+	width:30px;
+	height:30px;
+}
+#map
+img:hover
+{
+	width:40px;
+	height:40px;
+}
+
+#visitor_form
+h2
+{
+	text-align: center;
+}
+
+#visitor_form
+form
+{
+	width:45%;
+	margin: auto;
+	border: 1px #cccccc;
+	padding: 10px;
+}
+
+#visitor_form
+form legend
+{
+	font-weight: bold;
+	text-align: center;
+	color: #666666;
+	margin-bottom: 5px;
+}
+
+#visitor_form
+form fieldset label
+{
+	font-weight:bold;
+	text-align: center;
+}
+
+/* 
+Button CSS code adapted from guide on:
+http://www.w3schools.com/css/css3_buttons.asp
+*/
+.button
+/* Scroll up and down buttons */
+{
+	width:10%;
+	background-color: #00a665;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+.highchart
+/* Centering the visitor data on stores.html */
+{
+	margin:auto;
+}
+
+#up_button
+{
+	width:150px;
+	position: fixed;
+	bottom: 15px;
+	right: -45%;
+}
+
+#galleryThumbnail
+/* Lightbox Thumbnail on index.html */
+{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+footer 
+.link
+/* For Email the Developer mailto link */
+{
+	color: white; 
+}
+
+#services
+/* For all text in services.html */
+{		
+	margin: auto;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#accordion
+{
+	margin: auto;
+	width:75%;
+}
+
+#accordion
+h4
+{
+	color: #00a665;
+}
+
+#accordion_content
+h5
+{
+	font-size: 1.1em;
+	text-decoration: bold italic underline;
+}
+
+#accordion_content
+{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8" />
+	<meta name = "author" about = "Sean Park" />
+	<meta name = "description" about = "Prantl's Bakery Website" />
+
+	<!-- Import stylesheets -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightboxclone-0.6.css" />
+	<!-- Import fonts (Roboto & Open Sans) from Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<!-- Import .js files -->
+	<script  type="text/javascript" src="js/jquery-2.2.1.min.js"> </script>
+	<script  type="text/javascript" src="js/jquery-ui.js"></script>
+	<script  type="text/javascript" src="js/scripts.js"> </script>
+	<script type="text/javascript" src="js/jquery.lightboxclone-0.6-min.js"></script>
+	<script  type="text/javascript" src="js/highcharts.js"></script>
+	<script  type="text/javascript" src="js/modules/exporting.js"></script>
+
+<!--Highcharts Stacked Column Graph for sales data-->
+<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Popular items for all locations (number of sales per month in 2016)'
+        },
+        xAxis: {
+        	title: {
+                text: 'Month'
+            },
+            categories: ['January', 'February', 'March']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Number of Sales'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            headerFormat: '<b>{point.x}</b><br/>',
+            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: true,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                    style: {
+                        textShadow: '0 0 3px black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Burnt Almond Torte',
+            data: [534,498,512]
+        }, {
+            name: 'Butter Cookie (dozen)',
+            data: [159,287,319]
+        }, {
+            name: 'Carrot Cake',
+            data: [38,27,157]
+        }]
+    });
+});
+		</script>
+
+	<title>Prantl's Bakery</title>
+
+</head>
+
+<body>
+	<div id="top_row"> <!-- Image excluded as page is intended for employees only. -->
+		<header> <!-- Green navigation bar -->
+			<a href="index.html">
+				<img src="images/sean.png" alt="Home">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="stores.html">Stores</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="data.html">Sales Data</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div> <!-- Close top_row -->
+
+	<div id="container"></div> <!-- Contains Highcharts charts -->
+	
+	<footer>
+		<br/>
+		&copy; Sean Park <br/>
+		<a class="link" href="mailto:spark3@andrew.cmu.edu">Email the developer</a><br/>
+		Last updated: March 24, 2016
+	</footer>
+</body>
+</html>

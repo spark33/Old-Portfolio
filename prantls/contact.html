@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8" />
+	<meta name = "author" content = "Sean Park" />
+	<meta name = "description" content = "Prantl's Bakery Website" />
+
+	<!-- Import stylesheets -->
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+	<!-- Import fonts (Roboto & Open Sans) from Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+	<!-- Import .js files -->
+	<script  type="text/javascript" src="js/jquery-2.2.1.min.js"> </script>
+	<script  type="text/javascript" src="js/scripts.js"> </script>
+	<script  type="text/javascript" src="js/jquery-ui.js"></script>
+	<script  type="text/javascript" src="js/highcharts.js"></script>
+	<script  type="text/javascript" src="js/modules/exporting.js"></script>
+
+	<title>Prantl's Bakery</title>
+
+</head>
+
+<body>
+	<div id="top_row"> <!-- Navigation bar + image. Same throughout all webpages. -->
+		<header> <!-- Green navigation bar -->
+			<a href="index.html">
+				<img src="images/sean.png" alt="Home">
+			</a>
+			<nav>
+				<ul>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="stores.html">Stores</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="data.html">Sales Data</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="image">
+			<h1>Contact Us</h1>
+			<button id="down_button" class="button" onclick="scrollTo('#visitor_form');">Down</button>
+		</div>
+	</div> <!-- Close top_row -->
+	<hr/>
+
+		<div id="visitor_form">
+			<h2>Visitor Inquiry Form</h2>
+			<form name="visitor_inquiry" onsubmit="return validate();" action="mailto:info@prantlsbakery.com">
+				<fieldset>
+					<legend>Name*: </legend>
+					<input type="text" name="firstname" maxlength="250" value="" required><br/>
+				</fieldset>
+				<fieldset>
+					<legend>Zip Code: </legend>
+					<input type="text" id="zipcode" name="zipcode" maxlength="5" value=""><br/>
+				</fieldset>
+				<fieldset>
+			  	  <legend>Inquiry: </legend>
+			  	  <textarea name="inquiry" cols="50" rows="10" maxlength="1000" ></textarea><br/>
+				</fieldset>
+		  	 	<fieldset>
+					<legend>Mailing Information</legend>
+					<label>E-mail Address*: </label>
+					<input type="email" name="zipcode" maxlength="100" value=""><br/>
+					<label>Please indicate if you want to receive news updates via email </label>
+	  				<input type="checkbox" name="updates" value="yes"><br/><br/>
+	  				<label>Here's what you'll receive through our e-mail updates: </label>
+	  				<ol>
+	  					<li>Notifications for Events</li>
+	  					<li>Exclusive Special Offers for subscribers</li>
+	  				</ol>
+				</fieldset>
+
+				<p><i>Required fields are indicated by *s.<i></p>
+
+				<input id="submit_button" type="image" src="images/submit.png" border="0" alt="Submit" />
+
+			</form>
+		</div> <!-- Close visitor_form -->
+
+		<button id="up_button" class="button" onclick="scrollToTop();">Back To Top</button>
+
+		<br/>
+		<br/><br/>
+
+		<footer>
+			<br/>
+			<!-- Links to social media -->
+			<!-- Icons downloaded from: -->
+			<!-- https://www.iconfinder.com/iconsets/icon-set-social-media-icons-colours-mouse-over-and-->
+			<a href="https://twitter.com/prantlsbakery"><img src="images/twitter_icon.png" width="30px" height="30px"/></a>
+			<a href="https://www.facebook.com/PrantlsBakery"><img src="images/facebook_icon.png" width="30px" height="30px"/></a>
+			<a href="https://www.instagram.com/prantls_bakery/"><img src="images/instagram_icon.png" width="30px" height="30px" /></a>
+			<br/>
+			&copy; Sean Park <br/>
+			<a class="link" href="mailto:spark3@andrew.cmu.edu">Email the developer</a><br/>
+			Last updated: March 24, 2016
+		</footer>
+	</div>
+
+</body>
+
+</html>
