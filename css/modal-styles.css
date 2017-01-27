@@ -32,6 +32,18 @@
 	overflow-y: scroll !important;
 }
 
+.modal
+table
+{
+	table-layout: fixed;
+}
+
+.modal
+img
+{
+	max-width: 100%;
+}
+
 .modal-close
 {
 	height: 50px;
