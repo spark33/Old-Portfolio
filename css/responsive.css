@@ -3,6 +3,11 @@
 
 @media screen and (max-width: 800px) {
 
+	#top-left
+	{
+		position: absolute;
+	}
+
 	.modal td
 	{
 		display: block;

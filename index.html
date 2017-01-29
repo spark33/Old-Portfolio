@@ -31,8 +31,9 @@ TO-DO LIST:
 
 <body>
 	<div id="top-left">
-		<p><b>Student at Carnegie Mellon</b></p>
-		<p><b>Developer / UX Designer</b></p>
+		<p><b>Sean Park</b></p>
+		<p>Developer / UX Designer</p>
+		<p>Student at Carnegie Mellon</p>
 	</div>
 	<div id="bottom-right">
 		<p><i class="fa fa-copyright" aria-hidden="true" style="color: #26a69a"> </i> Sean Park 2017</p>
@@ -58,9 +59,9 @@ TO-DO LIST:
 					</td>
 				</tr>
 			</table>
-			<h5>
+			<p>
 				<b>I’m a front-end developer <i>and</i> a problem solver.</b> I am passionate about understanding users to create beautiful and practical interfaces. From identifying problems and designing to implementing solutions, I strive to perfect my skills across the building process.<br/>
-			</h5>
+			</p>
 			<a href="#projects" class="button">Come check out what I’ve made!</a>
 		</div>
 		<div id="projects" class="section scrollspy">
@@ -158,19 +159,118 @@ TO-DO LIST:
 								<img src="images/scheduler/avail.png" />
 							</td>
 							<td>
-								<h5>
-									As a scheduling manager for CMU Computing Services, I was asked to manipulate the department’s schedule for student employees on WhenToWork.com. I was absolutely disgusted by the app’s unintuitive interface, lack of flexibility in shift planning and unnecessarily complex user stories; many of them were manually done on other software. The department was also using more than 5 apps to support its functions; any developer would have recognized how easy it would be to support all of them using one app.
-								</h5>	
+								<p><b>
+									I am a personnel manager for CMU's Computing Services. I created the TEF Scheduler to centralize all of TEF's software with enhanced user experience and functionality and replace the old WhenToWork system.
+								</b></p>	
+								<p>
+									This application will be completed this Spring. We expect deployment to occur this Fall after several months of user testing.
+								</p>
 							</td>
 						</tr>
 					</table>
 					<br/>
 					<h2>Project Introduction</h2>
-					<h5>
-						I did not want to work with this app for the next two years. I decided to create a more elegant solution and present it to the department head. I first surveyed current employees to assess issues with WhenToWork and defined focus points for the new app. I then designed the app, a project timeline and MongoDB document structures before onboarding a designer and another developer; neither had previous experience with the MEAN stack.
-					</h5>
-					<img src="images/scheduler/schedule.png" />
-					<img src="images/scheduler/view_reports.png" />
+					<p>
+						Currently, my department uses <a href="http://www.whentowork.com">WhenToWork</a> to schedule employee shifts, Google Sheets to monitor hour logs and a custom LAMP app for employees to submit reports. Every shift change is made by an administrator who is informed by employees by e-mail, leading to flooded inboxes and many missed shift changes. No employee management system caters to student employees' short shifts and unpredictability in schedules.
+					</p>
+					<p><b>
+						TEF Scheduler was designed to maximize automation and flexibility in scheduling. </b>It makes shifting easier for students while giving administrator a bird's eye view of all shifts and reports. In the future, it will also support data analytics and trend analysis.
+					</p>
+					<div class="slideshow">
+						<img src="images/scheduler/schedule.png" />
+						<img src="images/scheduler/view_reports.png" />
+						<img src="images/scheduler/view_employees.png" />
+					</div>
+					<br/><br/>
+
+					<h2>Implementation</h2>
+					<p>
+						To prioritize flexibility in data storage and access, I decided to use a <a href="https://docs.google.com/document/d/1k4ypLeFeJWAIR3cuGliVLN3EbZ980GqjUp6k5c-f8yc/edit?usp=sharing" target="_blank">NoSQL database</a> with AngularJS. Given the department's small size, denormalization was not a huge issue. The availability module and scheduler module use the <a href="https://fullcalendar.io/">FullCalendar</a> framework. The application is styled using <a href="http://materializecss.com/">Materialize</a>. The database was hosted on <a href="https://mlab.com/">MLab</a> and the app was hosted on <a href="https://www.heroku.com/home">Heroku</a>.
+					</p>
+
+					<h2>User Stories</h2>
+					<table id="user-stories">
+						<thead>
+						<tr>
+							<td><b>As a(n)...</b></td>
+							<td><b>I want to...</b></td>
+							<td><b>So that...</b></td>
+						</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Employee</td>
+								<td>Find a sub for my shift</td>
+								<td>I am not held accountable for an absence.</td>
+							</tr>
+							<tr>
+								<td>Employee</td>
+								<td>Upload my availability and preferences</td>
+								<td>I can get the shifts I want.</td>
+							</tr>
+							<tr>
+								<td>Employee</td>
+								<td>View all empty shifts</td>
+								<td>I can take an empty shift if I can.</td>
+							</tr>
+							<tr>
+								<td>Employee</td>
+								<td>Pick up a temporary shift</td>
+								<td>I can sub for someone else.</td>
+							</tr>
+							<tr>
+								<td>Employee</td>
+								<td>Submit shift report</td>
+								<td>I can report the work I've done.</td>
+							</tr>
+							<tr>
+								<td>Employee</td>
+								<td>Report equipment damage or supply shortage</td>
+								<td>I can notify staff.</td>
+							</tr>
+							<tr>
+								<td>Employee</td>
+								<td>View my personal shifts</td>
+								<td>I can figure out when I am working.</td>
+							</tr>
+							<tr>
+								<td>Employee</td>
+								<td>Keep up with my performance</td>
+								<td>I can figure out how I can be better.</td>
+							</tr>
+							<tr>
+								<td>Employee</td>
+								<td>Give TEFman and staff feedback</td>
+								<td>I can ask questions and help the department improve.</td>
+							</tr>
+							<tr>
+								<td>Manager</td>
+								<td>Search up all reports</td>
+								<td>i can follow up with my mentees if necessary.</td>
+							</tr>
+							<tr>
+								<td>Manager</td>
+								<td>Check employees' availabilities</td>
+								<td>so that I know who to give shifts to.</td>
+							</tr>
+							<tr>
+								<td>Manager</td>
+								<td>Monitor reported hours</td>
+								<td>so that I can make sure everyone is working all their shifts.</td>
+							</tr>
+							<tr>
+								<td>Manager</td>
+								<td>Submit mentoring reports</td>
+								<td>I can report progressing with mentoring mentees.</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h2>Specifications</h2>
+					<p>blah</p>
+
+					<h2>User Interaction Design</h2>
+					<p>blah</p>
 		        </div>
 			</div>
 			<div id="s53h-modal" class="modal">
@@ -185,9 +285,9 @@ TO-DO LIST:
 								<img src="images/s53h/home.png" />
 							</td>
 							<td>
-								<h5>
+								<p>
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet accumsan sapien, ut aliquet velit varius in. Praesent quis neque at ligula gravida tincidunt et vitae elit. In ac porta mi. Nunc ultricies mattis rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed congue mattis interdum. Nunc imperdiet lorem leo, ac malesuada dolor rutrum euismod. Vestibulum molestie faucibus purus, et faucibus sapien imperdiet id. In ut mollis mi, non vulputate est. Suspendisse sit amet aliquet ligula. Nunc quis interdum odio, eget varius risus. Sed eu mi et nulla ornare rutrum sit amet quis mauris. Quisque in sagittis nisi.
-								</h5>	
+								</p>	
 							</td>
 						</tr>
 					</table>
@@ -237,7 +337,7 @@ TO-DO LIST:
 		            			<img src="images/prantls/home.png" />
 		            		</td>
 		            		<td>
-		            			<h5><b>This was the first website I ever made.</b></h5>
+		            			<p><b>This was the first website I ever made.</b></p>
 		            			<p>
 		            				I'm really proud of it! This is a website for Prantl's Bakery, famous for its Burnt Almond Tortes. This website was created for IS course 67-250: Information Systems Milieux.
 		            			</p>
@@ -359,6 +459,13 @@ TO-DO LIST:
 			  // settings: "unslick"
 			  // instead of a settings object
 			]
+		});
+		$('.slideshow').slick({
+		  dots: true,
+		  infinite: true,
+		  speed: 500,
+		  fade: true,
+		  cssEase: 'linear'
 		});
 	});
 	$(function() {

@@ -46,6 +46,12 @@ a, p
     font-size: calc(12px + 0.2vw);
 }
 
+a
+{
+	color: inherit;
+	text-decoration: underline;
+}
+
 .image
 {
 	position:relative;
@@ -159,9 +165,19 @@ main > div
 #top-left
 {
 	position: fixed;
-	top: 3%;
+	top: 5%;
 	left: 4%;
 	z-index: 999;
+}
+
+#top-left h5
+{
+	margin-bottom: 15px;
+}
+
+#top-left p
+{
+	margin: 3px 0 3px 0;
 }
 
 #scroller
@@ -175,7 +191,7 @@ main > div
 {
 	position: fixed;
 	bottom: 10%;
-	right: 3%;
+	right: 1.5%;
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
 	-o-transform: rotate(90deg);
@@ -251,6 +267,11 @@ main > div
 table
 {
 	table-layout: fixed;
+}
+
+.projects-carousel p
+{
+	text-align: center;
 }
 
 footer
