@@ -10,9 +10,14 @@
 	padding: 1% 5%;
 }
 
+.modal td
+{
+	padding: 0 3% 0 3%;
+}
+
 .modal h1
 {
-	margin-top: 2%;
+	margin: 2% 0 6% 0;
 }
 
 .modal h2
@@ -22,7 +27,7 @@
 
 .modal h5
 {
-	padding: 1% 2% 1% 2%;
+	padding: 1% 0% 1% 0%;
 	text-align: justify;
 	line-height: 30px;
 }

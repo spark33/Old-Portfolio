@@ -224,12 +224,6 @@ main > div
 	padding-left: 10%;
 }
 
-#projects
-td
-{
-	text-align: center;
-}
-
 #about, #contact
 {
 	flex-direction: column;
