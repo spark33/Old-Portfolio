@@ -3,9 +3,9 @@
 
 @media screen and (max-width: 800px) {
 
-	#top-left
+	.modal td
 	{
-		position: absolute;
+		display: block;
 	}
 
 	#scroller, #bottom-right
@@ -19,7 +19,7 @@
 		padding-right: 5%;
 	}
 
-	#me
+	#me2
 	{
 		width: 18%;
 		left: 41%;
@@ -76,7 +76,7 @@
 		margin: 0 auto;
 	}
 
-	#me
+	#me2
 	{
 		width: 20%;
 		left: 40%;

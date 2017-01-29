@@ -1022,7 +1022,7 @@ if (jQuery) {
 
         // Set positioning for placeholder
         placeholder.css({
-          width: placeholder[0].getBoundingClientRect().width,
+          width: $(window).width(),
           height: placeholder[0].getBoundingClientRect().height,
           position: 'relative',
           top: 0,
@@ -1230,7 +1230,6 @@ if (jQuery) {
               }
             }
           });
-
         }
         });
 };

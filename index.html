@@ -48,7 +48,7 @@ TO-DO LIST:
 					<td colspan="2" style="text-align: center;">
 						<img id="me1" src="images/me1.jpg"/>
 					</td>
-					<td colspan="3" style="padding-left: 10%">
+					<td id="hi" colspan="3">
 						<h2>Hi!</h2>
 						<p>
 							I study Information Systems at <br/>
@@ -66,7 +66,7 @@ TO-DO LIST:
 		<div id="projects" class="section scrollspy">
 			<section class="projects-carousel slider">
 			    <div>
-			      <a class="modal-button" href="#scheduler-modal">
+			      <a class="modal-button" onclick="openModal()" href="#scheduler-modal">
 			      <div class="image">
 			        <img src="images/test.jpg"/>
 			      </div>
@@ -74,7 +74,7 @@ TO-DO LIST:
 			      <p>Scheduler</p>
 			    </div>
 			    <div>
-					<a class="modal-button" href="#s53h-modal">
+					<a class="modal-button" onclick="openModal()" href="#s53h-modal">
 					<div class="image">
 						<img src="images/test.jpg" />
 					</div>
@@ -82,7 +82,7 @@ TO-DO LIST:
 					<p>Seoul 53 Hotel</p>
 			    </div>
 			    <div>
-					<a class="modal-button" href="#soundbytes-modal">
+					<a class="modal-button" onclick="openModal()" href="#soundbytes-modal">
 					<div class="image">
 						<img src="images/test.jpg" />
 					</div>
@@ -90,7 +90,7 @@ TO-DO LIST:
 					<p>Soundbytes</p>
 			    </div>
 			    <div>
-					<a class="modal-button" href="#haydens-modal">
+					<a class="modal-button" onclick="openModal()" href="#haydens-modal">
 					<div class="image">
 						<img src="images/test.jpg" />
 					</div>
@@ -98,7 +98,7 @@ TO-DO LIST:
 					<p>Hayden's Shoes</p>
 			    </div>
 			    <div>
-					<a class="modal-button" href="#prantls-modal">
+					<a class="modal-button" onclick="openModal()" href="#prantls-modal">
 					<div class="image">
 						<img src="images/test.jpg" />
 					</div>
@@ -106,7 +106,7 @@ TO-DO LIST:
 					<p>Prantl's Bakery</p>
 			    </div>
 			    <div>
-					<a class="modal-button" href="#noobloop-modal">
+					<a class="modal-button" onclick="openModal()" href="#noobloop-modal">
 					<div class="image">
 						<img src="images/test.jpg" />
 					</div>
@@ -114,12 +114,28 @@ TO-DO LIST:
 					<p>NoobLoop</p>
 			    </div>
 			    <div>
-					<a class="modal-button" onclick="alert('coming soon')">
+					<a class="modal-button" onclick="openModal()" href="#probono-modal">
 					<div class="image">
 						<img src="images/test.jpg" />
 					</div>
 					</a>
-					<p>Another Project</p>
+					<p>UCC Pro-Bono Consulting</p>
+			    </div>
+			    <div>
+					<a class="modal-button" onclick="openModal()" href="#swapbox-modal">
+					<div class="image">
+						<img src="images/test.jpg" />
+					</div>
+					</a>
+					<p>Swapbox Database Design</p>
+			    </div>
+			    <div>
+					<a class="modal-button" onclick="openModal()" href="#chess_store-modal">
+					<div class="image">
+						<img src="images/test.jpg" />
+					</div>
+					</a>
+					<p>A&M Chess Store Application</p>
 			    </div>
 			</section>
 			<div id="scheduler-modal" class="modal">
@@ -231,7 +247,32 @@ TO-DO LIST:
 		            Insert NoobLoop Content
 		        </div>
 			</div>
+			<div id="probono-modal" class="modal">
+		        <div class="modal-close"> 
+		            <span>X</span>
+		        </div>
+		        <div class="modal-content">
+		            Insert Probono Content
+		        </div>
+			</div>
+			<div id="swapbox-modal" class="modal">
+		        <div class="modal-close"> 
+		            <span>X</span>
+		        </div>
+		        <div class="modal-content">
+		            Insert Swapbox Content
+		        </div>
+			</div>
+			<div id="chess_store-modal" class="modal">
+		        <div class="modal-close"> 
+		            <span>X</span>
+		        </div>
+		        <div class="modal-content">
+		            Insert Chess Store Content
+		        </div>
+			</div>
 		</div>
+
 		<div id="contact" class="section scrollspy">
 			<h3>Feel free to get in touch!</h3>
 			<br/><br/><br/>
@@ -273,57 +314,57 @@ TO-DO LIST:
 		$('.scrollspy').scrollSpy({
 			scrollOffset: 0
 		});
-      $(".projects-carousel").slick({
-        dots: true,
-        rows: 2,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-          // You can unslick at a given breakpoint now by adding:
-          // settings: "unslick"
-          // instead of a settings object
-        ]
-      });
+		$(".projects-carousel").slick({
+			dots: false,
+			rows: 2,
+			infinite: true,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			responsive: [
+			  {
+			    breakpoint: 1024,
+			    settings: {
+			      slidesToShow: 3,
+			      slidesToScroll: 3,
+			      infinite: true,
+			      dots: false,
+
+			    }
+			  },
+			  {
+			    breakpoint: 600,
+			    settings: {
+			      slidesToShow: 1,
+			      slidesToScroll: 1,
+			      rows: 1
+			    }
+			  }
+			  // You can unslick at a given breakpoint now by adding:
+			  // settings: "unslick"
+			  // instead of a settings object
+			]
+		});
 	});
 	$(function() {
 		$.scrollify({
 			section : ".scrollspy",
 			interstitialSection: "footer",
-			updateHash: false
+			updateHash: false,
+			setHeights: true
 		});
 		$('.modal').modal();
 	});
-	$('.modal-button').click(function() {
+	function openModal() {
 		$.scrollify.disable();
 		$('#projects').css('overflow-y','scroll');
-	});
-	$('.modal-close').click(function() {
+	};
+	function closeModal() {
 		$.scrollify.enable();
-	});
+		$('#projects').css('overflow-y','none');
+	};
+	$('.modal-close').click( function() {
+		closeModal();
+	})
 </script>
 </body>
 </html>
