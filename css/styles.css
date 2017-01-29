@@ -46,12 +46,6 @@ a, p
     font-size: calc(12px + 0.2vw);
 }
 
-a
-{
-	color: inherit;
-	text-decoration: underline;
-}
-
 .image
 {
 	position:relative;

@@ -38,6 +38,12 @@
 	font-size: 1.1em;
 }
 
+.modal a
+{
+	color: inherit;
+	text-decoration: underline;
+}
+
 .modal-content
 {
 	overflow-y: scroll !important;
