@@ -159,20 +159,30 @@ main > div
 #top-left
 {
 	position: fixed;
-	top: 5%;
-	left: 4%;
+	top: 6%;
+	left: 3%;
 	z-index: 999;
 }
+/*
+#top-right
+{
+	position: fixed;
+	top: 3%;
+	right: 4%;
+	z-index: 9999;
+	text-align: right;
+}
 
-#top-left h5
+#top-right h5
 {
 	margin-bottom: 15px;
 }
 
-#top-left p
+#top-right p
 {
 	margin: 3px 0 3px 0;
 }
+*/
 
 #scroller
 {
