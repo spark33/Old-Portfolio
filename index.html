@@ -5,6 +5,8 @@ TO-DO LIST:
 -sub-button animation
 -signature animation
 
+-modal section divider image
+
 -create separate page for social?
 -->
 
@@ -231,7 +233,7 @@ TO-DO LIST:
 
 					<h2>Implementation</h2>
 					<p>
-						To prioritize flexibility in data storage and access, I decided to use a <a href="https://docs.google.com/document/d/1k4ypLeFeJWAIR3cuGliVLN3EbZ980GqjUp6k5c-f8yc/edit?usp=sharing" target="_blank">NoSQL database</a> with AngularJS. Given the department's small size, denormalization was not a huge issue. The availability module and scheduler module use the <a href="https://fullcalendar.io/">FullCalendar</a> framework. The application is styled using <a href="http://materializecss.com/">Materialize</a>. The database was hosted on <a href="https://mlab.com/">MLab</a> and the app was hosted on <a href="https://www.heroku.com/home">Heroku</a>.
+						To prioritize flexibility in data storage and access, I decided to use a <a href="https://docs.google.com/document/d/1k4ypLeFeJWAIR3cuGliVLN3EbZ980GqjUp6k5c-f8yc/edit?usp=sharing" target="_blank">NoSQL database</a> with AngularJS. Given the department's small size, denormalization was not a huge issue. The availability module and scheduler module use the <a href="https://fullcalendar.io/">FullCalendar</a> framework. The application is styled using <a href="http://materializecss.com/">Materialize</a>. The MongoDB database was hosted on <a href="https://mlab.com/">MLab</a> and the app was hosted on <a href="https://www.heroku.com/home">Heroku</a>.
 					</p>
 
 					<div id="user-stories">
@@ -510,7 +512,8 @@ TO-DO LIST:
 		  infinite: true,
 		  speed: 500,
 		  fade: true,
-		  cssEase: 'linear'
+		  cssEase: 'linear',
+		  lazyLoad: 'ondemand'
 		});
 	});
 	$(function() {
