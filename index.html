@@ -59,9 +59,9 @@ TO-DO LIST:
 					</td>
 				</tr>
 			</table>
-			<p>
+			<h5>
 				<b>I’m a front-end developer <i>and</i> a problem solver.</b> I am passionate about understanding users to create beautiful and practical interfaces. From identifying problems and designing to implementing solutions, I strive to perfect my skills across the building process.<br/>
-			</p>
+			</h5>
 			<a href="#projects" class="button">Come check out what I’ve made!</a>
 		</div>
 		<div id="projects" class="section scrollspy">
@@ -156,7 +156,7 @@ TO-DO LIST:
 					<table>
 						<tr>
 							<td>
-								<img src="images/scheduler/avail.png" />
+								<img src="images/scheduler/schedule.png" />
 							</td>
 							<td>
 								<p><b>
@@ -164,6 +164,10 @@ TO-DO LIST:
 								</b></p>	
 								<p>
 									This application will be completed this Spring. We expect deployment to occur this Fall after several months of user testing.
+								</p>
+								<p>
+									<a href="http://tef-scheduler.herokuapp.com">Check out a prototype here.</a><br/>
+									<small>ID: seanpark PW: password</small>
 								</p>
 							</td>
 						</tr>
@@ -180,97 +184,135 @@ TO-DO LIST:
 						<img src="images/scheduler/schedule.png" />
 						<img src="images/scheduler/view_reports.png" />
 						<img src="images/scheduler/view_employees.png" />
+						<img src="images/scheduler/avail.png" />
 					</div>
 					<br/><br/>
+
+					<h2>User Interaction Design</h2>
+					<p>
+						The previous model keeps reports completely separate from the scheduling module. The Scheduler merges the reporting app with the scheduling app with shift-specific reports. This allows scalable development of data analysis tools on the same app.
+					</p>
+					<table>
+						<tr>
+							<td>
+								<img src="images/scheduler/avail.png" />
+							</td>
+							<td>
+								<p><b>User Profiles</b></p>
+								<p>
+									Unlike WhenToWork's separate availability module, the Scheduler does not require the user to open external windows to input availability. All necessary user information can be viewed and edited on one page.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/scheduler/schedule.png" />
+							</td>
+							<td>
+								<p><b>Scheduling Module</b></p>
+								<p>
+									On WhenToWork, all functions were done on separate web pages. Shifts had to be manually subbed by deletion and addition by a manager. This module allows the user to view the schedule by building, pick up shifts, assign subs and submit reports using one simple jQuery calendar. This eliminated extraneous e-mail communication and ~20 clicks for every shift change.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img src="images/scheduler/view_reports.png" />
+							</td>
+							<td>
+								<p><b>View Reports</b></p>
+								<p>
+									By displaying all reports on one view, the manager can simply scroll through reports instead of clicking on individual reports to read them.
+								</p>
+							</td>
+						</tr>
+
+					</table>
 
 					<h2>Implementation</h2>
 					<p>
 						To prioritize flexibility in data storage and access, I decided to use a <a href="https://docs.google.com/document/d/1k4ypLeFeJWAIR3cuGliVLN3EbZ980GqjUp6k5c-f8yc/edit?usp=sharing" target="_blank">NoSQL database</a> with AngularJS. Given the department's small size, denormalization was not a huge issue. The availability module and scheduler module use the <a href="https://fullcalendar.io/">FullCalendar</a> framework. The application is styled using <a href="http://materializecss.com/">Materialize</a>. The database was hosted on <a href="https://mlab.com/">MLab</a> and the app was hosted on <a href="https://www.heroku.com/home">Heroku</a>.
 					</p>
 
-					<h2>User Stories</h2>
-					<table id="user-stories">
-						<thead>
-						<tr>
-							<td><b>As a(n)...</b></td>
-							<td><b>I want to...</b></td>
-							<td><b>So that...</b></td>
-						</tr>
-						</thead>
-						<tbody>
+					<div id="user-stories">
+						<h2>User Stories</h2>
+						<table>
+							<thead>
 							<tr>
-								<td>Employee</td>
-								<td>Find a sub for my shift</td>
-								<td>I am not held accountable for an absence.</td>
+								<td><b>As a(n)...</b></td>
+								<td><b>I want to...</b></td>
+								<td><b>So that...</b></td>
 							</tr>
-							<tr>
-								<td>Employee</td>
-								<td>Upload my availability and preferences</td>
-								<td>I can get the shifts I want.</td>
-							</tr>
-							<tr>
-								<td>Employee</td>
-								<td>View all empty shifts</td>
-								<td>I can take an empty shift if I can.</td>
-							</tr>
-							<tr>
-								<td>Employee</td>
-								<td>Pick up a temporary shift</td>
-								<td>I can sub for someone else.</td>
-							</tr>
-							<tr>
-								<td>Employee</td>
-								<td>Submit shift report</td>
-								<td>I can report the work I've done.</td>
-							</tr>
-							<tr>
-								<td>Employee</td>
-								<td>Report equipment damage or supply shortage</td>
-								<td>I can notify staff.</td>
-							</tr>
-							<tr>
-								<td>Employee</td>
-								<td>View my personal shifts</td>
-								<td>I can figure out when I am working.</td>
-							</tr>
-							<tr>
-								<td>Employee</td>
-								<td>Keep up with my performance</td>
-								<td>I can figure out how I can be better.</td>
-							</tr>
-							<tr>
-								<td>Employee</td>
-								<td>Give TEFman and staff feedback</td>
-								<td>I can ask questions and help the department improve.</td>
-							</tr>
-							<tr>
-								<td>Manager</td>
-								<td>Search up all reports</td>
-								<td>i can follow up with my mentees if necessary.</td>
-							</tr>
-							<tr>
-								<td>Manager</td>
-								<td>Check employees' availabilities</td>
-								<td>so that I know who to give shifts to.</td>
-							</tr>
-							<tr>
-								<td>Manager</td>
-								<td>Monitor reported hours</td>
-								<td>so that I can make sure everyone is working all their shifts.</td>
-							</tr>
-							<tr>
-								<td>Manager</td>
-								<td>Submit mentoring reports</td>
-								<td>I can report progressing with mentoring mentees.</td>
-							</tr>
-						</tbody>
-					</table>
-
-					<h2>Specifications</h2>
-					<p>blah</p>
-
-					<h2>User Interaction Design</h2>
-					<p>blah</p>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Employee</td>
+									<td>Find a sub for my shift</td>
+									<td>I am not held accountable for an absence.</td>
+								</tr>
+								<tr>
+									<td>Employee</td>
+									<td>Upload my availability and preferences</td>
+									<td>I can get the shifts I want.</td>
+								</tr>
+								<tr>
+									<td>Employee</td>
+									<td>View all empty shifts</td>
+									<td>I can take an empty shift if I can.</td>
+								</tr>
+								<tr>
+									<td>Employee</td>
+									<td>Pick up a temporary shift</td>
+									<td>I can sub for someone else.</td>
+								</tr>
+								<tr>
+									<td>Employee</td>
+									<td>Submit shift report</td>
+									<td>I can report the work I've done.</td>
+								</tr>
+								<tr>
+									<td>Employee</td>
+									<td>Report equipment damage or supply shortage</td>
+									<td>I can notify staff.</td>
+								</tr>
+								<tr>
+									<td>Employee</td>
+									<td>View my personal shifts</td>
+									<td>I can figure out when I am working.</td>
+								</tr>
+								<tr>
+									<td>Employee</td>
+									<td>Keep up with my performance</td>
+									<td>I can figure out how I can be better.</td>
+								</tr>
+								<tr>
+									<td>Employee</td>
+									<td>Give TEFman and staff feedback</td>
+									<td>I can ask questions and help the department improve.</td>
+								</tr>
+								<tr>
+									<td>Manager</td>
+									<td>Search up all reports</td>
+									<td>i can follow up with my mentees if necessary.</td>
+								</tr>
+								<tr>
+									<td>Manager</td>
+									<td>Check employees' availabilities</td>
+									<td>so that I know who to give shifts to.</td>
+								</tr>
+								<tr>
+									<td>Manager</td>
+									<td>Monitor reported hours</td>
+									<td>so that I can make sure everyone is working all their shifts.</td>
+								</tr>
+								<tr>
+									<td>Manager</td>
+									<td>Submit mentoring reports</td>
+									<td>I can report progressing with mentoring mentees.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 		        </div>
 			</div>
 			<div id="s53h-modal" class="modal">
@@ -316,8 +358,11 @@ TO-DO LIST:
 		            			<img src="images/haydens/executive_home.png" />
 		            		</td>
 		            		<td>
+		            			<p><b>
+		            				Using Highcharts, I created a data analytics platform for a fictional shoe store.
+		            			</b></p>
 		            			<p>
-		            				Text text 
+		            				The platform displays different profile information and sales data for each type of user.
 		            			</p>
 		            			<a href="./haydens">Check it out here!</a>
 		            		</td>
@@ -339,7 +384,7 @@ TO-DO LIST:
 		            		<td>
 		            			<p><b>This was the first website I ever made.</b></p>
 		            			<p>
-		            				I'm really proud of it! This is a website for Prantl's Bakery, famous for its Burnt Almond Tortes. This website was created for IS course 67-250: Information Systems Milieux.
+		            				This is a website for Prantl's Bakery, famous for its Burnt Almond Tortes. This website was created for IS course 67-250: Information Systems Milieux.
 		            			</p>
 		            			<a href="./prantls">Check it out here!</a>
 		            		</td>

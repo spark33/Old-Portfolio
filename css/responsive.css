@@ -13,6 +13,11 @@
 		display: block;
 	}
 
+	#user-stories
+	{
+		display: none;
+	}
+
 	#scroller, #bottom-right
 	{
 		display: none;

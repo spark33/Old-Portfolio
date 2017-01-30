@@ -193,11 +193,6 @@ main > div
 	transform: rotate(90deg);
 }
 
-#landing
-{
-	height: 70vh;
-}
-
 #about, #projects, #contact
 {
 	padding-left: 25%;
@@ -206,7 +201,7 @@ main > div
 
 #about h5
 {
-	line-height: 7vh;
+	line-height: 8vh;
 	max-width: 100%;
 	text-align: justify;
 }
@@ -220,6 +215,11 @@ main > div
 #about table
 {
 	table-layout: fixed;
+}
+
+#about 
+{
+	text-align: justify;
 }
 
 #me1
@@ -282,5 +282,5 @@ footer
 .scrollspy
 {
 	position: relative;
-	max-height: 100vh !important;
+	max-height: 90vh !important;
 }

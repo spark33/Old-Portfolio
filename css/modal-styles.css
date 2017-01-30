@@ -30,7 +30,8 @@
 	margin-top: 6vh;
 }
 
-.modal a, p
+.modal a, 
+.modal p
 {
 	padding: 1% 0% 1% 0%;
 	text-align: justify;
