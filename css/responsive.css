@@ -87,6 +87,10 @@
 
 @media screen and (max-width: 700px) {
 
+	svg {
+		width: 50%;
+	}
+
 	#landing-subtitle
 	{
 		margin-top: 45%;
