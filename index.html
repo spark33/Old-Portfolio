@@ -1,11 +1,13 @@
 <!--
 
 TO-DO LIST:
--appear animations
+
+-add content for all modals
+-make modal images zoomable on click
+
 -sub-button animation
 -signature animation
-
--make modal images zoomable on click
+-loading animation
 
 -create separate page for social?
 -->
@@ -30,511 +32,599 @@ TO-DO LIST:
 	<link rel="stylesheet" type="text/css" href="css/scroll-button.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/slick-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/loader.css">
+
+	<link rel="stylesheet" type="text/css" href="css/test2.css">
 </head>
 
-<body>
-	<div id="top-left">
-		<img src="images/logo.png" width="100px"/>
+<body onload="preloader()">
+	<div id="loader">
+		<div aria-busy="true" aria-label="Loading" role="progressbar" class="container">
+		  <div class="swing">
+		    <div class="swing-l"></div>
+		    <div></div>
+		    <div></div>
+		    <div></div>
+		    <div></div>
+		    <div class="swing-r"></div>
+		  </div>
+		  <div class="shadow">
+		    <div class="shadow-l"></div>
+		    <div></div>
+		    <div></div>
+		    <div></div>
+		    <div></div>
+		    <div class="shadow-r"></div>
+		  </div>
+		 </div>
 	</div>
-	<!--
-	<div id="top-right">
-		<h5><b>Sean Park</b></h5>
-		<p>Developer / UX Designer</p>
-		<p>Student at Carnegie Mellon</p>
-	-->
-	</div>
-	<div id="bottom-right">
-		<p><i class="fa fa-copyright" aria-hidden="true" style="color: #26a69a"> </i> Sean Park 2017</p>
-	</div>
-	<main>
-		<div id="landing" class="section scrollspy">
-			<h1>Sean Park<br/><br/></h1>
-			<a class="scroll-button" href="#about"><small>Scroll</small><span></span><span></span><span></span></a>
+	<div id="main-site" style="display: none;">
+		<div id="top-left">
+			<a href="#landing"><img src="images/logo.png" width="100px"/></a>
 		</div>
-		<div id="about" class="section scrollspy">
-			<table>
-				<tr>
-					<td colspan="2" style="text-align: center;">
-						<img id="me1" src="images/me1.jpg"/>
-					</td>
-					<td id="hi" colspan="3">
-						<h2>Hi! I'm Sean.</h2>
-						<p>
-							I study Information Systems at <br/>
-							<b>Carnegie Mellon University.</b><br/><br/>
-							<i>Expected Graduation: May 2019</i>
-						</p>
-					</td>
-				</tr>
-			</table>
-			<h5>
-				<b>I’m a front-end developer <i>and</i> a problem solver.</b> I am passionate about understanding users to create beautiful and practical interfaces. From identifying problems and designing to implementing solutions, I strive to perfect my skills across the building process.<br/>
-			</h5>
-			<a href="#projects" class="button">Come check out what I’ve made!</a>
+		<!--
+		<div id="top-right">
+			<h5><b>Sean Park</b></h5>
+			<p>Developer / UX Designer</p>
+			<p>Student at Carnegie Mellon</p>
+		-->
+		<div id="bottom-right">
+			<p><i class="fa fa-copyright" aria-hidden="true" style="color: #26a69a"> </i> Sean Park 2017</p>
 		</div>
-		<div id="projects" class="section scrollspy">
-			<section class="projects-carousel slider">
-			    <div>
-			      <a class="modal-button" onclick="openModal()" href="#scheduler-modal">
-			      <div class="image">
-			        <img src="images/test.jpg"/>
-			      </div>
-			      </a>
-			      <p>Scheduler</p>
-			    </div>
-			    <div>
-					<a class="modal-button" onclick="openModal()" href="#s53h-modal">
-					<div class="image">
-						<img src="images/test.jpg" />
-					</div>
-					</a>
-					<p>Seoul 53 Hotel</p>
-			    </div>
-			    <div>
-					<a class="modal-button" onclick="openModal()" href="#soundbytes-modal">
-					<div class="image">
-						<img src="images/test.jpg" />
-					</div>
-					</a>
-					<p>Soundbytes</p>
-			    </div>
-			    <div>
-					<a class="modal-button" onclick="openModal()" href="#haydens-modal">
-					<div class="image">
-						<img src="images/test.jpg" />
-					</div>
-					</a>
-					<p>Hayden's Shoes</p>
-			    </div>
-			    <div>
-					<a class="modal-button" onclick="openModal()" href="#prantls-modal">
-					<div class="image">
-						<img src="images/test.jpg" />
-					</div>
-					</a>
-					<p>Prantl's Bakery</p>
-			    </div>
-			    <div>
-					<a class="modal-button" onclick="openModal()" href="#noobloop-modal">
-					<div class="image">
-						<img src="images/test.jpg" />
-					</div>
-					</a>
-					<p>NoobLoop</p>
-			    </div>
-			    <div>
-					<a class="modal-button" onclick="openModal()" href="#probono-modal">
-					<div class="image">
-						<img src="images/test.jpg" />
-					</div>
-					</a>
-					<p>UCC Consulting</p>
-			    </div>
-			    <div>
-					<a class="modal-button" onclick="openModal()" href="#swapbox-modal">
-					<div class="image">
-						<img src="images/test.jpg" />
-					</div>
-					</a>
-					<p>Swapbox Database</p>
-			    </div>
-			    <div>
-					<a class="modal-button" onclick="openModal()" href="#chess_store-modal">
-					<div class="image">
-						<img src="images/test.jpg" />
-					</div>
-					</a>
-					<p>A&M Chess Store</p>
-			    </div>
-			    <div>
-					<a class="modal-button" onclick="openModal()" href="#this-modal">
-					<div class="image">
-						<img src="images/test.jpg" />
-					</div>
-					</a>
-					<p>This Website</p>
-			    </div>
-			</section>
-			<div id="scheduler-modal" class="modal">
-		        <div class="modal-close"> 
-		            <span>X</span>
-		        </div>
-		        <div class="modal-content">
-		        	<h1>TEF Scheduler</h1>
-					<table>
-						<tr>
-							<td>
-								<img src="images/scheduler/schedule.png" />
-							</td>
-							<td>
-								<p><b>
-									I am a personnel manager for CMU's Computing Services. I created the TEF Scheduler to centralize all of TEF's software with enhanced user experience and functionality and replace the old WhenToWork system.
-								</b></p>	
-								<p>
-									This application will be completed this Spring. We expect deployment to occur this Fall after several months of user testing.
-								</p>
-								<!--
-								<p>
-									<a href="http://tef-scheduler.herokuapp.com">Check out a prototype here.</a><br/>
-									<small>ID: seanpark PW: password</small>
-								</p>
-								-->
-							</td>
-						</tr>
-					</table>
-					<img class="divider" src="images/divider.png">
-					<h2>User Interaction Design</h2>
-					<p>
-						Currently, my department uses <a href="http://www.whentowork.com">WhenToWork</a> to schedule employee shifts, Google Sheets to monitor hour logs and a custom LAMP app for employees to submit reports. Every shift change is made by an administrator who is informed by employees by e-mail, leading to flooded inboxes and many missed shift changes. No employee management system caters to student employees' short shifts and unpredictability in schedules.
-					</p>
-					<p><b>
-						TEF Scheduler was designed to maximize automation and flexibility in scheduling. </b>It makes shifting easier for students while giving administrator a bird's eye view of all shifts and reports. In the future, it will also support data analytics and trend analysis.
-					</p>
-					<p>
-						The previous model keeps reports completely separate from the scheduling module. The Scheduler merges the reporting app with the scheduling app with shift-specific reports. This allows scalable development of data analysis tools on the same app.
-					</p>
-					<table>
-						<tr>
-							<td>
-								<img src="images/scheduler/avail.png" />
-							</td>
-							<td>
-								<p><b>User Profiles</b></p>
-								<p>
-									Unlike WhenToWork's separate availability module, the Scheduler does not require the user to open external windows to input availability. All necessary user information can be viewed and edited on one page.
-								</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<img src="images/scheduler/schedule.png" />
-							</td>
-							<td>
-								<p><b>Scheduling Module</b></p>
-								<p>
-									On WhenToWork, all functions were done on separate web pages. Shifts had to be manually subbed by deletion and addition by a manager. This module allows the user to view the schedule by building, pick up shifts, assign subs and submit reports using one simple jQuery calendar. This eliminated extraneous e-mail communication and ~20 clicks for every shift change.
-								</p>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<img src="images/scheduler/view_reports.png" />
-							</td>
-							<td>
-								<p><b>View Reports</b></p>
-								<p>
-									By displaying all reports on one view, the manager can simply scroll through reports instead of clicking on individual reports to read them.
-								</p>
-							</td>
-						</tr>
-
-					</table>
-					<img class="divider" src="images/divider.png">
-					<h2>Implementation</h2>
-					<p>
-						To prioritize flexibility in data storage and access, I decided to use a <a href="https://docs.google.com/document/d/1k4ypLeFeJWAIR3cuGliVLN3EbZ980GqjUp6k5c-f8yc/edit?usp=sharing" target="_blank">NoSQL database</a> with AngularJS. Given the department's small size, denormalization was not a huge issue. The availability module and scheduler module use the <a href="https://fullcalendar.io/">FullCalendar</a> framework. The application is styled using <a href="http://materializecss.com/">Materialize</a>. The MongoDB database was hosted on <a href="https://mlab.com/">MLab</a> and the app was hosted on <a href="https://www.heroku.com/home">Heroku</a>.
-					</p>
-					<img class="divider" src="images/divider.png">
-					<div id="user-stories">
-						<h2>User Stories</h2>
+		<main>
+			<div id="landing" class="section scrollspy">
+				<h1 id="name">Sean Park<br/><br/></h1>
+				<div class="main_animation"></div>
+				<a class="scroll-button" href="#about"><small>Scroll</small><span></span><span></span><span></span></a>
+			</div>
+			<div id="about" class="section scrollspy">
+				<table>
+					<tr>
+						<td colspan="2" style="text-align: center;">
+							<img id="me1" src="images/me1.jpg"/>
+						</td>
+						<td id="hi" colspan="3">
+							<h2>Hi! I'm Sean.</h2>
+							<p>
+								I study Information Systems at <br/>
+								<b>Carnegie Mellon University.</b><br/><br/>
+								<i>Expected Graduation: May 2019</i>
+							</p>
+						</td>
+					</tr>
+				</table>
+				<h5>
+					<b>I’m a front-end developer <i>and</i> a problem solver.</b> I am passionate about understanding users to create beautiful and practical interfaces. From identifying problems and designing to implementing solutions, I strive to perfect my skills across the building process.<br/>
+				</h5>
+				<a href="#projects" class="button">Come check out what I’ve made!</a>
+			</div>
+			<div id="projects" class="section scrollspy">
+				<section class="projects-carousel slider">
+				    <div>
+				      <a class="modal-button" onclick="openModal()" href="#scheduler-modal">
+				      <div class="image">
+				        <img src="images/test.jpg"/>
+				      </div>
+				      </a>
+				      <p>Scheduler</p>
+				    </div>
+				    <div>
+						<a class="modal-button" onclick="openModal()" href="#soundbytes-modal">
+						<div class="image">
+							<img src="images/test.jpg" />
+						</div>
+						</a>
+						<p>Soundbytes</p>
+				    </div>
+				    <div>
+						<a class="modal-button" onclick="openModal()" href="#s53h-modal">
+						<div class="image">
+							<img src="images/test.jpg" />
+						</div>
+						</a>
+						<p>Seoul 53 Hotel</p>
+				    </div>
+				    <div>
+						<a class="modal-button" onclick="openModal()" href="#haydens-modal">
+						<div class="image">
+							<img src="images/test.jpg" />
+						</div>
+						</a>
+						<p>Hayden's Shoes</p>
+				    </div>
+				    <div>
+						<a class="modal-button" onclick="openModal()" href="#chess_store-modal">
+						<div class="image">
+							<img src="images/test.jpg" />
+						</div>
+						</a>
+						<p>A&M Chess Store</p>
+				    </div>
+				    <div>
+						<a class="modal-button" onclick="openModal()" href="#noobloop-modal">
+						<div class="image">
+							<img src="images/test.jpg" />
+						</div>
+						</a>
+						<p>NoobLoop</p>
+				    </div>
+				    <div>
+						<a class="modal-button" onclick="openModal()" href="#probono-modal">
+						<div class="image">
+							<img src="images/test.jpg" />
+						</div>
+						</a>
+						<p>UCC Consulting</p>
+				    </div>
+				    <div>
+						<a class="modal-button" onclick="openModal()" href="#swapbox-modal">
+						<div class="image">
+							<img src="images/test.jpg" />
+						</div>
+						</a>
+						<p>Swapbox Database</p>
+				    </div>
+				    <div>
+						<a class="modal-button" onclick="openModal()" href="#prantls-modal">
+						<div class="image">
+							<img src="images/test.jpg" />
+						</div>
+						</a>
+						<p>Prantl's Bakery</p>
+				    </div>
+				    <div>
+						<a class="modal-button" onclick="openModal()" href="#this-modal">
+						<div class="image">
+							<img src="images/test.jpg" />
+						</div>
+						</a>
+						<p>This Website</p>
+				    </div>
+				</section>
+				<div id="scheduler-modal" class="modal">
+			        <div class="modal-close"> 
+			            <span>&times;</span>
+			        </div>
+			        <div class="modal-content">
+			        	<h1>TEF Scheduler</h1>
 						<table>
-							<thead>
 							<tr>
-								<td><b>As a(n)...</b></td>
-								<td><b>I want to...</b></td>
-								<td><b>So that...</b></td>
+								<td>
+									<img src="images/scheduler/schedule.png" />
+								</td>
+								<td>
+									<p><b>
+										I am a personnel manager for CMU's Computing Services. I created the TEF Scheduler to centralize all of TEF's software with enhanced user experience and functionality and replace the old WhenToWork system.
+									</b></p>	
+									<p>
+										This application will be completed this Spring. We expect deployment to occur this Fall after several months of user testing.
+									</p>
+									<!--
+									<p>
+										<a href="http://tef-scheduler.herokuapp.com">Check out a prototype here.</a><br/>
+										<small>ID: seanpark PW: password</small>
+									</p>
+									-->
+								</td>
 							</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Employee</td>
-									<td>Find a sub for my shift</td>
-									<td>I am not held accountable for an absence.</td>
-								</tr>
-								<tr>
-									<td>Employee</td>
-									<td>Upload my availability and preferences</td>
-									<td>I can get the shifts I want.</td>
-								</tr>
-								<tr>
-									<td>Employee</td>
-									<td>View all empty shifts</td>
-									<td>I can take an empty shift if I can.</td>
-								</tr>
-								<tr>
-									<td>Employee</td>
-									<td>Pick up a temporary shift</td>
-									<td>I can sub for someone else.</td>
-								</tr>
-								<tr>
-									<td>Employee</td>
-									<td>Submit shift report</td>
-									<td>I can report the work I've done.</td>
-								</tr>
-								<tr>
-									<td>Employee</td>
-									<td>Report equipment damage or supply shortage</td>
-									<td>I can notify staff.</td>
-								</tr>
-								<tr>
-									<td>Employee</td>
-									<td>View my personal shifts</td>
-									<td>I can figure out when I am working.</td>
-								</tr>
-								<tr>
-									<td>Employee</td>
-									<td>Keep up with my performance</td>
-									<td>I can figure out how I can be better.</td>
-								</tr>
-								<tr>
-									<td>Employee</td>
-									<td>Give TEFman and staff feedback</td>
-									<td>I can ask questions and help the department improve.</td>
-								</tr>
-								<tr>
-									<td>Manager</td>
-									<td>Search up all reports</td>
-									<td>i can follow up with my mentees if necessary.</td>
-								</tr>
-								<tr>
-									<td>Manager</td>
-									<td>Check employees' availabilities</td>
-									<td>so that I know who to give shifts to.</td>
-								</tr>
-								<tr>
-									<td>Manager</td>
-									<td>Monitor reported hours</td>
-									<td>so that I can make sure everyone is working all their shifts.</td>
-								</tr>
-								<tr>
-									<td>Manager</td>
-									<td>Submit mentoring reports</td>
-									<td>I can report progressing with mentoring mentees.</td>
-								</tr>
-							</tbody>
 						</table>
-					</div>
-		        </div>
-			</div>
-			<div id="s53h-modal" class="modal">
-		        <div class="modal-close"> 
-		            <span>X</span>
-		        </div>
-		        <div class="modal-content">
-		            <h1>Seoul 53 Hotel Website</h1>
-		            <table>
-						<tr>
-							<td>
-								<img src="images/s53h/home.png" />
-							</td>
-							<td>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet accumsan sapien, ut aliquet velit varius in. Praesent quis neque at ligula gravida tincidunt et vitae elit. In ac porta mi. Nunc ultricies mattis rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed congue mattis interdum. Nunc imperdiet lorem leo, ac malesuada dolor rutrum euismod. Vestibulum molestie faucibus purus, et faucibus sapien imperdiet id. In ut mollis mi, non vulputate est. Suspendisse sit amet aliquet ligula. Nunc quis interdum odio, eget varius risus. Sed eu mi et nulla ornare rutrum sit amet quis mauris. Quisque in sagittis nisi.
-								</p>	
-							</td>
-						</tr>
-					</table>
-					<img src="images/s53h/about.png" />
-					<img src="images/s53h/rooms.png" />
-					<img src="images/s53h/draft1.png" />
-		        </div>
-			</div>
-			<div id="soundbytes-modal" class="modal">
-		        <div class="modal-close"> 
-		            <span>X</span>
-		        </div>
-		        <div class="modal-content">
-		            Insert Soundbytes Content
-		        </div>
-			</div>
-			<div id="haydens-modal" class="modal">
-		        <div class="modal-close"> 
-		            <span>X</span>
-		        </div>
-		        <div class="modal-content">
-		           	<h1>Hayden's Shoes Data Platform</h1>
-		            <table>
-		            	<tr>
-		            		<td>
-		            			<img src="images/haydens/executive_home.png" />
-		            		</td>
-		            		<td>
-		            			<p><b>
-		            				Using Highcharts, I created a data analytics platform for a fictional shoe store.
-		            			</b></p>
-		            			<p>
-		            				The platform displays different profile information and sales data for each type of user.
-		            			</p>
-		            			<a href="./haydens">Check it out here!</a>
-		            		</td>
-		            	</tr>
-		            </table>
-		        </div>
-			</div>
-			<div id="prantls-modal" class="modal">
-		        <div class="modal-close"> 
-		            <span>X</span>
-		        </div>
-		        <div class="modal-content">
-		            <h1>Prantl's Bakery Website</h1>
-		            <table>
-		            	<tr>
-		            		<td>
-		            			<img src="images/prantls/home.png" />
-		            		</td>
-		            		<td>
-		            			<p><b>This was the first website I ever made.</b></p>
-		            			<p>
-		            				This is a website for Prantl's Bakery, famous for its Burnt Almond Tortes. This website was created for IS course 67-250: Information Systems Milieux.
-		            			</p>
-		            			<a href="./prantls">Check it out here!</a>
-		            		</td>
-		            	</tr>
-		            </table>
-		        </div>
-			</div>
-			<div id="noobloop-modal" class="modal">
-		        <div class="modal-close"> 
-		            <span>X</span>
-		        </div>
-		        <div class="modal-content">
-		            Insert NoobLoop Content
-		        </div>
-			</div>
-			<div id="probono-modal" class="modal">
-		        <div class="modal-close"> 
-		            <span>X</span>
-		        </div>
-		        <div class="modal-content">
-		            Insert Probono Content
-		        </div>
-			</div>
-			<div id="swapbox-modal" class="modal">
-		        <div class="modal-close"> 
-		            <span>X</span>
-		        </div>
-		        <div class="modal-content">
-		            Insert Swapbox Content
-		        </div>
-			</div>
-			<div id="chess_store-modal" class="modal">
-		        <div class="modal-close"> 
-		            <span>X</span>
-		        </div>
-		        <div class="modal-content">
-		            Insert Chess Store Content
-		        </div>
-			</div>
-			<div id="this-modal" class="modal">
-		        <div class="modal-close"> 
-		            <span>X</span>
-		        </div>
-		        <div class="modal-content">
-		            Insert Content for this website
-		        </div>
-			</div>
-		</div>
+						<img class="divider" src="images/divider.png">
+						<h2>User Interaction Design</h2>
+						<p>
+							Currently, my department uses <a href="http://www.whentowork.com">WhenToWork</a> to schedule employee shifts, Google Sheets to monitor hour logs and a custom LAMP app for employees to submit reports. Every shift change is made by an administrator who is informed by employees by e-mail, leading to flooded inboxes and many missed shift changes. No employee management system caters to student employees' short shifts and unpredictability in schedules.
+						</p>
+						<p><b>
+							TEF Scheduler was designed to maximize automation and flexibility in scheduling. </b>It makes shifting easier for students while giving administrator a bird's eye view of all shifts and reports. In the future, it will also support data analytics and trend analysis.
+						</p>
+						<p>
+							The previous model keeps reports completely separate from the scheduling module. The Scheduler merges the reporting app with the scheduling app with shift-specific reports. This allows scalable development of data analysis tools on the same app.
+						</p>
+						<table>
+							<tr>
+								<td>
+									<img src="images/scheduler/avail.png" />
+								</td>
+								<td>
+									<p><b>User Profiles</b></p>
+									<p>
+										Unlike WhenToWork's separate availability module, the Scheduler does not require the user to open external windows to input availability. All necessary user information can be viewed and edited on one page.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/scheduler/schedule.png" />
+								</td>
+								<td>
+									<p><b>Scheduling Module</b></p>
+									<p>
+										On WhenToWork, all functions were done on separate web pages. Shifts had to be manually subbed by deletion and addition by a manager. This module allows the user to view the schedule by building, pick up shifts, assign subs and submit reports using one simple jQuery calendar. This eliminated extraneous e-mail communication and ~20 clicks for every shift change.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/scheduler/view_reports.png" />
+								</td>
+								<td>
+									<p><b>View Reports</b></p>
+									<p>
+										By displaying all reports on one view, the manager can simply scroll through reports instead of clicking on individual reports to read them.
+									</p>
+								</td>
+							</tr>
 
-		<div id="contact" class="section scrollspy">
-			<h3>Feel free to get in touch!</h3>
-			<br/><br/><br/>
-			<div>
-				<p><i class="fa fa-fw fa-phone" aria-hidden="true"> </i> <span>(412) 265 - 8129</span></p>
-				<p><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> <span>spark3@andrew.cmu.edu</span></p>
-				<p><i class="fa fa-fw fa-github" aria-hidden="true"> </i> <span>/spark33</span></p>
-				<p><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> <span>/spark6</span></p>
+						</table>
+						<img class="divider" src="images/divider.png">
+						<h2>Implementation</h2>
+						<p>
+							To prioritize flexibility in data storage and access, I decided to use a <a href="https://docs.google.com/document/d/1k4ypLeFeJWAIR3cuGliVLN3EbZ980GqjUp6k5c-f8yc/edit?usp=sharing" target="_blank">NoSQL database</a> with AngularJS. Given the department's small size, denormalization was not a huge issue. The availability module and scheduler module use the <a href="https://fullcalendar.io/">FullCalendar</a> framework. The application is styled using <a href="http://materializecss.com/">Materialize</a>. The MongoDB database was hosted on <a href="https://mlab.com/">MLab</a> and the app was hosted on <a href="https://www.heroku.com/home">Heroku</a>.
+						</p>
+						<div id="user-stories">
+							<img class="divider" src="images/divider.png">
+							<br/>
+							<h2>User Stories</h2>
+							<table>
+								<thead>
+								<tr>
+									<td><b>As a(n)...</b></td>
+									<td><b>I want to...</b></td>
+									<td><b>So that...</b></td>
+								</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Employee</td>
+										<td>Find a sub for my shift</td>
+										<td>I am not held accountable for an absence.</td>
+									</tr>
+									<tr>
+										<td>Employee</td>
+										<td>Upload my availability and preferences</td>
+										<td>I can get the shifts I want.</td>
+									</tr>
+									<tr>
+										<td>Employee</td>
+										<td>View all empty shifts</td>
+										<td>I can take an empty shift if I can.</td>
+									</tr>
+									<tr>
+										<td>Employee</td>
+										<td>Pick up a temporary shift</td>
+										<td>I can sub for someone else.</td>
+									</tr>
+									<tr>
+										<td>Employee</td>
+										<td>Submit shift report</td>
+										<td>I can report the work I've done.</td>
+									</tr>
+									<tr>
+										<td>Employee</td>
+										<td>Report equipment damage or supply shortage</td>
+										<td>I can notify staff.</td>
+									</tr>
+									<tr>
+										<td>Employee</td>
+										<td>View my personal shifts</td>
+										<td>I can figure out when I am working.</td>
+									</tr>
+									<tr>
+										<td>Employee</td>
+										<td>Keep up with my performance</td>
+										<td>I can figure out how I can be better.</td>
+									</tr>
+									<tr>
+										<td>Employee</td>
+										<td>Give TEFman and staff feedback</td>
+										<td>I can ask questions and help the department improve.</td>
+									</tr>
+									<tr>
+										<td>Manager</td>
+										<td>Search up all reports</td>
+										<td>i can follow up with my mentees if necessary.</td>
+									</tr>
+									<tr>
+										<td>Manager</td>
+										<td>Check employees' availabilities</td>
+										<td>so that I know who to give shifts to.</td>
+									</tr>
+									<tr>
+										<td>Manager</td>
+										<td>Monitor reported hours</td>
+										<td>so that I can make sure everyone is working all their shifts.</td>
+									</tr>
+									<tr>
+										<td>Manager</td>
+										<td>Submit mentoring reports</td>
+										<td>I can report progressing with mentoring mentees.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+			        </div>
+				</div>
+				<div id="s53h-modal" class="modal">
+			        <div class="modal-close"> 
+			            <span>&times;</span>
+			        </div>
+			        <div class="modal-content">
+			            <h1>Seoul 53 Hotel Website</h1>
+			            <table>
+							<tr>
+								<td>
+									<img src="images/s53h/home.png" />
+								</td>
+								<td>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet accumsan sapien, ut aliquet velit varius in. Praesent quis neque at ligula gravida tincidunt et vitae elit. In ac porta mi. Nunc ultricies mattis rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed congue mattis interdum. Nunc imperdiet lorem leo, ac malesuada dolor rutrum euismod. Vestibulum molestie faucibus purus, et faucibus sapien imperdiet id. In ut mollis mi, non vulputate est. Suspendisse sit amet aliquet ligula. Nunc quis interdum odio, eget varius risus. Sed eu mi et nulla ornare rutrum sit amet quis mauris. Quisque in sagittis nisi.
+									</p>	
+								</td>
+							</tr>
+						</table>
+						<img src="images/s53h/about.png" />
+						<img src="images/s53h/rooms.png" />
+						<img src="images/s53h/draft1.png" />
+			        </div>
+				</div>
+				<div id="soundbytes-modal" class="modal">
+			        <div class="modal-close"> 
+			            <span>&times;</span>
+			        </div>
+			        <div class="modal-content">
+			            Insert Soundbytes Content
+			        </div>
+				</div>
+				<div id="haydens-modal" class="modal">
+			        <div class="modal-close"> 
+			            <span>&times;</span>
+			        </div>
+			        <div class="modal-content">
+			           	<h1>Hayden's Shoes Data Platform</h1>
+			            <table>
+			            	<tr>
+			            		<td>
+			            			<img src="images/haydens/executive_home.png" />
+			            		</td>
+			            		<td>
+			            			<p><b>
+			            				Using Highcharts, I created a data analytics platform for a fictional shoe store.
+			            			</b></p>
+			            			<p>
+			            				The platform displays different profile information and sales data for each type of user.
+			            			</p>
+			            			<a href="./haydens">Check it out here!</a>
+			            		</td>
+			            	</tr>
+			            </table>
+			        </div>
+				</div>
+				<div id="prantls-modal" class="modal">
+			        <div class="modal-close"> 
+			            <span>&times;</span>
+			        </div>
+			        <div class="modal-content">
+			            <h1>Prantl's Bakery Website</h1>
+			            <table>
+			            	<tr>
+			            		<td>
+			            			<img src="images/prantls/home.png" />
+			            		</td>
+			            		<td>
+			            			<p><b>This was the first website I ever made.</b></p>
+			            			<p>
+			            				This is a website for Prantl's Bakery, famous for its Burnt Almond Tortes. This website was created for IS course 67-250: Information Systems Milieux.
+			            			</p>
+			            			<a href="./prantls">Check it out here!</a>
+			            		</td>
+			            	</tr>
+			            </table>
+			        </div>
+				</div>
+				<div id="noobloop-modal" class="modal">
+			        <div class="modal-close"> 
+			            <span>&times;</span>
+			        </div>
+			        <div class="modal-content">
+			            Insert NoobLoop Content
+			        </div>
+				</div>
+				<div id="probono-modal" class="modal">
+			        <div class="modal-close"> 
+			            <span>&times;</span>
+			        </div>
+			        <div class="modal-content">
+			            Insert Probono Content
+			        </div>
+				</div>
+				<div id="swapbox-modal" class="modal">
+			        <div class="modal-close"> 
+			            <span>&times;</span>
+			        </div>
+			        <div class="modal-content">
+			            Insert Swapbox Content
+			        </div>
+				</div>
+				<div id="chess_store-modal" class="modal">
+			        <div class="modal-close"> 
+			            <span>&times;</span>
+			        </div>
+			        <div class="modal-content">
+			            Insert Chess Store Content
+			        </div>
+				</div>
+				<div id="this-modal" class="modal">
+			        <div class="modal-close"> 
+			            <span>&times;</span>
+			        </div>
+			        <div class="modal-content">
+			            Insert Content for this website
+			        </div>
+				</div>
 			</div>
-			<img id="me2" src="images/me2.png" />
-		</div>
 
-		<!-- FOOTER AS DIV FOR SCROLLING-->
-		<footer class="scrollspy">
-			<a href="#landing" class="button">Back to Top</a>
-			<br/><br/><br/>
-			<p>Made <span style="color: #26a69a;"><i class="tiny material-icons">volume_up</i></span> by Sean Park</p>
-        	<p>spark3@andrew.cmu.edu</p>
-	    </footer>
-	</main>
+			<div id="contact" class="section scrollspy">
+				<h3>Feel free to get in touch!</h3>
+				<br/><br/><br/>
+				<div>
+					<p><i class="fa fa-fw fa-phone" aria-hidden="true"> </i> <span>(412) 265 - 8129</span></p>
+					<p><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> <span>spark3@andrew.cmu.edu</span></p>
+					<p><i class="fa fa-fw fa-github" aria-hidden="true"> </i> <span>/spark33</span></p>
+					<p><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> <span>/spark6</span></p>
+				</div>
+				<img id="me2" src="images/me2.png" />
+			</div>
 
-	<div id="scroller" class="col m3 l2">
-      <ul class="section table-of-contents">
-        <li><a href="#landing">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-        <li><a href="resume.pdf" target="_blank">Resume</a></li>
-      </ul>
-    </div>
+			<!-- FOOTER AS DIV FOR SCROLLING-->
+			<footer class="scrollspy">
+				<a href="#landing" class="button">Back to Top</a>
+				<br/><br/><br/>
+				<p>Made <span style="color: #26a69a;"><i class="tiny material-icons">volume_up</i></span> by Sean Park</p>
+	        	<p>spark3@andrew.cmu.edu</p>
+		    </footer>
+		</main>
 
-<!-- SCRIPTS -->
-<script src="jquery-3.1.1.js"></script>
-<script type="text/javascript" src="materialize/js/materialize.js"></script>
-<script type="text/javascript" src="scrollify/jquery.scrollify.js"></script>
-<script type="text/javascript" src="slick/slick.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('.scrollspy').scrollSpy({
-			scrollOffset: 0
+		<div id="scroller" class="col m3 l2">
+	      <ul class="section table-of-contents">
+	        <li><a href="#landing">Home</a></li>
+	        <li><a href="#about">About Me</a></li>
+	        <li><a href="#projects">Projects</a></li>
+	        <li><a href="#contact">Contact Me</a></li>
+	        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+	      </ul>
+	    </div>
+	</div>
+	<!-- SCRIPTS -->
+	<script src="jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="materialize/js/materialize.js"></script>
+	<script type="text/javascript" src="scrollify/jquery.scrollify.js"></script>
+	<script type="text/javascript" src="slick/slick.js"></script>
+	<script type="text/javascript">
+		/*
+		$(document).ready(function(){
+			$('.scrollspy').scrollSpy({
+				scrollOffset: 0
+			});
+			/*
+			$.scrollify({
+				section : "#main-site.scrollspy",
+				interstitialSection: "footer",
+				updateHash: false
+			});
+
+			$(".projects-carousel").slick({
+				dots: false,
+				rows: 2,
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				responsive: [
+				  {
+				    breakpoint: 1024,
+				    settings: {
+				      slidesToShow: 3,
+				      slidesToScroll: 3,
+				      infinite: true,
+				      dots: false,
+
+				    }
+				  },
+				  {
+				    breakpoint: 600,
+				    settings: {
+				      slidesToShow: 1,
+				      slidesToScroll: 1,
+				      rows: 1
+				    }
+				  }
+				  // You can unslick at a given breakpoint now by adding:
+				  // settings: "unslick"
+				  // instead of a settings object
+				]
+			});
+			$('.slideshow').slick({
+			  dots: true,
+			  infinite: true,
+			  speed: 500,
+			  fade: true,
+			  cssEase: 'linear',
+			  lazyLoad: 'ondemand'
+			});
 		});
-		$(".projects-carousel").slick({
-			dots: false,
-			rows: 2,
-			infinite: true,
-			slidesToShow: 3,
-			slidesToScroll: 3,
-			responsive: [
-			  {
-			    breakpoint: 1024,
-			    settings: {
-			      slidesToShow: 3,
-			      slidesToScroll: 3,
-			      infinite: true,
-			      dots: false,
+		*/
+		$(function() {
+			$('.modal').modal();
+		});
+		function openModal() {
+			$.scrollify.disable();
+			$('#projects').css('overflow-y','scroll');
+		};
+		function closeModal() {
+			$.scrollify.enable();
+			$('#projects').css('overflow-y','none');
+		};
+		$('.modal-close').click( function() {
+			closeModal();
+		})
+		
+		//SITE PRELOADER
 
-			    }
-			  },
-			  {
-			    breakpoint: 600,
-			    settings: {
-			      slidesToShow: 1,
-			      slidesToScroll: 1,
-			      rows: 1
-			    }
-			  }
-			  // You can unslick at a given breakpoint now by adding:
-			  // settings: "unslick"
-			  // instead of a settings object
-			]
-		});
-		$('.slideshow').slick({
-		  dots: true,
-		  infinite: true,
-		  speed: 500,
-		  fade: true,
-		  cssEase: 'linear',
-		  lazyLoad: 'ondemand'
-		});
-	});
-	$(function() {
-		$.scrollify({
-			section : ".scrollspy",
-			interstitialSection: "footer",
-			updateHash: false,
-			setHeights: true
-		});
-		$('.modal').modal();
-	});
-	function openModal() {
-		$.scrollify.disable();
-		$('#projects').css('overflow-y','scroll');
-	};
-	function closeModal() {
-		$.scrollify.enable();
-		$('#projects').css('overflow-y','none');
-	};
-	$('.modal-close').click( function() {
-		closeModal();
-	})
-</script>
+		function preloader() {
+		  var loader = setTimeout(showPage, 3500);
+		}
+
+		function showPage() {
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("main-site").style.display = "block";
+			$('.scrollspy').scrollSpy({
+				scrollOffset: 0
+			});
+			/*
+			$.scrollify({
+				section : "#main-site.scrollspy",
+				interstitialSection: "footer",
+				updateHash: false
+			});
+			*/
+
+			$(".projects-carousel").slick({
+				dots: false,
+				rows: 2,
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				responsive: [
+				  {
+				    breakpoint: 1024,
+				    settings: {
+				      slidesToShow: 3,
+				      slidesToScroll: 3,
+				      infinite: true,
+				      dots: false,
+
+				    }
+				  },
+				  {
+				    breakpoint: 600,
+				    settings: {
+				      slidesToShow: 1,
+				      slidesToScroll: 1,
+				      rows: 1
+				    }
+				  }
+				  // You can unslick at a given breakpoint now by adding:
+				  // settings: "unslick"
+				  // instead of a settings object
+				]
+			});
+			$('.slideshow').slick({
+			  dots: true,
+			  infinite: true,
+			  speed: 500,
+			  fade: true,
+			  cssEase: 'linear',
+			  lazyLoad: 'ondemand'
+			});
+		}
+	</script>
 </body>
 </html>

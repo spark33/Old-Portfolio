@@ -1,0 +1,36 @@
+.main_animation, .main_animation::before, .main_animation::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.main_animation {
+  width: 500px;
+  height: 250px;
+  margin: auto;
+  background: none;
+  color: #26a69a;
+  box-shadow: inset 0 0 0 1px rgba(38, 166, 154, 0.5); }
+  .main_animation::before, .main_animation::after {
+    content: '';
+    z-index: -1;
+    margin: -5%;
+    box-shadow: inset 0 0 0 3px;
+    animation: clipMe 15s linear infinite; }
+  .main_animation::before {
+    animation-delay: -7.5s; }
+  .main_animation:hover::after, .main_animation:hover::before {
+    background-color: rgba(255, 0, 0, 0.3); }
+
+@keyframes clipMe {
+  0%, 100% {
+    clip: rect(0px, 550px, 3px, 0px); }
+  25% {
+    clip: rect(0px, 3px, 275px, 0px); }
+  50% {
+    clip: rect(272px, 550px, 275px, 0px); }
+  75% {
+    clip: rect(0px, 550px, 275px, 547px); } }
+
+/*# sourceMappingURL=test2.css.map */
