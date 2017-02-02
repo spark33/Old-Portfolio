@@ -56,11 +56,6 @@
 	display: none;
 }
 
-body
-{
-	font-family: 'Avenir', sans-serif;
-}
-
 body a
 {
 	cursor: pointer;
@@ -68,6 +63,7 @@ body a
 
 body
 {
+	font-family: 'Avenir', sans-serif;
 	min-width: 100%;
 	max-width: 100%;
 }

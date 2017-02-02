@@ -1,0 +1,46 @@
+/*
+$codepen-logo-path: url('//blog.codepen.io/wp-content/uploads/2012/06/Button-White-Large.png');
+*/
+.main_animation, .main_animation::before, .main_animation::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.main_animation {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background: none;
+  color: #26a69a;
+  box-shadow: inset 0 0 0 1px rgba(38, 166, 154, 0.5);
+  content: 'Hi!';
+  /*
+  &:hover {
+    &::after,
+    &::before {
+      background-color: rgba(#f00, .3);
+    }
+  }
+  */ }
+  .main_animation::before, .main_animation::after {
+    content: '';
+    z-index: -1;
+    margin: -5%;
+    box-shadow: inset 0 0 0 2px;
+    animation: clipMe 8s linear infinite; }
+  .main_animation::before {
+    animation-delay: -4s; }
+
+@keyframes clipMe {
+  0%, 100% {
+    clip: rect(0px, 220px, 2px, 0px); }
+  25% {
+    clip: rect(0px, 2px, 220px, 0px); }
+  50% {
+    clip: rect(218px, 220px, 220px, 0px); }
+  75% {
+    clip: rect(0px, 220px, 220px, 218px); } }
+
+/*# sourceMappingURL=animation.css.map */
