@@ -34,7 +34,7 @@ TO-DO LIST:
 	<link rel="stylesheet" type="text/css" href="css/slick-styles.css">
 	<link rel="stylesheet" type="text/css" href="css/loader.css">
 
-	<link rel="stylesheet" type="text/css" href="css/animation.css">
+	<link rel="stylesheet" type="text/css" href="css/animation2.css">
 </head>
 
 <body onload="preloader()">
@@ -73,8 +73,41 @@ TO-DO LIST:
 		</div>
 		<main>
 			<div id="landing" class="section scrollspy">
-				<h1 id="name">Sean Park<br/><br/></h1>
-				<div class="main_animation"></div>
+				<!--<h1 id="name"><br/>Sean Park<br/><br/></h1>
+				<div class="main_animation"></div>-->
+				<svg viewBox="0 0 800 600">
+				  <symbol id="s-text">
+				    <text text-anchor="middle"
+				          x="50%"
+				          y="50%"
+				          class="text--line"
+				          >
+				      Sean
+				    </text>
+				    <text text-anchor="middle"
+				          x="50%"
+				          y="98%"
+				          class="text--line2"
+				          >
+				      Park
+				    </text>
+				    
+				  </symbol>
+				  
+				  <g class="g-ants">
+				    <use xlink:href="#s-text"
+				      class="text-copy"></use>     
+				    <use xlink:href="#s-text"
+				      class="text-copy"></use>     
+				    <use xlink:href="#s-text"
+				      class="text-copy"></use>     
+				    <use xlink:href="#s-text"
+				      class="text-copy"></use>     
+				    <use xlink:href="#s-text"
+				      class="text-copy"></use>     
+				  </g>
+				</svg>
+				<h5 style="color: #808080; margin-top: 15%;">Developer / UX Designer</h5>
 				<a class="scroll-button" href="#about"><small>Scroll</small><span></span><span></span><span></span></a>
 			</div>
 			<div id="about" class="section scrollspy">

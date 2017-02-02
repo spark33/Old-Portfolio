@@ -51,11 +51,6 @@
     to   { opacity: 1; }
 }
 
-#name
-{
-	display: none;
-}
-
 body a
 {
 	cursor: pointer;

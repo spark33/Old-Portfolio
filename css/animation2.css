@@ -1,0 +1,40 @@
+.text--line {
+  font-size: 25em; }
+
+.text--line2 {
+  font-size: 20em; }
+
+svg {
+  position: absolute;
+  top: 25%;
+  width: 70%;
+  height: 25%; }
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 7% 28%;
+  stroke-width: 3px;
+  animation: stroke-offset 6s linear; }
+  .text-copy:nth-child(1) {
+    stroke: #26a69a;
+    stroke-dashoffset: 7%; }
+  .text-copy:nth-child(2) {
+    stroke: #00bfa5;
+    stroke-dashoffset: 14%; }
+  .text-copy:nth-child(3) {
+    stroke: #1de9b6;
+    stroke-dashoffset: 21%; }
+  .text-copy:nth-child(4) {
+    stroke: #80cbc4;
+    stroke-dashoffset: 28%; }
+  .text-copy:nth-child(5) {
+    stroke: #4db6ac;
+    stroke-dashoffset: 35%; }
+
+@keyframes stroke-offset {
+  50% {
+    stroke-dashoffset: 35%;
+    stroke-dasharray: 0 87.5%; } }
+
+/*# sourceMappingURL=animation2.css.map */
