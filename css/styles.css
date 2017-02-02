@@ -20,7 +20,11 @@
             animation: fadein 2s;
 }
 
-
+#landing-subtitle
+{
+	color: #808080; 
+	margin-top: 20%;
+}
 
 @keyframes fadein {
     from { opacity: 0; }
