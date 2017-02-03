@@ -2,14 +2,15 @@
 
 TO-DO LIST:
 
+-scrollify
+-MODAL PICS
 -add content for all modals
 -make modal images zoomable on click
 
 -sub-button animation
 -signature animation
--loading animation
 
--create separate page for social?
+-create separate section for social?
 -->
 
 
@@ -227,7 +228,7 @@ TO-DO LIST:
 								</td>
 								<td>
 									<p><b>
-										I am a personnel manager for CMU's Computing Services. I created the TEF Scheduler to centralize all of TEF's software with enhanced user experience and functionality and replace the old WhenToWork system.
+										I am a personnel manager for CMU's Computing Services. I created the TEF Scheduler to centralize all of TEF's software with enhanced user experience and functionality and replace the old scheduling and reporting software.
 									</b></p>	
 									<p>
 										This application will be completed this Spring. We expect deployment to occur this Fall after several months of user testing.
@@ -241,8 +242,8 @@ TO-DO LIST:
 								</td>
 							</tr>
 						</table>
-						<img class="divider" src="images/divider.png">
 						<h2>User Interaction Design</h2>
+						<img class="divider" src="images/divider.png">
 						<p>
 							Currently, my department uses <a href="http://www.whentowork.com">WhenToWork</a> to schedule employee shifts, Google Sheets to monitor hour logs and a custom LAMP app for employees to submit reports. Every shift change is made by an administrator who is informed by employees by e-mail, leading to flooded inboxes and many missed shift changes. No employee management system caters to student employees' short shifts and unpredictability in schedules.
 						</p>
@@ -288,15 +289,15 @@ TO-DO LIST:
 							</tr>
 
 						</table>
-						<img class="divider" src="images/divider.png">
 						<h2>Implementation</h2>
+						<img class="divider" src="images/divider.png">
 						<p>
 							To prioritize flexibility in data storage and access, I decided to use a <a href="https://docs.google.com/document/d/1k4ypLeFeJWAIR3cuGliVLN3EbZ980GqjUp6k5c-f8yc/edit?usp=sharing" target="_blank">NoSQL database</a> with AngularJS. Given the department's small size, denormalization was not a huge issue. The availability module and scheduler module use the <a href="https://fullcalendar.io/">FullCalendar</a> framework. The application is styled using <a href="http://materializecss.com/">Materialize</a>. The MongoDB database was hosted on <a href="https://mlab.com/">MLab</a> and the app was hosted on <a href="https://www.heroku.com/home">Heroku</a>.
 						</p>
 						<div id="user-stories">
-							<img class="divider" src="images/divider.png">
 							<br/>
 							<h2>User Stories</h2>
+							<img class="divider" src="images/divider.png">
 							<table>
 								<thead>
 								<tr>
@@ -381,22 +382,65 @@ TO-DO LIST:
 			            <span>&times;</span>
 			        </div>
 			        <div class="modal-content">
-			            <h1>Seoul 53 Hotel Website</h1>
+			            <h1>Seoul 53 Hotel</h1>
 			            <table>
 							<tr>
 								<td>
 									<img src="images/s53h/home.png" />
 								</td>
 								<td>
+									<p><b>
+										I created the website for Seoul 53 Hotel using AngularJS to handle session data and instant translation.
+									</b></p>
 									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet accumsan sapien, ut aliquet velit varius in. Praesent quis neque at ligula gravida tincidunt et vitae elit. In ac porta mi. Nunc ultricies mattis rutrum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed congue mattis interdum. Nunc imperdiet lorem leo, ac malesuada dolor rutrum euismod. Vestibulum molestie faucibus purus, et faucibus sapien imperdiet id. In ut mollis mi, non vulputate est. Suspendisse sit amet aliquet ligula. Nunc quis interdum odio, eget varius risus. Sed eu mi et nulla ornare rutrum sit amet quis mauris. Quisque in sagittis nisi.
+										The development process included designing and prototyping 3 websites. While the client is sorting out domain issues, check out a <a href="http://s53h.herokuapp.com">prototype</a> on Heroku.
 									</p>	
 								</td>
 							</tr>
 						</table>
-						<img src="images/s53h/about.png" />
-						<img src="images/s53h/rooms.png" />
-						<img src="images/s53h/draft1.png" />
+						<h2>Design Process</h2>
+						<img class="divider" src="images/divider.png">
+						<p>
+							<b>
+								The website was designed to highlight the hotel's cheap prices and proximity to Seoul's tourist attractions.
+							</b>
+							The clean user interface is easy to navigate and pleasant to the eyes. Animation and parallax banners contribute to the website's fluid user experience, and all important information is highlighted to entice users to make reservations. All content is fully mobile responsive.
+						</p>
+						<table>
+							<tr>
+								<td style="text-align: right;">
+									<img src="images/s53h/home.gif" width="100%"/>
+								</td>
+								<td>
+									<p><b>
+										Instant Translation
+									</b></p>
+									<p>
+										All site content is automatically translated at the push of a button, without changing pages. All information is handled by JSONs in a single controller so that adding languages and changing page content is easily done without knowing HTML/CSS.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/s53h/rooms.png" />
+								</td>
+								<td>
+									<p><b>Action Cue Placement</b></p>
+									<p>
+										Action cues like "Scroll", "Back to Top" and "Reserve" buttons constantly invite users to explore more about the hotel.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/s53h/about.png" />
+								</td>
+								<td>
+									<p><b>Content Writing / Translating</b></p>
+									<p>As a trilingual and the only fluent English speaker, I also wrote and translated the client's desired content. Knowing both languages gave me the client's perspective and the flexibility to adapt content.</p>
+								</td>
+							</tr>
+						</table>
 			        </div>
 				</div>
 				<div id="soundbytes-modal" class="modal">

@@ -14,8 +14,8 @@ svg {
   fill: none;
   stroke: white;
   stroke-dasharray: 7% 28%;
-  stroke-width: 3px;
-  animation: stroke-offset 6s linear; }
+  stroke-width: 8px;
+  animation: stroke-offset 5s linear; }
   .text-copy:nth-child(1) {
     stroke: #26a69a;
     stroke-dashoffset: 7%; }
