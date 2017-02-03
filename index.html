@@ -2,7 +2,6 @@
 
 TO-DO LIST:
 
--scrollify
 -MODAL PICS
 -add content for all modals
 -make modal images zoomable on click
@@ -27,8 +26,8 @@ TO-DO LIST:
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/modal-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/scroll-button.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -376,6 +375,12 @@ TO-DO LIST:
 							</table>
 						</div>
 			        </div>
+			        <a class="switch-modal button" onclick="switchModal('#scheduler-modal', '#s53h-modal');">
+			        	Next Project
+			        </a>
+			        <div class="modal-bottom modal-close"> 
+			            <span>&times;</span>
+			        </div>
 				</div>
 				<div id="s53h-modal" class="modal">
 			        <div class="modal-close"> 
@@ -442,6 +447,12 @@ TO-DO LIST:
 							</tr>
 						</table>
 			        </div>
+			        <a class="switch-modal button" onclick="switchModal('#s53h-modal', '#chess_store-modal');">
+			        	Next Project
+			        </a>
+			        <div class="modal-bottom modal-close"> 
+			            <span>&times;</span>
+			        </div>
 				</div>
 				<div id="soundbytes-modal" class="modal">
 			        <div class="modal-close"> 
@@ -449,6 +460,12 @@ TO-DO LIST:
 			        </div>
 			        <div class="modal-content">
 			            Insert Soundbytes Content
+			        </div>
+			        <a class="switch-modal button" onclick="switchModal('#soundbytes-modal', '#haydens-modal');">
+			        	Next Project
+			        </a>
+			        <div class="modal-bottom modal-close"> 
+			            <span>&times;</span>
 			        </div>
 				</div>
 				<div id="haydens-modal" class="modal">
@@ -474,6 +491,12 @@ TO-DO LIST:
 			            	</tr>
 			            </table>
 			        </div>
+			        <a class="switch-modal button" onclick="switchModal('#haydens-modal', '#noobloop-modal');">
+			        	Next Project
+			        </a>
+			        <div class="modal-bottom modal-close"> 
+			            <span>&times;</span>
+			        </div>
 				</div>
 				<div id="prantls-modal" class="modal">
 			        <div class="modal-close"> 
@@ -496,6 +519,12 @@ TO-DO LIST:
 			            	</tr>
 			            </table>
 			        </div>
+			        <a class="switch-modal button" onclick="switchModal('#prantls-modal', '#soundbytes-modal');">
+			        	Next Project
+			        </a>
+			        <div class="modal-bottom modal-close"> 
+			            <span>&times;</span>
+			        </div>
 				</div>
 				<div id="noobloop-modal" class="modal">
 			        <div class="modal-close"> 
@@ -503,6 +532,12 @@ TO-DO LIST:
 			        </div>
 			        <div class="modal-content">
 			            Insert NoobLoop Content
+			        </div>
+			        <a class="switch-modal button" onclick="switchModal('#noobloop-modal', '#swapbox-modal');">
+			        	Next Project
+			        </a>
+			        <div class="modal-bottom modal-close"> 
+			            <span>&times;</span>
 			        </div>
 				</div>
 				<div id="probono-modal" class="modal">
@@ -512,6 +547,12 @@ TO-DO LIST:
 			        <div class="modal-content">
 			            Insert Probono Content
 			        </div>
+			        <a class="switch-modal button" onclick="switchModal('#probono-modal', '#prantls-modal');">
+			        	Next Project
+			        </a>
+			        <div class="modal-bottom modal-close"> 
+			            <span>&times;</span>
+			        </div>
 				</div>
 				<div id="swapbox-modal" class="modal">
 			        <div class="modal-close"> 
@@ -519,6 +560,12 @@ TO-DO LIST:
 			        </div>
 			        <div class="modal-content">
 			            Insert Swapbox Content
+			        </div>
+			        <a class="switch-modal button" onclick="switchModal('#swapbox-modal', '#this-modal');">
+			        	Next Project
+			        </a>
+			        <div class="modal-bottom modal-close"> 
+			            <span>&times;</span>
 			        </div>
 				</div>
 				<div id="chess_store-modal" class="modal">
@@ -528,6 +575,12 @@ TO-DO LIST:
 			        <div class="modal-content">
 			            Insert Chess Store Content
 			        </div>
+			        <a class="switch-modal button" onclick="switchModal('#chess_store-modal', '#probono-modal');">
+			        	Next Project
+			        </a>
+			        <div class="modal-bottom modal-close"> 
+			            <span>&times;</span>
+			        </div>
 				</div>
 				<div id="this-modal" class="modal">
 			        <div class="modal-close"> 
@@ -535,6 +588,12 @@ TO-DO LIST:
 			        </div>
 			        <div class="modal-content">
 			            Insert Content for this website
+			        </div>
+			        <a class="switch-modal button" onclick="switchModal('#this-modal', '#scheduler-modal');">
+			        	Next Project
+			        </a>
+			        <div class="modal-bottom modal-close"> 
+			            <span>&times;</span>
 			        </div>
 				</div>
 			</div>
@@ -639,6 +698,12 @@ TO-DO LIST:
 			$.scrollify.enable();
 			$('#projects').css('overflow-y','none');
 		};
+
+		function switchModal(srcSelector, targetSelector) {
+			var switcher = setTimeout($(srcSelector).modal('close'),2000);
+			$(targetSelector).modal('open');
+		}
+
 		$('.modal-close').click( function() {
 			closeModal();
 		})
