@@ -651,17 +651,15 @@ TO-DO LIST:
 
 		function showPage() {
 			document.getElementById("loader").style.display = "none";
-			document.getElementById("main-site").style.display = "block";
+			document.getElementById("main-site").style.display = "flex";
 			$('.scrollspy').scrollSpy({
 				scrollOffset: 0
 			});
-			/*
 			$.scrollify({
-				section : "#main-site.scrollspy",
+				section : ".scrollspy",
 				interstitialSection: "footer",
 				updateHash: false
 			});
-			*/
 
 			$(".projects-carousel").slick({
 				dots: false,
