@@ -1,4 +1,7 @@
-
+.teal-text
+{
+	color: #26a69a;
+}
 
 #top-left,
 #bottom-right,
@@ -23,7 +26,8 @@
 #landing-subtitle
 {
 	color: #808080; 
-	margin-top: 20%;
+	margin-top: 14%;
+	font-size: 2em;
 }
 
 @keyframes fadein {
@@ -216,8 +220,8 @@ main > div
 #top-left
 {
 	position: fixed;
-	top: 6%;
-	left: 3%;
+	top: 9%;
+	left: 4%;
 	z-index: 999;
 }
 /*
@@ -244,8 +248,8 @@ main > div
 #scroller
 {
 	position: fixed;
-	bottom: 2%;
-	left: 3%;
+	bottom: 5.5%;
+	left: 4%;
 }
 
 #bottom-right
@@ -268,7 +272,8 @@ main > div
 
 #about h5
 {
-	line-height: 8vh;
+	font-size: 1.4em;
+	line-height: 7vh;
 	max-width: 100%;
 	text-align: justify;
 }
@@ -298,7 +303,21 @@ main > div
 
 #hi
 {
+	padding: 0;
 	padding-left: 10%;
+}
+
+#hi
+h2
+{
+	font-size: 3em;
+}
+
+#hi
+p
+{
+	font-size: 1.25em;
+	line-height: 2;
 }
 
 #about, #contact

@@ -3,18 +3,13 @@ $colors: #26a69a, #00bfa5, #1de9b6, #80cbc4, #4db6ac;
 
 .text--line
 {
-  font-size: 25em;
-}
-
-.text--line2
-{
-  font-size: 20em;
+  font-size: 9em;
 }
 
 svg {
   position: absolute;
-  top: 20%;
-  height: 35%;
+  height: 100%;
+  width: 70% !important;
   }
 
 $max: 5;
@@ -23,9 +18,9 @@ $stroke-step: 7%;
   fill: none;
   stroke: white;
   stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
-  stroke-width: 8px;
+  stroke-width: 4.5px;
   
-  animation: stroke-offset 5s linear;
+  animation: stroke-offset 2s linear;
   
   @for $item from 1 through $max {
     $stroke-color: nth($colors, $item);

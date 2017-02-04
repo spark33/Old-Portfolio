@@ -33,7 +33,14 @@
 
 .modal h2
 {
-	margin-top: 6vh;
+	margin-top: 15vh;
+	font-size: 3em;
+}
+
+.modal
+h4
+{
+	font-size: 1.55em;
 }
 
 .modal p

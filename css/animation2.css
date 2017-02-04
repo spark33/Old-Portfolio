@@ -1,20 +1,17 @@
 .text--line {
-  font-size: 25em; }
-
-.text--line2 {
-  font-size: 20em; }
+  font-size: 9em; }
 
 svg {
   position: absolute;
-  top: 20%;
-  height: 35%; }
+  height: 100%;
+  width: 70% !important; }
 
 .text-copy {
   fill: none;
   stroke: white;
   stroke-dasharray: 7% 28%;
-  stroke-width: 8px;
-  animation: stroke-offset 5s linear; }
+  stroke-width: 4.5px;
+  animation: stroke-offset 2s linear; }
   .text-copy:nth-child(1) {
     stroke: #26a69a;
     stroke-dashoffset: 7%; }

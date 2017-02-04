@@ -2,6 +2,10 @@
 
 TO-DO LIST:
 
+MOBILE VIEW:
+-don't justify text in modal
+-make projects image bigger
+
 -MODAL PICS
 -add content for all modals
 -make modal images zoomable on click
@@ -82,16 +86,9 @@ TO-DO LIST:
 				          y="50%"
 				          class="text--line"
 				          >
-				      Sean
+				      Sean Park
 				    </text>
-				    <text text-anchor="middle"
-				          x="50%"
-				          y="98%"
-				          class="text--line2"
-				          >
-				      Park
-				    </text>
-				    
+				   
 				  </symbol>
 				  
 				  <g class="g-ants">
@@ -107,7 +104,7 @@ TO-DO LIST:
 				      class="text-copy"></use>     
 				  </g>
 				</svg>
-				<h5 id="landing-subtitle">Developer / UX Designer</h5>
+				<h4 id="landing-subtitle">Developer / UX Designer</h4>
 				<a class="scroll-button" href="#about"><small>Scroll</small><span></span><span></span><span></span></a>
 			</div>
 			<div id="about" class="section scrollspy">
@@ -117,17 +114,20 @@ TO-DO LIST:
 							<img id="me1" src="images/me1.jpg"/>
 						</td>
 						<td id="hi" colspan="3">
-							<h2>Hi! I'm Sean.</h2>
+							<h2 class="teal-text" style="font-weight: bold;">Hi! I'm Sean.</h2>
 							<p>
-								I study Information Systems at <br/>
-								<b>Carnegie Mellon University.</b><br/><br/>
+								<span style="line-height: 0em;">
+									I study Information Systems at
+									<b>Carnegie Mellon University.</b><br/>
+								</span>
 								<i>Expected Graduation: May 2019</i>
 							</p>
 						</td>
 					</tr>
 				</table>
 				<h5>
-					<b>I am a front-end developer <i>and</i> a problem solver.</b> I am passionate about understanding users to create beautiful and practical interfaces. From identifying problems and designing to implementing solutions, I strive to perfect my skills across the building process.<br/>
+					<b class="teal-text">I am a front-end developer <i>and</i> a problem solver.</b>
+					I am passionate about understanding users to create beautiful and practical interfaces. From identifying problems and designing to implementing solutions, I strive to perfect my skills across the building process.<br/>
 				</h5>
 				<a href="#projects" class="button">Come check out my projects!</a>
 			</div>
@@ -219,29 +219,15 @@ TO-DO LIST:
 			            <span>&times;</span>
 			        </div>
 			        <div class="modal-content">
-			        	<h1>TEF Scheduler</h1>
-						<table>
-							<tr>
-								<td>
-									<img src="images/scheduler/schedule.png" />
-								</td>
-								<td>
-									<p><b>
-										I am a personnel manager for CMU's Computing Services. I created the TEF Scheduler to centralize all of TEF's software with enhanced user experience and functionality and replace the old scheduling and reporting software.
-									</b></p>	
-									<p>
-										This application will be completed this Spring. We expect deployment to occur this Fall after several months of user testing.
-									</p>
-									<!--
-									<p>
-										<a href="http://tef-scheduler.herokuapp.com">Check out a prototype here.</a><br/>
-										<small>ID: seanpark PW: password</small>
-									</p>
-									-->
-								</td>
-							</tr>
-						</table>
-						<h2>User Interaction Design</h2>
+			        	<h1 class="teal-text"><b>TEF Scheduler</b></h1>
+        				<p><b>
+							I am a personnel manager for CMU's Computing Services. I created the TEF Scheduler to centralize all of TEF's software with enhanced user experience and functionality and replace the old scheduling and reporting software.
+						</b></p>	
+						<p>
+							This application will be completed this Spring. We expect deployment to occur this Fall after several months of user testing.
+						</p>
+						<img src="images/scheduler/schedule.png" />
+						<h2><b>User Interaction Design</b></h2>
 						<img class="divider" src="images/divider.png">
 						<p>
 							Currently, my department uses <a href="http://www.whentowork.com">WhenToWork</a> to schedule employee shifts, Google Sheets to monitor hour logs and a custom LAMP app for employees to submit reports. Every shift change is made by an administrator who is informed by employees by e-mail, leading to flooded inboxes and many missed shift changes. No employee management system caters to student employees' short shifts and unpredictability in schedules.
@@ -258,7 +244,7 @@ TO-DO LIST:
 									<img src="images/scheduler/avail.png" />
 								</td>
 								<td>
-									<p><b>User Profiles</b></p>
+									<h4><b>User Profiles</b></h4>
 									<p>
 										Unlike WhenToWork's separate availability module, the Scheduler does not require the user to open external windows to input availability. All necessary user information can be viewed and edited on one page.
 									</p>
@@ -269,7 +255,7 @@ TO-DO LIST:
 									<img src="images/scheduler/schedule.png" />
 								</td>
 								<td>
-									<p><b>Scheduling Module</b></p>
+									<h4><b>Scheduling Module</b></h4>
 									<p>
 										On WhenToWork, all functions were done on separate web pages. Shifts had to be manually subbed by deletion and addition by a manager. This module allows the user to view the schedule by building, pick up shifts, assign subs and submit reports using one simple jQuery calendar. This eliminated extraneous e-mail communication and ~20 clicks for every shift change.
 									</p>
@@ -280,7 +266,7 @@ TO-DO LIST:
 									<img src="images/scheduler/view_reports.png" />
 								</td>
 								<td>
-									<p><b>View Reports</b></p>
+									<h4><b>View Reports</b></h4>
 									<p>
 										By displaying all reports on one view, the manager can simply scroll through reports instead of clicking on individual reports to read them.
 									</p>
@@ -288,14 +274,14 @@ TO-DO LIST:
 							</tr>
 
 						</table>
-						<h2>Implementation</h2>
+						<h2><b>Implementation</b></h2>
 						<img class="divider" src="images/divider.png">
 						<p>
 							To prioritize flexibility in data storage and access, I decided to use a <a href="https://docs.google.com/document/d/1k4ypLeFeJWAIR3cuGliVLN3EbZ980GqjUp6k5c-f8yc/edit?usp=sharing" target="_blank">NoSQL database</a> with AngularJS. Given the department's small size, denormalization was not a huge issue. The availability module and scheduler module use the <a href="https://fullcalendar.io/">FullCalendar</a> framework. The application is styled using <a href="http://materializecss.com/">Materialize</a>. The MongoDB database was hosted on <a href="https://mlab.com/">MLab</a> and the app was hosted on <a href="https://www.heroku.com/home">Heroku</a>.
 						</p>
 						<div id="user-stories">
 							<br/>
-							<h2>User Stories</h2>
+							<h2><b>User Stories</b></h2>
 							<img class="divider" src="images/divider.png">
 							<table>
 								<thead>
@@ -593,7 +579,7 @@ TO-DO LIST:
 			</div>
 
 			<div id="contact" class="section scrollspy">
-				<h3>Feel free to get in touch!</h3>
+				<h2 class="teal-text">Feel free to get in touch!</h2>
 				<br/><br/><br/>
 				<div>
 					<p><i class="fa fa-fw fa-phone" aria-hidden="true"> </i> <span>(412) 265 - 8129</span></p>
