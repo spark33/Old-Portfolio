@@ -87,6 +87,13 @@
 
 @media screen and (max-width: 700px) {
 
+
+	/* long text should be made smaller so that it isn't cut off on small screens */
+	#long-text
+	{
+		font-size: 2em;
+	}
+
 	svg 
 	{
 		width: 50%;
