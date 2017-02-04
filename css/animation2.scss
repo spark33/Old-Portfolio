@@ -13,14 +13,14 @@ svg {
   }
 
 $max: 5;
-$stroke-step: 7%; 
+$stroke-step: 10%; 
 .text-copy {
   fill: none;
-  stroke: white;
+  stroke: red;
   stroke-dasharray: $stroke-step $stroke-step * ($max - 1);
   stroke-width: 4.5px;
   
-  animation: stroke-offset 2s linear;
+  animation: stroke-offset 2.5s linear;
   
   @for $item from 1 through $max {
     $stroke-color: nth($colors, $item);
@@ -33,9 +33,10 @@ $stroke-step: 7%;
   }
 
 @keyframes stroke-offset {
-  50% {
+  0% {
     stroke-dashoffset: $stroke-step * $max;  
     stroke-dasharray: 0 $stroke-step * $max*2.5;
   }
 }
+
 

@@ -8,29 +8,29 @@ svg {
 
 .text-copy {
   fill: none;
-  stroke: white;
-  stroke-dasharray: 7% 28%;
+  stroke: red;
+  stroke-dasharray: 10% 40%;
   stroke-width: 4.5px;
-  animation: stroke-offset 2s linear; }
+  animation: stroke-offset 2.5s linear; }
   .text-copy:nth-child(1) {
     stroke: #26a69a;
-    stroke-dashoffset: 7%; }
+    stroke-dashoffset: 10%; }
   .text-copy:nth-child(2) {
     stroke: #00bfa5;
-    stroke-dashoffset: 14%; }
+    stroke-dashoffset: 20%; }
   .text-copy:nth-child(3) {
     stroke: #1de9b6;
-    stroke-dashoffset: 21%; }
+    stroke-dashoffset: 30%; }
   .text-copy:nth-child(4) {
     stroke: #80cbc4;
-    stroke-dashoffset: 28%; }
+    stroke-dashoffset: 40%; }
   .text-copy:nth-child(5) {
     stroke: #4db6ac;
-    stroke-dashoffset: 35%; }
+    stroke-dashoffset: 50%; }
 
 @keyframes stroke-offset {
-  50% {
-    stroke-dashoffset: 35%;
-    stroke-dasharray: 0 87.5%; } }
+  0% {
+    stroke-dashoffset: 50%;
+    stroke-dasharray: 0 125%; } }
 
 /*# sourceMappingURL=animation2.css.map */
