@@ -92,6 +92,16 @@
 		width: 50%;
 	}
 
+	#hi p
+	{
+		line-height: 4vh;
+	}
+
+	#about h5
+	{
+		line-height: 5vh;
+	}
+
 	.text--line {
 	  font-size: 15em; 
 	}
