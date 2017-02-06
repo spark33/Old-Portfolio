@@ -3,13 +3,11 @@
 TO-DO LIST:
 
 -MODAL PICS
--add content for all modals
 -make modal images zoomable on click
 -previous project buttons
 
 -create separate section for social?
 -make projects image bigger in mobile view?
--sub-button animation
 -signature animation
 -->
 
@@ -113,16 +111,15 @@ TO-DO LIST:
 						<td id="hi" colspan="3">
 							<h2 class="teal-text" style="font-weight: bold;">Hi! I'm Sean.</h2>
 							<p>
-								I study Information Systems at<br/>
-								<b>Carnegie Mellon University.</b><br/>
-								Expected Graduation: May 2019
+								I study Information Systems<br/>
+								<b>Carnegie Mellon University.</b>
 							</p>
 						</td>
 					</tr>
 				</table>
 				<h5>
 					<b class="teal-text">I am a front-end developer <i>and</i> a problem solver.</b>
-					I am passionate about understanding users to create beautiful and practical interfaces. From identifying problems and designing to implementing solutions, I strive to perfect my skills across the building process.<br/>
+					I am passionate about learning users to create beautiful and practical interfaces. From identifying problems to designing and implementing solutions, I strive to perfect my skills across the development process.<br/>
 				</h5>
 				<a href="#projects" class="button">Come check out my projects!</a>
 			</div>
@@ -515,9 +512,11 @@ TO-DO LIST:
 			            	Find out more about UCC <a href="http://www.cmuucc.com/">here</a>.
 			            </p>
 			        </div>
-			        <a class="switch-modal button modal-bottom" onclick="switchModal('#probono-modal', '#swapbox-modal');">
+			        <div class="modal-bottom">
+			        	<a class="switch-modal button" onclick="switchModal('#probono-modal', '#swapbox-modal');">
 			        	Next Project >>
 			        </a>
+			        </div>
 				</div>
 				<div id="swapbox-modal" class="modal">
 			        <div class="modal-close"> 
@@ -553,9 +552,11 @@ TO-DO LIST:
 			            	Check out my database <a href="chess-store/db_design.pdf" target="_blank">design</a> in 3NF, <a href="chess-store/erd.pdf">ERD</a>, or <a href="chess-store/data_dict.pdf">data dictionary</a>.
 			            </p>
 			        </div>
-			        <a class="switch-modal button modal-bottom" onclick="switchModal('#chess_store-modal', '#soundbytes-modal');">
-			        	Next Project >>
-			        </a>
+			        <div class="modal-bottom">
+			        	<a class="switch-modal button" onclick="switchModal('#chess_store-modal', '#soundbytes-modal');">
+			        		Next Project >>
+			       		</a>
+			        </div>
 				</div>
 				<div id="this-modal" class="modal">
 			        <div class="modal-close"> 
@@ -569,13 +570,19 @@ TO-DO LIST:
 						<p>
 							I used <a href="">Slick</a> for the project slider, <a href="">Scrollify</a> to paginate and got some animation inspiration from <a href="http://www.hongkiat.com">Hongkiat.</a> This was my first time using SASS and CSS animations. This project helped me think of the web page as a dynamic canvas to do more than just place/style HTML elements.
 						</p>
+						<p>
+							From the loading animation to section dividers, this website plays with the concept of the teal circle. There's no corny symbolism there-- just a design concept I found elegant :)
+						</p>
+						<img class="divider" src="images/divider.png">
 			            <p>
-			            	Shout out to my amazing mentee <a href="https://elizabethwang.myportfolio.com/">Elizabeth Wang</a> for helping me sketch the project icons! More elegant, colored icons coming soon!
+			            	Shout out to my amazing mentee <a href="https://elizabethwang.myportfolio.com/">Elizabeth Wang</a> for helping me sketch the project icons! 
 			            </p>
 			        </div>
-			        <a class="switch-modal button" onclick="switchModal('#this-modal', '#prantls-modal');">
-			        	Next Project >>
-			        </a>
+			        <div class="modal-bottom">
+				        <a class="switch-modal button" onclick="switchModal('#this-modal', '#prantls-modal');">
+				        	Next Project >>
+				        </a>			        
+				    </div>
 				</div>
 			</div>
 
@@ -585,8 +592,8 @@ TO-DO LIST:
 				<div>
 					<p><i class="fa fa-fw fa-phone" aria-hidden="true"> </i> <span>(412) 265 - 8129</span></p>
 					<p><i class="fa fa-fw fa-envelope" aria-hidden="true"></i> <span>spark3@andrew.cmu.edu</span></p>
-					<p><i class="fa fa-fw fa-github" aria-hidden="true"> </i> <span>/spark33</span></p>
-					<p><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> <span>/spark6</span></p>
+					<p><i class="fa fa-fw fa-github" aria-hidden="true"> </i> <a href="https://github.com/spark33">/spark33</a></p>
+					<p><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/spark6?trk=hp-identity-photo">/spark6</a></p>
 				</div>
 				<img id="me2" src="images/me2.png" />
 			</div>

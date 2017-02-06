@@ -102,6 +102,11 @@ a, p
     font-size: calc(12px + 0.2vw);
 }
 
+a
+{
+	color: #26a69a;
+}
+
 .logo
 {
 	width: 100px;
@@ -145,8 +150,8 @@ a, p
 	margin: 5%;
 	padding: 12px;
 	border: 2px solid #26a69a;
-	text-decoration: none;
-	color: #26a69a;
+	text-decoration: none !important;
+	color: #26a69a !important;
 	border-radius: 5px;
 	transition: all .15s ease-in-out;
 	-moz-transition: all .15s ease-in-out;
@@ -155,7 +160,7 @@ a, p
 
 .button:hover
 {
-	color: white;
+	color: white !important;
 	background: #26a69a;
 }
 
