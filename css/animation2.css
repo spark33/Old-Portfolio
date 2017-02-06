@@ -12,7 +12,7 @@ svg {
   stroke: red;
   stroke-dasharray: 10% 40%;
   stroke-width: 4.5px;
-  animation: stroke-offset 2.5s linear; }
+  animation: stroke-offset 1.5s linear; }
   .text-copy:nth-child(1) {
     stroke: #26a69a;
     stroke-dashoffset: 10%; }
