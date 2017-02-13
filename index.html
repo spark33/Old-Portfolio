@@ -222,11 +222,38 @@ TO-DO LIST:
 							This application will be completed this Spring. We expect deployment to occur this Fall after several months of user testing and optimizing for security, dependability and scalability. Check out a demo <a href="http://tef-scheduler.herokuapp.com" target="_blank">here</a>! You can log in with ID: seanpark and PW: password.
 						</p>
 						<img src="images/scheduler/schedule.png" />
-						<h2><b>User Interaction Design</b></h2>
+						<h2><b>Problem Identification</b></h2>
 						<img class="divider" src="images/divider.png">
 						<p>
-							Currently, my department uses <a href="http://www.whentowork.com" target="_blank">WhenToWork</a> to schedule employee shifts, Google Sheets to monitor hour logs and a custom LAMP app for employees to submit reports. Every shift change is made by an administrator who is informed by employees by e-mail, leading to flooded inboxes and many missed shift changes. No employee management system caters to student employees' short shifts and unpredictability in schedules.
+							Currently, my department uses <a href="http://www.whentowork.com" target="_blank">WhenToWork</a> to schedule employee shifts, Google Sheets to monitor hour logs and a custom LAMP app for employees to submit reports. Every shift change is made by an administrator who is informed by employees by e-mail, leading to flooded inboxes and many missed shift changes. <b>No employee management system caters to student employees' short shifts and unpredictability in schedules.</b>
 						</p>
+						<p>To ensure that the app would improve on all of WhenToWork's pain points, I sent out a survey that collected a mix of general and detailed responses in both quantitative and qualitative forms.</p>
+						<table>
+							<tr>
+								<td>
+									<img src="images/scheduler/data1.png">
+								</td>
+								<td>
+									<h4><b>Shift Transfer Automation</b></h4>
+									<p>
+										Most employees rated "Making temporary / permanent changes to schedule" as the most difficult interaction. Automating this process became a primary objective of the TEF Scheduler.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/scheduler/data3.png">
+								</td>
+								<td>
+									<h4><b>UI / UX Improvements</b></h4>
+									<p>
+										Many employees who had rated WhenToWork with mid-range quantitative scores gave scathing qualitative responses. Most employees found WhenToWork extremely unattractive and difficult to use.
+									</p>
+								</td>
+							</tr>
+						</table>
+						<h2><b>User Interaction Design</b></h2>
+						<img class="divider" src="images/divider.png">
 						<p><b>
 							TEF Scheduler was designed to maximize automation and flexibility in scheduling. </b>It makes shifting easier for students while giving administrator a bird's eye view of all shifts and reports. In the future, it will also support data analytics and trend analysis.
 						</p>
@@ -376,13 +403,39 @@ TO-DO LIST:
 							The development process included designing and prototyping 3 websites. While the client is sorting out domain issues, check out a <a target="_blank" href="http://s53h.herokuapp.com">prototype</a> on Heroku.
 						</p>
 						<img src="images/s53h/home.png" />
-						<h2><b>Design Process</b></h2>
+						<h2><b>Client Interaction</b></h2>
+						<img class="divider" src="images/divider.png">
+						<table>
+							<tr>
+								<td>
+									<img src="images/s53h/client-key.png">
+								</td>
+								<td>
+									<h4><b>Interaction Method</b></h4>
+									<p>
+										After assessing my prototype, my clients pointed out details by referring to specific sections using a key. A code would refer to a section on the website, which the client would explain further on an Excel spreadsheet.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/s53h/client-excel.png">
+								</td>
+								<td>
+									<h4><b>Request Examples</b></h4>
+									<p>
+										Client requests ranged from simple style changes to content additions and restructuring. These changes were made frequently to ensure that the clients were satisfied with the final product.
+									</p>
+								</td>
+							</tr>
+						</table>
+						<h2><b>Design Points</b></h2>
 						<img class="divider" src="images/divider.png">
 						<p>
 							<b>
 								The website was designed to highlight the hotel's cheap prices and proximity to Seoul's tourist attractions.
 							</b>
-							The clean user interface is easy to navigate and pleasant to the eyes. Animation and parallax banners contribute to the website's fluid user experience, and all important information is highlighted to entice users to make reservations. All content is fully mobile responsive.
+							The clean user interface is easy to navigate and pleasant to the eyes. Animation and parallax banners contribute to the website's fluid user experience, and all important information is highlighted to entice users to make reservations. All content is fully mobile responsive. Because it is an image-heavy one-page website, it loads quite slowly; I am still researching how to improve loading speed.
 						</p>
 						<table>
 							<tr>
@@ -581,19 +634,24 @@ TO-DO LIST:
 						<p>
 							I used <a target="_blank" href="http://kenwheeler.github.io/slick/">Slick</a> for the project slider, <a target="_blank" href="https://projects.lukehaas.me/scrollify/">Scrollify</a> to paginate and got some animation inspiration from <a target="_blank" href="http://www.hongkiat.com">Hongkiat.</a> This was my first time using SASS and CSS animations. This project helped me think of the web page as a dynamic canvas to do more than just place/style HTML elements. One month into development, I am excited to see where this project goes in the future.
 						</p>
+						<h2><b>Design Points</b></h2>
+						<img class="divider" src="images/divider.png">
+						<p>
+							<b>I love minimalistic designs.</b> Designs that make a user say <i class="teal-text"><b>"wow"</b></i> are not extravagant-- they are intricate and immaculate. Find the beauty of the website in this modal's close button that rotate subtly on hover and the soft colors that <span class="teal-text"><b>pop</b></span> on every view.
+						</p>
 						<p>
 							From the loading animation to section dividers, this website plays with the concept of the teal circle. There's no corny symbolism there-- just a design concept I found elegant :)
 						</p>
-						<img class="divider" src="images/divider.png">
 			            <p>
 			            	Shout out to my amazing mentee <a href="https://elizabethwang.myportfolio.com/" target="_blank">Elizabeth Wang</a> for helping me sketch the project icons! 
 			            </p>
 			        </div>
-			        <div class="modal-bottom">
-				        <a class="switch-modal button" onclick="switchModal('#this-modal', '#prantls-modal');">
-				        	Next Project >>
-				        </a>			        
-				    </div>
+			        <a class="switch-modal button" onclick="switchModal('#this-modal', '#prantls-modal');">
+			        	Next Project >>
+			        </a>	
+			        <div class="modal-close modal-bottom"> 
+			            <span>&times;</span>
+			        </div>		        
 				</div>
 			</div>
 
