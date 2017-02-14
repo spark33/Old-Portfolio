@@ -45,6 +45,13 @@ TO-DO LIST:
 		ga('send', 'pageview');
 
 	</script>
+	<style type="text/css">
+		@font-face
+		{
+			font-family: 'Avenir';
+			src: url("fonts/Avenir.ttc");
+		}
+	</style>
 </head>
 
 <body onload="preloader()">
@@ -142,7 +149,7 @@ TO-DO LIST:
 				        <img src="images/icons/scheduler.jpg"/>
 				      </div>
 				      </a>
-				      <p>Scheduler</p>
+				      <p>TEF Scheduler</p>
 				    </div>
 				    <div>
 						<a class="modal-button" onclick="openModal()" href="#soundbytes-modal">
@@ -175,6 +182,14 @@ TO-DO LIST:
 						</div>
 						</a>
 						<p>A&M Chess Store</p>
+				    </div>
+				    <div>
+						<a class="modal-button" onclick="openModal()" href="#hci-modal">
+						<div class="image">
+							<img src="images/icons/users.png" />
+						</div>
+						</a>
+						<p>HCI Research</p>
 				    </div>
 				    <div>
 						<a class="modal-button" onclick="openModal()" href="#probono-modal">
@@ -222,7 +237,7 @@ TO-DO LIST:
 							This application will be completed this Spring. We expect deployment to occur this Fall after several months of user testing and optimizing for security, dependability and scalability. Check out a demo <a href="http://tef-scheduler.herokuapp.com" target="_blank">here</a>! You can log in with ID: seanpark and PW: password.
 						</p>
 						<img src="images/scheduler/schedule.png" />
-						<h2><b>Research</b></h2>
+						<h2><b>Initial Research</b></h2>
 						<img class="divider" src="images/divider.png">
 						<p>
 							Currently, my department uses <a href="http://www.whentowork.com" target="_blank">WhenToWork</a> to schedule employee shifts, Google Sheets to monitor hour logs and a custom LAMP app for employees to submit reports. Every shift change is made by an administrator who is informed by employees by e-mail, leading to flooded inboxes and many missed shift changes. <b>No employee management system caters to student employees' short shifts and unpredictability in schedules.</b> I leave out my research on existing platforms for brevity.
@@ -481,6 +496,69 @@ TO-DO LIST:
 			            <span>&times;</span>
 			        </div>
 				</div>
+				<div id="hci-modal" class="modal">
+			        <div class="modal-close"> 
+			            <span>&times;</span>
+			        </div>
+			        <div class="modal-content">
+			        	<h1 class="teal-text"><b>HCI Research</b></h1>
+			            <p>
+			            	<b>I conducted and presented 3 user interaction research projects for course 05-499C: Designing Large-Scale Peer Learning Systems.</b> I created prototypes for offline interaction systems and analyzed quantitative and qualitative data from interactions to improve future software implementations. Below, I summarize my work from one project from Fall 2016. 
+			            	<br/><br/><i>If any explanation is insufficient, refer to my attachments at the bottom of this page.</i>
+			            </p>
+			            <h2><b>Observing Interactions</b></h2>
+			            <img class="divider" src="images/divider.png">
+			            <p>
+			            	<b>This project trained me to make actionable qualitative observations from real-time, in-person interactions.</b> I observed the interactions between my consulting club members to note correlations between the number of side conversations and their personal characteristics <small>(major, grade level, position in club, etc)</small>. Below, I briefly summarize my findings using my project slides.
+			            </p>
+			            <table>
+			            	<tr>
+			            		<td>
+			            			<img src="images/hci-research/p1-diagram.jpg">
+			            		</td>
+			            		<td>
+			            			<h4><b>Observations</b></h4>
+			            			<p>
+			            				I noted productive primary discussions, productive side conversations and distracted side conversations using different colored lines. I also noted generalizations in text. Surprisingly, there were close to no correlations between any of the variables, other than their proximity in seating arrangement.
+			            			</p>
+			            		</td>
+			            	</tr>
+			            	<tr>
+			            		<td>
+			            			<img src="images/hci-research/p1-interview.jpg">
+			            		</td>
+			            		<td>
+			            			<h4><b>Interview</b></h4>
+			            			<p>
+			            				To find answers, I interviewed several members and board members. Interviewees attributed the lack of correlation to the agenda on Google Documents. Because members were only paying attention while points relevant to them were being discussed, there were many side conversations occurring at random times. Many members stated that side conversations were <i>not</i> hurting the group's productivity.
+			            			</p>
+			            		</td>
+			            	</tr>
+			            	<tr>
+			            		<td>
+			            			<img src="images/hci-research/p1-hypothesis.jpg">
+			            		</td>
+			            		<td>
+			            			<h4><b>Conclusion</b></h4>
+			            			<p>
+			            				I concluded that the discussion was layered-- one layer of discussions centralized by the Google Documents, and one layer of side conversations between members sitting next to one another. I connected this finding to <a target="_blank" href="http://dl.acm.org/citation.cfm?id=142769">previous research</a> on technology enhanced interactions by Jim Hollan and Scott Stornetta.
+			            			</p>
+			            		</td>
+			            	</tr>
+			            </table>
+			            <p>
+			            	<br/>
+			            	View all my slides <a target="_blank" href="hci-research/project1-ppt.pdf">here</a>.<br/>
+			           		View my final report <a target="_blank" href="hci-research/project1-writeup.pdf">here</a>.
+			           	</p>
+			        </div>
+			        <a class="switch-modal button" onclick="switchModal('#hci-modal', '#probono-modal');">
+			        	Next Project >>
+			        </a>
+			        <div class="modal-bottom modal-close"> 
+			            <span>&times;</span>
+			        </div>
+				</div>
 				<div id="soundbytes-modal" class="modal">
 			        <div class="modal-close"> 
 			            <span>&times;</span>
@@ -529,11 +607,12 @@ TO-DO LIST:
 			            	</tr>
 			            </table>
 			        </div>
-			        <br/><br/>
-			        <a class="switch-modal button modal-bottom" onclick="switchModal('#haydens-modal', '#probono-modal');">
-			        	Next Project >>
-			        </a>
-				</div>
+			        <div class="modal-bottom">
+			        	<a class="switch-modal button" onclick="switchModal('#haydens-modal', '#hci-modal');">
+			        		Next Project >>
+			        	</a>
+			        </div>
+			    </div>
 				<div id="prantls-modal" class="modal">
 			        <div class="modal-close"> 
 			            <span>&times;</span>
