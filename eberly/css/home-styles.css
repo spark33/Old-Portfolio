@@ -23,7 +23,7 @@ iframe
 	max-width: 100%;
 }
 
-div, td
+div
 {
 	padding: 2% 5%;
 }
@@ -32,6 +32,11 @@ ul
 {
 	padding: 5%;
 	list-style-type: none;
+}
+
+hr
+{
+	width: 90%;
 }
 
 /* HEADER */
