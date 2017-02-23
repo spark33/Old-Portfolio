@@ -1,12 +1,19 @@
-/* TEST */
+/* FOR DEBUGGING 
+
 *
 {
-	border: 1px solid black;
+	border: 1px solid grey;
 }
 
 /* GENERAL STYLES */
 
 body
+{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+main
 {
 	padding: 3% 7% 0;
 	margin: 0;
@@ -36,21 +43,72 @@ ul
 
 hr
 {
-	width: 90%;
+	width: 80%;
+	float: left;
+}
+
+a
+{
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover
+{
+	text-decoration: underline;
 }
 
 /* HEADER */
+
+header
+{
+	background: linear-gradient(
+	            rgba(20,20,20, .8), 
+	            rgba(20,20,20, .8)),
+				url(../images/red_backdrop.png);
+	color: white;
+}
+
+#bar
+{
+	height: 5px;
+	background: #AF001F;
+	padding: 0;
+}
+
+#logo-cell
+{
+	width: 100px;
+}
+
+#logo
+{
+	position: relative;
+	top: -5px;
+	float: left;
+}
+
+#title-cell
+{
+	padding-left: 10px;
+}
 
 #contact-info
 {
 	text-align: right;
 }
 
-/* BUTTONS SECTION */
-
-#buttons
+#contact-info p
 {
-	padding: 2% 5% 2% 5%;
+	margin-top: 0;
+}
+
+/* BANNER SECTION */
+
+#landing
+{
+	padding: 2% 12% 3%;
 }
 
 #search
@@ -61,10 +119,24 @@ hr
 	float: right;
 }
 
+header > table,
+footer > table
+{
+	padding: 0 12% 0 12%;
+}
 
-/* FEATURES SECTION*/
 
-td
+/* TIPS SECTION*/
+/* ADDITIONAL SUPPORT TOPICS SECTION */
+
+#tips, #additional-topics
+{
+	background: #f1f1f1;
+}
+
+#tips td,
+#additional-topics td,
+footer td
 {
 	vertical-align: top;
 }
@@ -74,7 +146,12 @@ td
 footer
 {
 	margin-top: 5%;
+	max-width: 100%;
+	padding: 3% 0 3% 0;
+	background: #474747;
+	color: white;
 }
+
 
 
 
