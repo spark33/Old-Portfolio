@@ -237,12 +237,16 @@ TO-DO LIST:
 							This application will be completed this Spring. We expect deployment to occur this Fall after several months of user testing and optimizing for security, dependability and scalability. Check out a demo <a href="http://tef-scheduler.herokuapp.com" target="_blank">here</a>! You can log in with ID: seanpark and PW: password.
 						</p>
 						<img src="images/scheduler/schedule.png" />
-						<h2><b>Initial Research</b></h2>
+						<h2><b>Introduction</b></h2>
 						<img class="divider" src="images/divider.png">
 						<p>
-							Currently, my department uses <a href="http://www.whentowork.com" target="_blank">WhenToWork</a> to schedule employee shifts, Google Sheets to monitor hour logs and a custom LAMP app for employees to submit reports. Every shift change is made by an administrator who is informed by employees by e-mail, leading to flooded inboxes and many missed shift changes. <b>No employee management system caters to student employees' short shifts and unpredictability in schedules.</b> I leave out my research on existing platforms for brevity.
+							Currently, my department uses <a href="http://www.whentowork.com" target="_blank">WhenToWork</a> to schedule employee shifts, Google Sheets to monitor hour logs and a custom LAMP app for employees to submit reports. Every shift change is made by an administrator who is informed by employees by e-mail, leading to flooded inboxes and many missed shift changes. <b>No employee management system caters to student employees' short shifts and unpredictability in schedules.</b> 
 						</p>
-						<p>To ensure that the app would improve on all of WhenToWork's pain points, I sent out a survey that collected a mix of general and detailed responses in both quantitative and qualitative forms.</p>
+						<h2><b>Design Research Process</b></h2>
+						<img class="divider" src="images/divider.png">
+						<p>
+							To ensure that the app would improve on all of WhenToWork's pain points, I sent out a survey that collected a mix of general and detailed responses in both quantitative and qualitative forms. I also identified the user stories of an ideal replacement software, which you can find at the <a href="#user-stories">bottom</a> of this page. I also conducted competitor analysis to compare their functionalities with the identified user stories.
+						</p>
 						<table>
 							<tr>
 								<td>
@@ -262,18 +266,32 @@ TO-DO LIST:
 								<td>
 									<h4><b>UI / UX Improvements</b></h4>
 									<p>
-										Many employees who had rated WhenToWork with mid-range quantitative scores gave scathing qualitative responses. Most employees found WhenToWork extremely unattractive and difficult to use.
+										Even employees who had given WhenToWork's convenience and functionalities mid-range ratings gave scathing qualitative responses. Most employees found WhenToWork extremely unattractive and difficult to use.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img src="images/scheduler/homebase.png">
+								</td>
+								<td>
+									<h4><b>Competitor Analysis</b></h4>
+									<p>
+										I analyzed and piloted multiple demos of 4-5 existing scheduling software including Homebase, Shiftboard and Humanity. I noted the convenience of relevant features from both employee and admin perspectives.
 									</p>
 								</td>
 							</tr>
 						</table>
+						<p>
+							After the research was complete, I began to wireframe and prototype the front-end in HTML/CSS/AngularJS. Below, I outline the thinking behind the TEF Scheduler's structure and design.
+						</p>
 						<h2><b>User Interaction Design</b></h2>
 						<img class="divider" src="images/divider.png">
 						<p><b>
 							TEF Scheduler was designed to maximize automation and flexibility in scheduling. </b>It makes shifting easier for students while giving administrator a bird's eye view of all shifts and reports. In the future, it will also support data analytics and trend analysis.
 						</p>
 						<p>
-							The previous model keeps reports completely separate from the scheduling module. The Scheduler merges the reporting app with the scheduling app with shift-specific reports. This allows scalable development of data analysis tools on the same app.
+							The previous model keeps reports completely separate from the scheduling module. The TEF Scheduler merges the reporting app with the scheduling app with shift-specific reports. This allows scalable development of data analysis tools on the same app.
 						</p>
 						<table>
 							<tr>
@@ -305,7 +323,7 @@ TO-DO LIST:
 								<td>
 									<h4><b>View Reports</b></h4>
 									<p>
-										By displaying all reports on one view, the manager can simply scroll through reports instead of clicking on individual reports to read them.
+										By displaying all reports on one view, the manager can simply scroll through reports instead of clicking on individual reports to read them. Reports also send e-mail notifications to relevant staff.
 									</p>
 								</td>
 							</tr>
@@ -314,7 +332,7 @@ TO-DO LIST:
 						<h2 id="long-text"><b>Implementation</b></h2>
 						<img class="divider" src="images/divider.png">
 						<p>
-							To prioritize flexibility in data storage and access, I decided to use a <a href="https://docs.google.com/document/d/1k4ypLeFeJWAIR3cuGliVLN3EbZ980GqjUp6k5c-f8yc/edit?usp=sharing" target="_blank">NoSQL database</a> with AngularJS. Given the department's small size, denormalization was not a huge issue. The availability module and scheduler module use the <a href="https://fullcalendar.io/" target="_blank">FullCalendar</a> framework. The application is styled using <a href="http://materializecss.com/" target="_blank">Materialize</a>. The MongoDB database was hosted on <a href="https://mlab.com/" target="_blank">MLab</a> and the app was hosted on <a target="_blank" href="https://www.heroku.com/home">Heroku</a>.
+							To prioritize flexibility in data storage and access, I decided to use a <a href="https://docs.google.com/document/d/1k4ypLeFeJWAIR3cuGliVLN3EbZ980GqjUp6k5c-f8yc/edit?usp=sharing" target="_blank">NoSQL database</a> on MongoDB with AngularJS. Given the department's small size, denormalization was not a huge issue. The availability module and scheduler module use the <a href="https://fullcalendar.io/" target="_blank">FullCalendar</a> framework. The application is styled using <a href="http://materializecss.com/" target="_blank">Materialize</a>. The MongoDB database was hosted on <a href="https://mlab.com/" target="_blank">MLab</a> and the app was hosted on <a target="_blank" href="https://www.heroku.com/home">Heroku</a>. Because this is my first project on the MEAN stack that was built within one month, I am not particularly proud of my code style. I <b><i>am</i></b> proud that it is fully functional and will be implemented for CMU Computing Services starting Fall 2017!
 						</p>
 						<div id="user-stories">
 							<br/>
@@ -567,10 +585,10 @@ TO-DO LIST:
 			        	<h1 class="teal-text"><b>CMU Soundbytes</b></h1>
 			            <p>
 			            	<b>I designed and created the website for Soundbytes using a Jekyll ruby gem.</b>
-			            	I am using Jekyll to allow a blog-style update interaction to allow non-tech savvy Soundbytes in the future are able to update the website freely.
+			            	I am using Jekyll to allow a blog-style update interaction to allow non-tech savvy Soundbytes in the future are able to update the website freely. I was mainly in charge of designing and developing the landing page.
 			            </p>
 						<p>
-							The website is still in progress, but it should be up by the end of February. You can view a draft <a target="_blank" href="https://cmusoundbytes.github.io/">here</a>.
+							The website is still in progress, but it should be up by the first week of March. You can view a draft <a target="_blank" href="https://cmusoundbytes.github.io/">here</a>.
 						</p>
 						<img src="images/soundbytes/home.png" />
 						<p>
@@ -713,6 +731,9 @@ TO-DO LIST:
 						</b></p>	
 						<p>
 							I used <a target="_blank" href="http://kenwheeler.github.io/slick/">Slick</a> for the project slider, <a target="_blank" href="https://projects.lukehaas.me/scrollify/">Scrollify</a> to paginate and got some animation inspiration from <a target="_blank" href="http://www.hongkiat.com">Hongkiat.</a> This was my first time using SASS and CSS animations. This project helped me think of the web page as a dynamic canvas to do more than just place/style HTML elements. One month into development, I am excited to see where this project goes in the future.
+						</p>
+						<p>
+							This website has gone through multiple iterations of wireframing and prototyping, with input from many of my friends and instructors. Each effect, animation, font-size, arrangement and color choice has been carefully selected, and it will continue to develop in the future as I continue to grow as a developer and designer.
 						</p>
 						<h2><b>Design Points</b></h2>
 						<img class="divider" src="images/divider.png">
