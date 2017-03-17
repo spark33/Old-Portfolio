@@ -15,6 +15,11 @@
 		display: block;
 	}
 
+	.modal-header td
+	{
+		display: table-cell;
+	}
+
 	#user-stories
 	{
 		display: none;
@@ -41,6 +46,12 @@
 	{
 		width: 70% !important;
 		height: auto !important;
+	}
+
+	.projects-carousel img
+	{
+		width: 70%;
+		margin: 0 auto;
 	}
 
 	div

@@ -119,8 +119,8 @@ a
 
 .image img
 {
-	width:100%;
-    vertical-align:top;
+	width: 100%;
+  vertical-align:top;
 }
 
 .image:after, .image:before {
@@ -352,6 +352,15 @@ p
 .projects-carousel p
 {
 	text-align: center;
+	margin-bottom: 0;
+}
+
+.projects-carousel small
+{
+	color: #999;
+	display: block;
+	margin-top: -3px;
+	margin-bottom: 10px;
 }
 
 .projects-carousel a img

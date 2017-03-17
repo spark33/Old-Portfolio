@@ -143,94 +143,140 @@ TO-DO LIST:
 			</div>
 			<div id="projects" class="section scrollspy">
 				<section class="projects-carousel slider">
-				    <div>
-				      <a class="modal-button" onclick="openModal()" href="#scheduler-modal">
-				      <div class="image">
-				        <img src="images/icons/scheduler.png"/>
-				      </div>
-				      </a>
-				      <p>TEF Scheduler</p>
-				    </div>
-				    <div>
+			    <div>
+			      <a class="modal-button" onclick="openModal()" href="#scheduler-modal">
+			      <div class="image">
+			        <img src="images/icons/scheduler.png"/>
+			      </div>
+			      </a>
+			      <p>TEF Scheduler</p>
+			      <small>MEAN Stack</small>
+			    </div>
+			    <div>
+						<a class="modal-button" onclick="openModal()" href="#upc-modal">
+						<div class="image">
+							<img src="images/icons/soundbytes.png" />
+						</div>
+						</a>
+						<p>CMU Poker Club</p>
+						<small>Jekyll</small>
+				  </div>
+				  <div>
+						<a class="modal-button" onclick="openModal()" href="#eberly-modal">
+						<div class="image">
+							<img src="images/icons/soundbytes.png" />
+						</div>
+						</a>
+						<p>CMU Canvas Help</p>
+						<small>Jekyll</small>
+				  </div>
+				  <div>
+						<a class="modal-button" onclick="openModal()" href="#hci-modal">
+							<div class="image">
+								<img src="images/icons/users.png" />
+							</div>
+						</a>
+						<p>HCI Research</p>
+						<small>Qualitative Data Analysis</small>
+			    </div>
+				  <div>
+						<a class="modal-button" onclick="openModal()" href="#chess_store-modal">
+							<div class="image">
+								<img src="images/icons/chess.png" />
+							</div>
+						</a>
+						<p>A&M Chess Store</p>
+						<small>Ruby on Rails</small>
+			    </div>
+			    <div>
+				    <a class="modal-button" onclick="openModal()" href="#s53h-modal">
+							<div class="image">
+								<img src="images/icons/hotel.png" />
+							</div>
+						</a>
+						<p>Seoul 53 Hotel</p>
+						<small>AngularJS</small>
+			    </div>
+			    <div>
+						<a class="modal-button" onclick="openModal()" href="#haydens-modal">
+							<div class="image">
+								<img src="images/icons/data.png" />
+							</div>
+						</a>
+						<p>Hayden's Shoes</p>
+						<small>JS/jQuery</small>
+			    </div>
+			    <div>
+						<a class="modal-button" onclick="openModal()" href="#probono-modal">
+							<div class="image">
+								<img src="images/icons/ucc.png" />
+							</div>
+						</a>
+						<p>UCC Consulting</p>
+						<small>Customer Acquisition Model</small>
+			    </div>
+			    <div>
 						<a class="modal-button" onclick="openModal()" href="#soundbytes-modal">
 						<div class="image">
 							<img src="images/icons/soundbytes.png" />
 						</div>
 						</a>
 						<p>Soundbytes</p>
-				    </div>
-				    <div>
-						<a class="modal-button" onclick="openModal()" href="#s53h-modal">
-						<div class="image">
-							<img src="images/icons/hotel.png" />
-						</div>
-						</a>
-						<p>Seoul 53 Hotel</p>
-				    </div>
-				    <div>
-						<a class="modal-button" onclick="openModal()" href="#haydens-modal">
-						<div class="image">
-							<img src="images/icons/data.png" />
-						</div>
-						</a>
-						<p>Hayden's Shoes</p>
-				    </div>
-				    <div>
-						<a class="modal-button" onclick="openModal()" href="#chess_store-modal">
-						<div class="image">
-							<img src="images/icons/chess.png" />
-						</div>
-						</a>
-						<p>A&M Chess Store</p>
-				    </div>
-				    <div>
-						<a class="modal-button" onclick="openModal()" href="#hci-modal">
-						<div class="image">
-							<img src="images/icons/users.png" />
-						</div>
-						</a>
-						<p>HCI Research</p>
-				    </div>
-				    <div>
-						<a class="modal-button" onclick="openModal()" href="#probono-modal">
-						<div class="image">
-							<img src="images/icons/ucc.png" />
-						</div>
-						</a>
-						<p>UCC Consulting</p>
-				    </div>
-				    <div>
+						<small>Jekyll</small>
+				  </div>
+			    <div>
 						<a class="modal-button" onclick="openModal()" href="#swapbox-modal">
-						<div class="image">
-							<img src="images/icons/database.png" />
-						</div>
+							<div class="image">
+								<img src="images/icons/database.png" />
+							</div>
 						</a>
 						<p>Swapbox Database</p>
-				    </div>
-				    <div>
+						<small>PostgreSQL/Python</small>
+			    </div>
+			    <div>
 						<a class="modal-button" onclick="openModal()" href="#prantls-modal">
-						<div class="image">
-							<img src="images/icons/cupcake.png" />
-						</div>
+							<div class="image">
+								<img src="images/icons/cupcake.png" />
+							</div>
 						</a>
 						<p>Prantl's Bakery</p>
-				    </div>
-				    <div>
+						<small>HTML/CSS</small>
+			    </div>
+			    <div>
 						<a class="modal-button" onclick="openModal()" href="#this-modal">
-						<div class="image">
-							<img src="images/icons/html.png" />
-						</div>
+							<div class="image">
+								<img src="images/icons/html.png" />
+							</div>
 						</a>
 						<p>This Website</p>
-				    </div>
+						<small>HTML/CSS/SASS/JS</small>
+				  </div>
 				</section>
 				<div id="scheduler-modal" class="modal">
-			        <div class="modal-close"> 
+					<table class="modal-nav">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#scheduler-modal', '#this-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>This Website</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
-			        <div class="modal-content">
-			        	<h1 class="teal-text"><b>TEF Scheduler</b></h1>
-        				<p><b>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#scheduler-modal', '#upc-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Poker Club Website</small>
+							</td>
+						</tr>
+					</table>
+	        <div class="modal-content">
+	        	<h1 class="teal-text"><b>TEF Scheduler</b></h1>
+    				<p><b>
 							I am a personnel manager for CMU's Computing Services. I created the TEF Scheduler to centralize all of TEF's software with enhanced user experience and functionality and replace the old scheduling and reporting software.
 						</b></p>	
 						<p>
@@ -327,7 +373,6 @@ TO-DO LIST:
 									</p>
 								</td>
 							</tr>
-
 						</table>
 						<h2 id="long-text"><b>Implementation</b></h2>
 						<img class="divider" src="images/divider.png">
@@ -415,21 +460,54 @@ TO-DO LIST:
 								</tbody>
 							</table>
 						</div>
-			        </div>
-			        <a class="switch-modal button" onclick="switchModal('#scheduler-modal', '#s53h-modal');">
-			        	Next Project >>
-			        </a>
-			        <div class="modal-bottom modal-close"> 
+	        </div>
+	        <table class="modal-nav modal-bottom">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#scheduler-modal', '#this-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>This Website</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#scheduler-modal', '#upc-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Poker Club Website</small>
+							</td>
+						</tr>
+					</table>
 				</div>
 				<div id="s53h-modal" class="modal">
-			        <div class="modal-close"> 
+	        <table class="modal-nav">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#s53h-modal', '#chess_store-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>A&M Chess Store Application</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
-			        <div class="modal-content">
-			            <h1 class="teal-text"><b>Seoul 53 Hotel</b></h1>
-			            <p><b>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#s53h-modal', '#haydens-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Hayden's Shoes Data Platform</small>
+							</td>
+						</tr>
+					</table>
+	        <div class="modal-content">
+	          <h1 class="teal-text"><b>Seoul 53 Hotel</b></h1>
+	          <p><b>
 							I created the website for Seoul 53 Hotel using AngularJS to handle session data and instant translation.
 						</b></p>
 						<p>
@@ -506,87 +584,153 @@ TO-DO LIST:
 								</td>
 							</tr>
 						</table>
-			        </div>
-			        <a class="switch-modal button" onclick="switchModal('#s53h-modal', '#chess_store-modal');">
-			        	Next Project >>
-			        </a>
-			        <div class="modal-bottom modal-close"> 
+		    	</div>
+	        <table class="modal-nav modal-bottom">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#s53h-modal', '#chess_store-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>A&M Chess Store Application</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#s53h-modal', '#haydens-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Hayden's Shoes Data Platform</small>
+							</td>
+						</tr>
+					</table>
 				</div>
 				<div id="hci-modal" class="modal">
-			        <div class="modal-close"> 
+	        <table class="modal-nav">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#hci-modal', '#eberly-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>CMU Canvas Help Website</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
-			        <div class="modal-content">
-			        	<h1 class="teal-text"><b>HCI Research</b></h1>
-			            <p>
-			            	<b>I conducted and presented 3 user interaction research projects for course 05-499C: Designing Large-Scale Peer Learning Systems.</b> I created prototypes for offline interaction systems and analyzed quantitative and qualitative data from interactions to improve future software implementations. Below, I summarize my work from one project from Fall 2016. 
-			            	<br/><br/><i>If any explanation is insufficient, refer to my attachments at the bottom of this page.</i>
-			            </p>
-			            <h2><b>Observing Interactions</b></h2>
-			            <img class="divider" src="images/divider.png">
-			            <p>
-			            	<b>This project trained me to make actionable qualitative observations from real-time, in-person interactions.</b> I observed the interactions between my consulting club members to note correlations between the number of side conversations and their personal characteristics <small>(major, grade level, position in club, etc)</small>. Below, I briefly summarize my findings using my project slides.
-			            </p>
-			            <table>
-			            	<tr>
-			            		<td>
-			            			<img src="images/hci-research/p1-diagram.jpg">
-			            		</td>
-			            		<td>
-			            			<h4><b>Observations</b></h4>
-			            			<p>
-			            				I noted productive primary discussions, productive side conversations and distracted side conversations using different colored lines. I also noted generalizations in text. Surprisingly, there were close to no correlations between any of the variables, other than their proximity in seating arrangement.
-			            			</p>
-			            		</td>
-			            	</tr>
-			            	<tr>
-			            		<td>
-			            			<img src="images/hci-research/p1-interview.jpg">
-			            		</td>
-			            		<td>
-			            			<h4><b>Interview</b></h4>
-			            			<p>
-			            				To find answers, I interviewed several members and board members. Interviewees attributed the lack of correlation to the agenda on Google Documents. Because members were only paying attention while points relevant to them were being discussed, there were many side conversations occurring at random times. Many members stated that side conversations were <i>not</i> hurting the group's productivity.
-			            			</p>
-			            		</td>
-			            	</tr>
-			            	<tr>
-			            		<td>
-			            			<img src="images/hci-research/p1-hypothesis.jpg">
-			            		</td>
-			            		<td>
-			            			<h4><b>Conclusion</b></h4>
-			            			<p>
-			            				I concluded that the discussion was layered-- one layer of discussions centralized by the Google Documents, and one layer of side conversations between members sitting next to one another. I connected this finding to <a target="_blank" href="http://dl.acm.org/citation.cfm?id=142769">previous research</a> on technology enhanced interactions by Jim Hollan and Scott Stornetta.
-			            			</p>
-			            		</td>
-			            	</tr>
-			            </table>
-			            <p>
-			            	<br/>
-			            	View all my slides <a target="_blank" href="hci-research/project1-ppt.pdf">here</a>.<br/>
-			           		View my final report <a target="_blank" href="hci-research/project1-writeup.pdf">here</a>.
-			           	</p>
-			        </div>
-			        <a class="switch-modal button" onclick="switchModal('#hci-modal', '#probono-modal');">
-			        	Next Project >>
-			        </a>
-			        <div class="modal-bottom modal-close"> 
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#hci-modal', '#chess_store-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>A&M Chess Store Application</small>
+							</td>
+						</tr>
+					</table>
+	        <div class="modal-content">
+	        	<h1 class="teal-text"><b>HCI Research</b></h1>
+	            <p>
+	            	<b>I conducted and presented 3 user interaction research projects for course 05-499C: Designing Large-Scale Peer Learning Systems.</b> I created prototypes for offline interaction systems and analyzed quantitative and qualitative data from interactions to improve future software implementations. Below, I summarize my work from one project from Fall 2016. 
+	            	<br/><br/><i>If any explanation is insufficient, refer to my attachments at the bottom of this page.</i>
+	            </p>
+	            <h2><b>Observing Interactions</b></h2>
+	            <img class="divider" src="images/divider.png">
+	            <p>
+	            	<b>This project trained me to make actionable qualitative observations from real-time, in-person interactions.</b> I observed the interactions between my consulting club members to note correlations between the number of side conversations and their personal characteristics <small>(major, grade level, position in club, etc)</small>. Below, I briefly summarize my findings using my project slides.
+	            </p>
+	            <table>
+	            	<tr>
+	            		<td>
+	            			<img src="images/hci-research/p1-diagram.jpg">
+	            		</td>
+	            		<td>
+	            			<h4><b>Observations</b></h4>
+	            			<p>
+	            				I noted productive primary discussions, productive side conversations and distracted side conversations using different colored lines. I also noted generalizations in text. Surprisingly, there were close to no correlations between any of the variables, other than their proximity in seating arrangement.
+	            			</p>
+	            		</td>
+	            	</tr>
+	            	<tr>
+	            		<td>
+	            			<img src="images/hci-research/p1-interview.jpg">
+	            		</td>
+	            		<td>
+	            			<h4><b>Interview</b></h4>
+	            			<p>
+	            				To find answers, I interviewed several members and board members. Interviewees attributed the lack of correlation to the agenda on Google Documents. Because members were only paying attention while points relevant to them were being discussed, there were many side conversations occurring at random times. Many members stated that side conversations were <i>not</i> hurting the group's productivity.
+	            			</p>
+	            		</td>
+	            	</tr>
+	            	<tr>
+	            		<td>
+	            			<img src="images/hci-research/p1-hypothesis.jpg">
+	            		</td>
+	            		<td>
+	            			<h4><b>Conclusion</b></h4>
+	            			<p>
+	            				I concluded that the discussion was layered-- one layer of discussions centralized by the Google Documents, and one layer of side conversations between members sitting next to one another. I connected this finding to <a target="_blank" href="http://dl.acm.org/citation.cfm?id=142769">previous research</a> on technology enhanced interactions by Jim Hollan and Scott Stornetta.
+	            			</p>
+	            		</td>
+	            	</tr>
+	            </table>
+	            <p>
+	            	<br/>
+	            	View all my slides <a target="_blank" href="hci-research/project1-ppt.pdf">here</a>.<br/>
+	           		View my final report <a target="_blank" href="hci-research/project1-writeup.pdf">here</a>.
+	           	</p>
+	        </div>
+	        <table class="modal-nav modal-bottom">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#hci-modal', '#eberly-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>A&M Chess Store Application</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#hci-modal', '#chess_store-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Hayden's Shoes Data Platform</small>
+							</td>
+						</tr>
+					</table>
 				</div>
 				<div id="soundbytes-modal" class="modal">
-			        <div class="modal-close"> 
+	        <table class="modal-nav">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#soundbytes-modal', '#probono-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>UCC Consulting</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
-			        <div class="modal-content">
-			        	<h1 class="teal-text"><b>CMU Soundbytes</b></h1>
-			            <p>
-			            	<b>I designed and created the website for Soundbytes using a Jekyll ruby gem.</b>
-			            	I am using Jekyll to allow a blog-style update interaction to allow non-tech savvy Soundbytes in the future are able to update the website freely. I was mainly in charge of designing and developing the landing page.
-			            </p>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#soundbytes-modal', '#swapbox-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Swapbox Database Model</small>
+							</td>
+						</tr>
+					</table>
+	        <div class="modal-content">
+	        	<h1 class="teal-text"><b>CMU Soundbytes</b></h1>
+            <p>
+            	<b>I designed and created the website for Soundbytes using a Jekyll ruby gem.</b>
+            	I am using Jekyll to allow a blog-style update interaction to allow non-tech savvy Soundbytes in the future are able to update the website freely. I was mainly in charge of designing and developing the landing page.
+            </p>
 						<p>
 							The website was uploaded to <a target="_blank" href="https://cmusoundbytes.com/">cmusoundbytes.com</a>.
 						</p>
@@ -594,139 +738,342 @@ TO-DO LIST:
 						<p>
 							I am working with <a target="_blank" href="https://github.com/grafmark59">Daniel Graf</a> on this website. Shout out to <a target="_blank" href="https://www.linkedin.com/in/shreya-desikan-9a52399b">Shreya Desikan</a> for designing our awesome logo! 
 						</p>
-			        </div>
-			        <a class="switch-modal button" onclick="switchModal('#soundbytes-modal', '#haydens-modal');">
-			        	Next Project >>
-			        </a>
-			        <div class="modal-bottom modal-close"> 
+	        </div>
+	        <table class="modal-nav modal-bottom">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#soundbytes-modal', '#probono-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>UCC Consulting</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#soundbytes-modal', '#swapbox-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Swapbox Database Model</small>
+							</td>
+						</tr>
+					</table>
 				</div>
 				<div id="haydens-modal" class="modal">
-			        <div class="modal-close"> 
+	        <table class="modal-nav">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#haydens-modal', '#s53h-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>Seoul 53 Hotel Website</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
-			        <div class="modal-content">
-			           	<h1 class="teal-text"><b>Hayden's Shoes Data Platform</b></h1>
-			            <table>
-			            	<tr>
-			            		<td>
-			            			<img src="images/haydens/executive_home.png" />
-			            		</td>
-			            		<td>
-			            			<p>
-			            				<b>Using Highcharts, I created a data analytics platform for a fictional shoe store.</b> This was created for the course 67-250: Information Systems Milieux as the final term project.
-			            			</p>
-			            			<p>
-			            				The platform displays different profile information and sales data for each type of user. This was accompanied by a business analysis report and a documentation of the platform's specifications. The values are hard-coded into Highcharts for demonstration purposes.
-			            			</p>
-			            			<a href="./haydens" target="_blank">Check it out here!</a>
-			            		</td>
-			            	</tr>
-			            </table>
-			        </div>
-			        <div class="modal-bottom">
-			        	<a class="switch-modal button" onclick="switchModal('#haydens-modal', '#hci-modal');">
-			        		Next Project >>
-			        	</a>
-			        </div>
-			    </div>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#haydens-modal', '#probono-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>UCC Consulting</small>
+							</td>
+						</tr>
+					</table>
+	        <div class="modal-content">
+	           	<h1 class="teal-text"><b>Hayden's Shoes Data Platform</b></h1>
+	            <table>
+	            	<tr>
+	            		<td>
+	            			<img src="images/haydens/executive_home.png" />
+	            		</td>
+	            		<td>
+	            			<p>
+	            				<b>Using Highcharts, I created a data analytics platform for a fictional shoe store.</b> This was created for the course 67-250: Information Systems Milieux as the final term project.
+	            			</p>
+	            			<p>
+	            				The platform displays different profile information and sales data for each type of user. This was accompanied by a business analysis report and a documentation of the platform's specifications. The values are hard-coded into Highcharts for demonstration purposes.
+	            			</p>
+	            			<a href="./haydens" target="_blank">Check it out here!</a>
+	            		</td>
+	            	</tr>
+	            </table>
+	        </div>
+	        <table class="modal-nav modal-bottom">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#haydens-modal', '#s53h-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>Seoul 53 Hotel Website</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
+			            <span>&times;</span>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#haydens-modal', '#probono-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>UCC Consulting</small>
+							</td>
+						</tr>
+					</table>
+		    </div>
 				<div id="prantls-modal" class="modal">
-			        <div class="modal-close"> 
+	        <table class="modal-nav">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#prantls-modal', '#swapbox-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>Swapbox Database Model</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
-			        <div class="modal-content">
-			            <h1 class="teal-text"><b>Prantl's Bakery</b></h1>
-			            <table>
-			            	<tr>
-			            		<td>
-			            			<img src="images/prantls/home.png" />
-			            		</td>
-			            		<td>
-			            			<p><b>This was the first website I ever made.</b></p>
-			            			<p>
-			            				This is a website for Prantl's Bakery, famous for its Burnt Almond Tortes. This website was created for IS course 67-250: Information Systems Milieux, and did not go into production.
-			            			</p>
-			            			<a href="./prantls" target="_blank">Check it out here!</a>
-			            		</td>
-			            	</tr>
-			            </table>
-			        </div>
-			        <br/><br/>
-			        <a class="switch-modal button modal-bottom" onclick="switchModal('#prantls-modal', '#scheduler-modal');">
-			        	Next Project >>
-			        </a>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#prantls-modal', '#this-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>This Website</small>
+							</td>
+						</tr>
+					</table>
+	        <div class="modal-content">
+	            <h1 class="teal-text"><b>Prantl's Bakery</b></h1>
+	            <table>
+	            	<tr>
+	            		<td>
+	            			<img src="images/prantls/home.png" />
+	            		</td>
+	            		<td>
+	            			<p><b>This was the first website I ever made.</b></p>
+	            			<p>
+	            				This is a website for Prantl's Bakery, famous for its Burnt Almond Tortes. This website was created for IS course 67-250: Information Systems Milieux, and did not go into production.
+	            			</p>
+	            			<a href="./prantls" target="_blank">Check it out here!</a>
+	            		</td>
+	            	</tr>
+	            </table>
+	        </div>
+	        <table class="modal-nav modal-bottom">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#prantls-modal', '#swapbox-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>Swapbox Database Model</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
+			            <span>&times;</span>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#prantls-modal', '#this-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>This Website</small>
+							</td>
+						</tr>
+					</table>
 				</div>
 				<div id="probono-modal" class="modal">
-			        <div class="modal-close"> 
+	        <table class="modal-nav">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#probono-modal', '#haydens-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>Hayden's Shoes Data Platform</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
-			        <div class="modal-content">
-			            <h1 class="teal-text"><b>UCC Probono Consulting</b></h1>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#probono-modal', '#soundbytes-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Soundbytes Website & Blog</small>
+							</td>
+						</tr>
+					</table>
+	        <div class="modal-content">
+	            <h1 class="teal-text"><b>UCC Probono Consulting</b></h1>
 
-			            <p><b>
-			            	My team of UCC consultants has conducted market research and designed customer research strategy for Platypus LLC, a Pittsburgh robotic startup that produces fully autonomous water data collection boats.</b> Currently the team is helping the company to build a formal U.S. marketing and sales handbook. The team is also working with an incubator from Netherlands to apply our research from last semester to help build the Netherlands sales handbook.
-			            </p>
-			            <p>
-			            	We have presented our sales outreach solution to our client, and are moving onto collecting data from potential clients to remodel the company's business model.
-			            </p>
-			            <p>
-			            	Find out more about UCC <a href="http://www.cmuucc.com/" target="_blank">here</a>.
-			            </p>
-			        </div>
-			        <div class="modal-bottom">
-			        	<a class="switch-modal button" onclick="switchModal('#probono-modal', '#swapbox-modal');">
-			        	Next Project >>
-			        </a>
-			        </div>
+	            <p><b>
+	            	My team of UCC consultants has conducted market research and designed customer research strategy for Platypus LLC, a Pittsburgh robotic startup that produces fully autonomous water data collection boats.</b> Currently the team is helping the company to build a formal U.S. marketing and sales handbook. The team is also working with an incubator from Netherlands to apply our research from last semester to help build the Netherlands sales handbook.
+	            </p>
+	            <p>
+	            	We have presented our sales outreach solution to our client, and are moving onto collecting data from potential clients to remodel the company's business model.
+	            </p>
+	            <p>
+	            	Find out more about UCC <a href="http://www.cmuucc.com/" target="_blank">here</a>.
+	            </p>
+	        </div>
+	        <table class="modal-nav modal-bottom">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#probono-modal', '#haydens-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>Hayden's Shoes Data Platform</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
+			            <span>&times;</span>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#probono-modal', '#soundbytes-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Soundbytes Website & Blog</small>
+							</td>
+						</tr>
+					</table>
 				</div>
 				<div id="swapbox-modal" class="modal">
-			        <div class="modal-close"> 
+	        <table class="modal-nav">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#swapbox-modal', '#soundbytes-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>Soundbytes Website & Blog</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
-			        <div class="modal-content">
-			            <h1 class="teal-text"><b>Swapbox Database</b></h1>
-			            <p><b>I designed and wrote queries for a PostgreSQL database for Swapbox.</b> This was a fictional database project for 67-262: Database Design and Development. With two other IS majors, I analyzed the company's business model, drew the conceptual model on Vertabelo and wrote SQL queries in Python using psycopg2.</p>
-			            <img src="images/swapbox_erd.png" />
-			            <p>Check out our final report <a href="swapbox-report.pdf" target="_blank">here</a>.</p>
-			            <p>Download our final deliverable zip file <a href="swapbox.zip">here</a>.</p>
-			        </div>
-			        <a class="switch-modal button" onclick="switchModal('#swapbox-modal', '#this-modal');">
-			        	Next Project >>
-			        </a>
-			        <div class="modal-bottom modal-close"> 
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#swapbox-modal', '#prantls-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Prantl's Bakery Website</small>
+							</td>
+						</tr>
+					</table>
+	        <div class="modal-content">
+	            <h1 class="teal-text"><b>Swapbox Database</b></h1>
+	            <p><b>I designed and wrote queries for a PostgreSQL database for Swapbox.</b> This was a fictional database project for 67-262: Database Design and Development. With two other IS majors, I analyzed the company's business model, drew the conceptual model on Vertabelo and wrote SQL queries in Python using psycopg2.</p>
+	            <img src="images/swapbox_erd.png" />
+	            <p>Check out our final report <a href="swapbox-report.pdf" target="_blank">here</a>.</p>
+	            <p>Download our final deliverable zip file <a href="swapbox.zip">here</a>.</p>
+	        </div>
+	        <table class="modal-nav modal-bottom">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#swapbox-modal', '#soundbytes-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>Soundbytes Website & Blog</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#swapbox-modal', '#prantls-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Prantl's Bakery Website</small>
+							</td>
+						</tr>
+					</table>
 				</div>
 				<div id="chess_store-modal" class="modal">
-			        <div class="modal-close"> 
+	        <table class="modal-nav">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#chess_store-modal', '#hci-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>HCI Research</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
-			        <div class="modal-content">
-			            <h1 class="teal-text"><b>A&M Chess Store</b></h1>
-			            <p>
-			            	<b>
-			            		I am creating an online retail application using Ruby on Rails. 
-			            	</b>
-			            	This project is for 67-272: Application Design and Development. As of February 6th 2017, have currently designed and documented the SQL database. I have designed and developed a front-end using simplified models to pass given controller tests and cucumber tests and uploaded my current progress <a href="http://chess-store.herokuapp.com">here</a>. I will be building out the full app in the coming weeks.
-			            </p>
-			            <p>
-			            	Check out my database <a target="_blank" href="chess-store/db_design.pdf" target="_blank">design</a> in 3NF, <a href="chess-store/erd.pdf" target="_blank">ERD</a>, or <a href="chess-store/data_dict.pdf" target="_blank">data dictionary</a>.
-			            </p>
-			        </div>
-			        <div class="modal-bottom">
-			        	<a class="switch-modal button" onclick="switchModal('#chess_store-modal', '#soundbytes-modal');">
-			        		Next Project >>
-			       		</a>
-			        </div>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#chess_store-modal', '#s53h-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Seoul 53 Hotel Website</small>
+							</td>
+						</tr>
+					</table>
+	        <div class="modal-content">
+	            <h1 class="teal-text"><b>A&M Chess Store</b></h1>
+	            <p>
+	            	<b>
+	            		I am creating an online retail application using Ruby on Rails. 
+	            	</b>
+	            	This project is for 67-272: Application Design and Development. As of February 6th 2017, have currently designed and documented the SQL database. I have designed and developed a front-end using simplified models to pass given controller tests and cucumber tests and uploaded my current progress <a href="http://chess-store.herokuapp.com">here</a>. I will be building out the full app in the coming weeks.
+	            </p>
+	            <p>
+	            	Check out my database <a target="_blank" href="chess-store/db_design.pdf" target="_blank">design</a> in 3NF, <a href="chess-store/erd.pdf" target="_blank">ERD</a>, or <a href="chess-store/data_dict.pdf" target="_blank">data dictionary</a>.
+	            </p>
+	        </div>
+	        <table class="modal-nav modal-bottom">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#chess_store-modal', '#hci-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>HCI Research</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
+			            <span>&times;</span>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#chess_store-modal', '#s53h-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>Seoul 53 Hotel Website</small>
+							</td>
+						</tr>
+					</table>
 				</div>
 				<div id="this-modal" class="modal">
-			        <div class="modal-close"> 
+	        <table class="modal-nav">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#this-modal', '#prantls-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>Prantl's Bakery Website</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>
-			        <div class="modal-content">
-			            <h1 class="teal-text"><b>This Website</b></h1>
-        				<p><b>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#this-modal', '#scheduler-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>TEF Scheduler</small>
+							</td>
+						</tr>
+					</table>
+	        <div class="modal-content">
+	          <h1 class="teal-text"><b>This Website</b></h1>
+    				<p><b>
 							This website was created from scratch using HTML5, CSS/SASS and simple JS.
 						</b></p>	
 						<p>
@@ -743,17 +1090,140 @@ TO-DO LIST:
 						<p>
 							From the loading animation to section dividers, this website plays with the concept of the teal circle. There's no corny symbolism there-- just a design concept I found elegant :)
 						</p>
-			            <p>
-			            	Shout out to my amazing mentee <a href="https://elizabethwang.myportfolio.com/" target="_blank">Elizabeth Wang</a> for helping me sketch the project icons! 
-			            </p>
-			        </div>
-			        <a class="switch-modal button" onclick="switchModal('#this-modal', '#prantls-modal');">
-			        	Next Project >>
-			        </a>	
-			        <div class="modal-close modal-bottom"> 
+            <p>
+            	Shout out to my amazing mentee <a href="https://elizabethwang.myportfolio.com/" target="_blank">Elizabeth Wang</a> for helping me sketch the project icons! 
+            </p>
+	        </div>
+	        <table class="modal-nav modal-bottom">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#this-modal', '#prantls-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>Prantl's Bakery Website</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
 			            <span>&times;</span>
-			        </div>		        
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#this-modal', '#scheduler-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>TEF Scheduler</small>
+							</td>
+						</tr>
+					</table>		        
 				</div>
+				<div id="upc-modal" class="modal">
+					<table class="modal-nav">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#upc-modal', '#scheduler-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>TEF Scheduler</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
+			            <span>&times;</span>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#upc-modal', '#eberly-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>CMU Canvas Help Website</small>
+							</td>
+						</tr>
+					</table>
+	        <div class="modal-content">
+	        	<h1 class="teal-text"><b>UPC Website</b></h1>
+	        	<p><b>
+	        		Heading
+	        	</b></p>
+	        	<p>
+	        		Content
+	        	</p>
+	        	<img src="images/upc.png" />
+	        </div>
+	       	<table class="modal-nav modal-bottom">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#upc-modal', '#scheduler-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>TEF Scheduler</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
+			            <span>&times;</span>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#upc-modal', '#eberly-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>CMU Canvas Help Website</small>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="eberly-modal" class="modal">
+					<table class="modal-nav">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#eberly-modal', '#upc-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>CMU Poker Club Website</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
+			            <span>&times;</span>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#eberly-modal', '#hci-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>HCI Research</small>
+							</td>
+						</tr>
+					</table>
+	        <div class="modal-content">
+	        	<h1 class="teal-text"><b>CMU Canvas Help Website</b></h1>
+	        	<p><b>
+	        		Heading
+	        	</b></p>
+	        	<p>
+	        		Content
+	        	</p>
+	        	<img src="images/upc.png" />
+	        </div>
+	       	<table class="modal-nav modal-bottom">
+						<tr>
+							<td>
+								<a class="switch-modal" onclick="switchModal('#eberly-modal', '#upc-modal');">
+				        	<< Previous Project
+				        </a><br/>
+				        <small>CMU Poker Club Website</small>
+							</td>
+							<td>
+								<div class="modal-close"> 
+			            <span>&times;</span>
+			        	</div>
+							</td>
+							<td style="text-align: right;">
+								<a class="switch-modal" onclick="switchModal('#eberly-modal', '#hci-modal');">
+				        	Next Project >>
+				        </a><br/>
+				        <small>HCI Research</small>
+							</td>
+						</tr>
+					</table>
+	      </div>
 			</div>
 
 			<div id="contact" class="section scrollspy">
