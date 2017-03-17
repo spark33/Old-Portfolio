@@ -12,13 +12,16 @@
 .slick-next:before
 {
 	transition: all 0.5s;
-	color: #777;
+	color: #999;
 }
 
-.slick-prev:before:hover,
-.slick-next:before:hover
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before,
 {
 	color: black;
+	opacity: 1;
 }
 
 .slick-frame {
