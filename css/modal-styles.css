@@ -40,7 +40,14 @@
 .modal h3
 {
 	font-size: 1.35em;
-	margin: 10px 0 3% 0;
+	margin: 10px 0 0 0;
+	color: #999;
+}
+
+.modal h5
+{
+	font-size: 1em;
+	margin-bottom: 3%;
 	color: #999;
 }
 
