@@ -12,6 +12,12 @@
 .slick-next:before
 {
 	transition: all 0.5s;
+	color: #777;
+}
+
+.slick-prev:before:hover,
+.slick-next:before:hover
+{
 	color: black;
 }
 
