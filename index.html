@@ -282,7 +282,7 @@ TO-DO LIST:
 							I am a personnel manager for CMU's Computing Services. I created the TEF Scheduler to centralize all of TEF's software with enhanced user experience and functionality and replace the old scheduling and reporting software.
 						</b></p>	
 						<p>
-							This application will be completed this Spring. We expect deployment to occur this Fall after several months of user testing and optimizing for security, dependability and scalability. Check out a demo <a href="http://tef-scheduler.herokuapp.com" target="_blank">here</a>! You can log in with ID: seanpark and PW: password.
+							Check out a demo <a href="http://tef-scheduler.herokuapp.com" target="_blank">here</a>! You can log in with ID: seanpark and PW: password. This was supposed to be deployed for Fall 2017, but fell through as I will be serving my military for a while starting in Fall 2017.
 						</p>
 						<img src="images/scheduler/schedule.png" />
 						<h2><b>Introduction</b></h2>
@@ -1240,15 +1240,23 @@ TO-DO LIST:
 	        		As a support technician for the CMU Eberly Educational Technologies Center, I was tasked with creating a CMU-specific help website for Canvas LMS.
 	        	</b></p>
 	        	<p>
-	        		The previous help website for Blackboard was very <a href="http://cmu.edu/blackboard" target="_blank">cluttered and unattractive</a>. Given the large scale of the QnA topics, I focused on how to optimize the user flow by prioritizing use cases and standardizing design elements. I have created a <a href="http://cmu.edu/canvas" target="_blank">placeholder website</a> to direct professors who need help while the Eberly Center staff collate the appropriate support content.
-	        	</p>
-	        	<p>
-	        		<b>The challenge with this project</b> is meeting my department's requirements and optimizing user experience while following CMU's <a href="https://www.cmu.edu/marcom/brand-standards/logos-colors-type.html" target="_blank">design standards</a>.
-	        	</p>
-	        	<p>
-	        		Currently, I have prioritized the user stories, categorized them and drawn an iteration of wireframes. I will move onto designing mockups and developing a first draft of the website to begin user testing. I plan to develop the website using Jekyll to take advantage of its flexbility and scalability. The website should be complete by the beginning of April.
+	        		The previous help website for Blackboard was very <a href="http://cmu.edu/blackboard" target="_blank">cluttered and unattractive</a>. Given the large scale of the QnA topics, I focused on how to optimize the user flow by prioritizing use cases and standardizing design elements. I have created a <a href="http://cmu.edu/canvas" target="_blank">placeholder website</a> to direct professors who need help while the Eberly Center staff collate the appropriate support content. I am currently developing the full website using Jekyll, and it should be fully deployed on the CMU domain by the end of June 2017.
 	        	</p>
 	        	<img src="images/eberly.png" />
+	        	<h2><b>Design Process</b></h2>
+						<img class="divider" src="images/divider.png">
+						<p>
+							Given the tight deadline, I could not wait for the team to collate all support materials to design the site's structure. Given the probable similarity in content between this new site with the CMU Blackboard site, I conducted a redesign of the CMU Blackboard website.
+						</p>
+						<p>insert image of question table here</p>
+						<p>
+							In order to expedite users' process of finding answers to specific questions, each question was grouped into categories in different ways-- by user, by feature, etc. I found through some casual user testing that users found features most easily when questions were grouped by feature.
+						</p>
+						<p>insert diagram of how content was organized</p>
+						<p>
+							Although the categories were redefined later in the content creation process, the division of content into separate categories allowed me to think through the development process more simply. Given the structure above, I only had to develop three page layouts: a main page, a category index page, and a post page. By passing in the right Front Matter variables into each of the pages and configuration file, I was able to make Jekyll do most of the work for page creation and navigation. This means that it will be easy for anyone on the Eberly Center team to add content in the future. The project is nearing completion and will be deployed before Fall 2017.
+						</p>
+						<p>insert images of final page designs</p>
 	        </div>
 	       	<table class="modal-nav modal-bottom">
 						<tr>
