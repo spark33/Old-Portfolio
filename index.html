@@ -1242,21 +1242,44 @@ TO-DO LIST:
 	        	<p>
 	        		The previous help website for Blackboard was very <a href="http://cmu.edu/blackboard" target="_blank">cluttered and unattractive</a>. Given the large scale of the QnA topics, I focused on how to optimize the user flow by prioritizing use cases and standardizing design elements. I have created a <a href="http://cmu.edu/canvas" target="_blank">placeholder website</a> to direct professors who need help while the Eberly Center staff collate the appropriate support content. I am currently developing the full website using Jekyll, and it should be fully deployed on the CMU domain by the end of June 2017.
 	        	</p>
-	        	<img src="images/eberly.png" />
+	        	<img src="images/canvas-help/placeholder.png" />
 	        	<h2><b>Design Process</b></h2>
 						<img class="divider" src="images/divider.png">
 						<p>
-							Given the tight deadline, I could not wait for the team to collate all support materials to design the site's structure. Given the probable similarity in content between this new site with the CMU Blackboard site, I conducted a redesign of the CMU Blackboard website.
+							Given the tight deadline, I could not wait for the team to collate all support materials to design the site's structure. Given the probable similarity in content between this new site with the CMU Blackboard site, I first conducted a redesign of the CMU Blackboard website. <b>The priority was minimizing the user's mental load, and easing the process of finding an answer to a known question.</b>
 						</p>
-						<p>insert image of question table here</p>
+						<img src="images/canvas-help/main-site.png" />
 						<p>
-							In order to expedite users' process of finding answers to specific questions, each question was grouped into categories in different ways-- by user, by feature, etc. I found through some casual user testing that users found features most easily when questions were grouped by feature.
+							In order to expedite users' process of finding answers to specific questions, each question was grouped into categories in different ways-- by user, by feature, etc. I found through some casual user testing that users found features most easily when questions were grouped by module. The most common modules were:
 						</p>
-						<p>insert diagram of how content was organized</p>
+						<ul>
+							<li>Groups/Attendance/Rollcall</li>
+							<li>Assignments</li>
+							<li>Analyzing Student Data</li>
+							<li>Speedgrader</li>
+							<li>Grade Center</li>
+							<li>Third-Party Modules</li>
+						</ul>
 						<p>
-							Although the categories were redefined later in the content creation process, the division of content into separate categories allowed me to think through the development process more simply. Given the structure above, I only had to develop three page layouts: a main page, a category index page, and a post page. By passing in the right Front Matter variables into each of the pages and configuration file, I was able to make Jekyll do most of the work for page creation and navigation. This means that it will be easy for anyone on the Eberly Center team to add content in the future. The project is nearing completion and will be deployed before Fall 2017.
+							Each module had an index page, in which there were 4 subcategories: Setup, Use, Configure, and FAQ. Because subcategories constant across all modules, the user does not have to explicitly explore all modules to identify the site structure.
 						</p>
-						<p>insert images of final page designs</p>
+						<h2><b>Development Process</b></h2>
+						<img class="divider" src="images/divider.png">
+						<p>
+							Given the site structure above, I only had to develop three page layouts: a main page, a category index page, and a post page. Using Jekyll, I set up the configuration files so that given a page with a certain set of variables, all data would be translated in HTML using Liquid. By passing in the right Front Matter variables into each of the pages and configuration file, I was able to make Jekyll do most of the work for page creation and navigation. The data below is all Jekyll needs to generate a fully styled answer page:
+						</p>
+						<p>
+							---<br/>
+							layout: post<br/>
+							title: Test Post for Speedgrader<br/>
+							tag: use<br/>
+							category: speedgrader<br/>
+							---
+						</p>
+						<p>
+							This data needs to be placed in the directory of the corresponding module in a Markdown file. The server does not even have to restart, as Jekyll regenerates static pages on file change. <b>In other words, all future managers will have to do to add content is upload a new Markdown file.</b> The project is nearing completion and will be deployed before Fall 2017.
+						</p>
+						<p><i>Final design images coming soon!</i></p>
 	        </div>
 	       	<table class="modal-nav modal-bottom">
 						<tr>
