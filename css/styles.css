@@ -278,9 +278,9 @@ main > div
 
 #about h5
 {
-    font-size: calc(14px + 0.7vw);
-	line-height: 7vh;
-	max-width: 100%;
+  font-size: calc(14px + 0.7vw);
+	line-height: 8vh;
+	max-width: 90%;
 	text-align: justify;
 }
 
