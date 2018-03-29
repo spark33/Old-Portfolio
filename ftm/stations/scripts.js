@@ -4,7 +4,7 @@ var stationNo = 0; // this is the only variable that has to be changed between s
 var displayTime = 15; // currently same for error and solution displays
 var count = displayTime;
 
-var passcodes = [29485769, 18932798, 19298358, 37123471];
+var passcodes = [37123471, 18932798, 19298358, 37123471];
 
 var solutionCodes = ['seanpark.xyz/ftm/cwm.html', // Code with Music! 
 										 'seanpark.xyz/ftm/ptb.html', // Play the Bits!
