@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>What are Numbers?</title>
+</head>
+<body>
+
+	<h1>What are Numbers?</h1>
+
+	<p>
+		Normally, in math classes, we work with numbers that look like this: 123. But what does that really mean? Well, we typically tend to represent numbers in their base 10 form. This means that:
+	</p>
+
+	<img src="base10.png">
+
+	<p>
+		But we can choose other bases as well. For example, if we choose base 3:
+	</p>
+
+	<img src="base3.png">
+
+	<p>
+		In the above conversion, we found how many of the largest power of 3 fit in the number. Then, we found the counts for rest of the powers down to zero, and put the counts together.
+	</p>
+
+	<h5>
+		There is an audio sample below being played in binary. Can you figure out what the number is in base 10?
+	</h5>
+
+	<script type="text/javascript" style="display:none;">
+		function setAudio() {
+			var sample = new Audio('wan.mp3');
+			sample.controls = true;
+			sample.loop = true;
+			sample.autoplay = true;
+			document.body.appendChild(sample);
+		}
+
+		setAudio();
+	</script>
+
+</body>
+</html>

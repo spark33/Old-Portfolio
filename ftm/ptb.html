@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Play the Bits!</title>
+</head>
+<body>
+
+	<h1>Play the Bits!</h1>
+
+	<p>
+		The audio sample below is playing a rhythm that represents a word.
+	</p>
+
+	<h3>Figure out what this word is!</h3>
+
+	<p><i>Ask the TA for a conversion chart. </i></p>
+
+	<script type="text/javascript" style="display:none;">
+		function setAudio() {
+			var sample = new Audio('ptb.mp3');
+			sample.controls = true;
+			sample.loop = true;
+			sample.autoplay = true;
+			document.body.appendChild(sample);
+		}
+
+		setAudio();
+	</script>
+</body>
+</html>
