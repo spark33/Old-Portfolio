@@ -7,24 +7,27 @@
 
 	<h1>Play the Bits!</h1>
 
+	<p><i>Ask the TA for a conversion chart.</i></p>
+
 	<p>
-		The audio sample below is playing a rhythm that represents a word.
+		Each audio sample below is playing a rhythm that represents a letter. Letters can be represented by combinations of 1's and 0's. After a 4 beat count, a sound represents a 1 and a click represents a 0.
 	</p>
 
-	<h3>Figure out what this word is!</h3>
-
-	<p><i>Ask the TA for a conversion chart. </i></p>
+	<h3>
+		The letters form a word when put together. The word is the solution piece.
+	</h3>
 
 	<script type="text/javascript" style="display:none;">
-		function setAudio() {
-			var sample = new Audio('ptb.mp3');
-			sample.controls = true;
-			sample.loop = true;
-			sample.autoplay = true;
-			document.body.appendChild(sample);
+		function setAudio(path) {
+			var letter = new Audio(path);
+			letter.controls = true;
+			document.body.appendChild(letter);
+			document.body.appendChild(document.createElement('br'));
 		}
 
-		setAudio();
+		setAudio('ptb_letter1.mp3');
+		setAudio('ptb_letter2.mp3');
+		setAudio('ptb_letter3.mp3');
 	</script>
 </body>
 </html>
