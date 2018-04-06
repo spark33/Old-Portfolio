@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Play the Bits!</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="mp_styles.css">
 </head>
 <body>
 
@@ -18,16 +20,19 @@
 	</h3>
 
 	<script type="text/javascript" style="display:none;">
-		function setAudio(path) {
+		function setAudio(num, path) {
 			var letter = new Audio(path);
 			letter.controls = true;
+			var label = document.createElement('h4');
+			label.appendChild(document.createTextNode('Letter ' + num + ': '));
+			document.body.appendChild(label);
 			document.body.appendChild(letter);
 			document.body.appendChild(document.createElement('br'));
 		}
 
-		setAudio('ptb_letter1.mp3');
-		setAudio('ptb_letter2.mp3');
-		setAudio('ptb_letter3.mp3');
+		setAudio(1,'ptb_letter1.mp3');
+		setAudio(2,'ptb_letter2.mp3');
+		setAudio(3,'ptb_letter3.mp3');
 	</script>
 </body>
 </html>

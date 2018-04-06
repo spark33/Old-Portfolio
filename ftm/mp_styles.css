@@ -1,0 +1,30 @@
+body {
+	background: #e1f7d5;
+	padding: 5% 20%;
+	font-family: 'Montserrat', sans-serif;
+	color: #353535;
+	line-height: 30px;
+}
+
+body > *, hr {
+	margin: 30px;
+}
+
+h1 {
+	color: #DF744A;
+	margin-top: 0;
+	font-size: 3em;
+}
+
+h3 {
+	color: black;
+	font-size: 1.5em;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 5px 0;
+}
